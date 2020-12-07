@@ -17,7 +17,7 @@ let bandsList = [
     MusicBand(name: "Daft punk", country: "France"),
     MusicBand(name: "Nightwish", country: "Finland"),
     MusicBand(name: "AC/DC", country: "Australia")
-            ]
+            ]    
 
 
 
