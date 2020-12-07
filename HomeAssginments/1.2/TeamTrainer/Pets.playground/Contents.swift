@@ -30,11 +30,3 @@ owner1.isOwn(pet: Pet(name: "Roger the Rabbit") )
 
 // Incorrect:
 //owner1.isOwn(pet: "Roger the Rabbit")
-
-
-
-
-
-
-
-
