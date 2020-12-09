@@ -6,15 +6,22 @@ import UIKit
 
 struct Musician
 {
-    var name: String
-    var familyName: String
-    var age: Int
-    var titleInBand: String
+    let fullName: String
+    let titleInBand: String
+    let periodInBand: String
     
     func printInfoAboutMusician(){
-        print("Name: \(name) \(familyName)\nAge: \(age)\nTitle: \(titleInBand)")
+        print("\(fullName) - \(titleInBand) (\(periodInBand))")
     }
 }
 
-var musician: Musician = Musician(name: "Alex", familyName: "Kualhin", age: 31, titleInBand: "Bass")
-musician.printInfoAboutMusician()
+var musicianList = [
+Musician(fullName: "John Lennon", titleInBand: "vocals, guitars, keyboards, harmonica, bass", periodInBand: "1960-1970"),
+    Musician(fullName: "Paul McCartney", titleInBand: "vocals, bass, guitars, keyboards, drums", periodInBand: "1960-1970"),
+    Musician(fullName: "George Harrison", titleInBand: "guitars, vocals, sitar, keyboards, bass", periodInBand: "1960-1970"),
+    Musician(fullName: "Ringo Starr", titleInBand: "drums, percussion, vocals", periodInBand: "1962-1970")
+]
+
+for element in musicianList{
+    element.printInfoAboutMusician()
+}
