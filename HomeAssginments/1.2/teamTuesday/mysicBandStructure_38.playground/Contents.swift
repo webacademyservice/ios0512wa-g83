@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 struct Band <MusiciansType, AlbumsType> {
     let name: String
     let country: String
