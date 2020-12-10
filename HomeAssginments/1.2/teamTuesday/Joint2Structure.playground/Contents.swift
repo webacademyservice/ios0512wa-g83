@@ -68,11 +68,6 @@ struct Band <MusiciansType, AlbumsType>
     var musiciansInBand: Array <MusiciansType>
     var albumsOfBand: Array <AlbumsType>
     
-    func bandByCountry() -> String
-    {
-        "\(name)\" is from \(country)"
-    }
-    
     func printInfoAboutBand()
     {
         print("\(name) - \(country)")
