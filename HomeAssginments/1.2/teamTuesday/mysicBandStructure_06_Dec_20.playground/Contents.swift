@@ -34,12 +34,15 @@ struct Musician<BandName>
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "yyyy"
 
-        print("\(bandName): \(fullName) - \(titleInBand) (\(dateFormatterPrint.string(from: periodInBand.start))-\(dateFormatterPrint.string(from: periodInBand.end)))")
+        print("\(bandName): \(fullName) - \(titleInBand)"
+              + " (\(dateFormatterPrint.string(from: periodInBand.start))"
+              + "-\(dateFormatterPrint.string(from: periodInBand.end)))")
     }
     
     static func generateDateInterval(startYear: Int, endYear: Int) -> DateInterval
     {
-     return DateInterval.init(start: Calendar.current.date(from: DateComponents(year:startYear))!, end: Calendar.current.date(from: DateComponents(year:endYear))!)
+     DateInterval.init(start: Calendar.current.date(from: DateComponents(year:startYear))!,
+                       end: Calendar.current.date(from: DateComponents(year:endYear))!)
     }
 }
 
