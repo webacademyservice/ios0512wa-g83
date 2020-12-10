@@ -23,6 +23,7 @@ struct Musician
         self.musicianHistory.updateValue(periodInBand, forKey: bandName)
     }
     
+    //Mutating for changing data in self.musicianHistory
     mutating func addToMusicianHistory(bandName: String, period: DateInterval){
         musicianHistory.updateValue(period, forKey: bandName)
     }
