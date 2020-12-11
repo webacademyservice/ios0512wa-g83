@@ -13,7 +13,6 @@ struct Ship {
 
 let ShipInfo = Ship(name:"Titanic", direction:"New-York", teamCapacity: 250)
    
-print(ShipInfo.description())
 
    var List =  [
    Ship(name:"Titanic", direction:"New-York", teamCapacity: 250),
@@ -21,3 +20,6 @@ print(ShipInfo.description())
    Ship(name: "Splendida", direction: "Barselona", teamCapacity: 150),
    Ship(name: "Smeralda", direction: "Palermo", teamCapacity: 140),
 ] 
+for Ship in List {
+    print(Ship.description())
+}
