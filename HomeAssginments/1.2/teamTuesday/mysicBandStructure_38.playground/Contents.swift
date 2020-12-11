@@ -2,9 +2,12 @@ import Foundation
 
 //Structure Band by country
 
-struct Band {
+struct Band <MusiciansType, AlbumsType> {
     let bandName: String
     let country: String
+    var allBandMusicians: Array <MusiciansType>
+    var allBandAlbums: Array <AlbumsType>
+    
     
     // Return band by country
     func bandByCountry() -> String {
@@ -37,17 +40,18 @@ struct Band {
 }
 
 let bandsList = [
-    Band(bandName: "The Beatles", country: "United Kingdom"),
-    Band(bandName: "Guns and Roses", country: "United States"),
-    Band(bandName: "Scorpions", country: "Germany"),
+    Band(bandName: "The Beatles", country: "United Kingdom",allBandMusicians: ["John Lennon", "Paul McCartney", "George Harrison","Ringo Starr"], allBandAlbums: ["With the Beatles", "Beatles 65", "Help!","Magical Mystery Tour"]),
+    Band(bandName: "Guns and Roses", country: "United States", allBandMusicians:["Axl Rose", "Duff McKagane", "Slash" ] , allBandAlbums:["Appetite for Destruction", "G N' R Lies", "Use Your Illusion", "The Spaghetti Incident?"]),
+    Band(bandName: "Scorpions", country: "Germany", allBandMusicians:["Rudolf Schenker", "Klaus Meine", "Matthias Jabs"] , allBandAlbums:["Lonesome Crow", "In Trance", "Animal Magnetism","Blackout"]),
 ]
+
 
 //Structure Musician in the band
 
-struct Musician <bandNameType> {
-    let bandName: bandNameType
+struct Musician <roleType> {
+    let bandName: String
     let musicianName: String
-    let roleInBand: String
+    let roleInBand: roleType
     let fromYear: Int
     let toYear: Int
     func musicianByBand() -> String {
@@ -70,9 +74,10 @@ let musicianList = [
 
 //Structure band albums
 
-struct Album <bandNameType> {
-    let bandName: bandNameType
+struct Album <albumType> {
+    let bandName: String
     var albumName: String
+    let albumType: albumType
     let albumDate: Int
     func albumByDate() -> String {
         return "\(bandName) have \(albumName) was recording in \(albumDate)"
@@ -80,18 +85,18 @@ struct Album <bandNameType> {
 }
 
 let albumList = [
-    Album(bandName: "The Beatles", albumName: "With the Beatles", albumDate: 1963),
-    Album(bandName: "The Beatles", albumName: "Beatles 65", albumDate: 1964),
-    Album(bandName: "The Beatles", albumName: "Help!", albumDate: 1965),
-    Album(bandName: "The Beatles", albumName: "Magical Mystery Tour", albumDate: 1965),
-    Album(bandName: "Guns and Roses", albumName: "Appetite for Destruction", albumDate: 1987),
-    Album(bandName: "Guns and Roses", albumName: "G N' R Lies ", albumDate: 1988),
-    Album(bandName: "Guns and Roses", albumName: "Use Your Illusion", albumDate: 1991),
-    Album(bandName: "Guns and Roses", albumName: "The Spaghetti Incident?", albumDate: 1993),
-    Album(bandName: "Scorpions", albumName: "Lonesome Crow", albumDate: 1972),
-    Album(bandName: "Scorpions", albumName: "In Trance", albumDate: 1975),
-    Album(bandName: "Scorpions", albumName: "Animal Magnetism", albumDate: 1980),
-    Album(bandName: "Scorpionss", albumName: "Blackout", albumDate: 1982),
+    Album(bandName: "The Beatles", albumName: "With the Beatles", albumType:"rock", albumDate: 1963),
+    Album(bandName: "The Beatles", albumName: "Beatles 65", albumType: "rock", albumDate: 1964),
+    Album(bandName: "The Beatles", albumName: "Help!", albumType: "rock", albumDate: 1965),
+    Album(bandName: "The Beatles", albumName: "Magical Mystery Tour", albumType: "rock", albumDate: 1965),
+    Album(bandName: "Guns and Roses", albumName: "Appetite for Destruction", albumType: "hard rock", albumDate: 1987),
+    Album(bandName: "Guns and Roses", albumName: "G N' R Lies", albumType: "hard rock", albumDate: 1988),
+    Album(bandName: "Guns and Roses", albumName: "Use Your Illusion", albumType: "hard rock", albumDate: 1991),
+    Album(bandName: "Guns and Roses", albumName: "The Spaghetti Incident?", albumType: "hard rock", albumDate: 1993),
+    Album(bandName: "Scorpions", albumName: "Lonesome Crow", albumType: "heavy metal", albumDate: 1972),
+    Album(bandName: "Scorpions", albumName: "In Trance", albumType: "heavy metal", albumDate: 1975),
+    Album(bandName: "Scorpions", albumName: "Animal Magnetism", albumType: "heavy metal", albumDate: 1980),
+    Album(bandName: "Scorpionss", albumName: "Blackout", albumType: "heavy metal", albumDate: 1982),
 ]
 
 print(bandsList[0].bandByCountry())
