@@ -55,8 +55,6 @@ extension Array where Element: PetProtocol {
 
 let array = [
     "Bucks Bunny"
-//    Pet(name: "Roger the Rabbit"),
-//    Pet(name: "Bucks Bunny"),
 ]
 
 array.bunnies()

@@ -56,15 +56,23 @@
 		868587312584CB350033A6E3 /* HelloApp */ = {
 			isa = PBXGroup;
 			children = (
-				868587322584CB350033A6E3 /* AppDelegate.swift */,
-				868587342584CB350033A6E3 /* SceneDelegate.swift */,
-				868587362584CB350033A6E3 /* ViewController.swift */,
+				868587482584CCCE0033A6E3 /* Sources */,
 				868587382584CB350033A6E3 /* Main.storyboard */,
 				8685873B2584CB370033A6E3 /* Assets.xcassets */,
 				8685873D2584CB370033A6E3 /* LaunchScreen.storyboard */,
 				868587402584CB370033A6E3 /* Info.plist */,
 			);
 			path = HelloApp;
+			sourceTree = "<group>";
+		};
+		868587482584CCCE0033A6E3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				868587322584CB350033A6E3 /* AppDelegate.swift */,
+				868587342584CB350033A6E3 /* SceneDelegate.swift */,
+				868587362584CB350033A6E3 /* ViewController.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
