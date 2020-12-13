@@ -37,6 +37,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C702B0BC2585F3D400BC1CF6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD637B2585030100E4010B /* AppDelegate.swift */,
+				C7FD637D2585030100E4010B /* SceneDelegate.swift */,
+				C7FD637F2585030100E4010B /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		C7FD636F2585030100E4010B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +66,7 @@
 		C7FD637A2585030100E4010B /* TheatreApp */ = {
 			isa = PBXGroup;
 			children = (
-				C7FD637B2585030100E4010B /* AppDelegate.swift */,
-				C7FD637D2585030100E4010B /* SceneDelegate.swift */,
-				C7FD637F2585030100E4010B /* ViewController.swift */,
+				C702B0BC2585F3D400BC1CF6 /* Sources */,
 				C7FD63812585030100E4010B /* Main.storyboard */,
 				C7FD63842585030700E4010B /* Assets.xcassets */,
 				C7FD63862585030700E4010B /* LaunchScreen.storyboard */,
