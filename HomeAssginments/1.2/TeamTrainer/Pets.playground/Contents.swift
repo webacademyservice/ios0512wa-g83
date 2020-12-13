@@ -30,7 +30,7 @@ extension String: PetProtocol {
     }
 }
 
-let owner0 = Owner(pets: [
+let owner0: Owner<String> = Owner(pets: [
     "Roger the Rabbit",
     "Bucks Bunny",
 ])
@@ -38,7 +38,11 @@ let owner0 = Owner(pets: [
 owner0.isOwn(pet: "Bucks Bunny")
 owner0.isOwn(pet: "Porky Pig")
 
-let owner1 = Owner(pets: [
+typealias PetString = String
+typealias PetOwner = Owner<Pet>
+typealias OnwerArray = Array<PetOwner>
+
+let owner1 = PetOwner(pets: [
     Pet(name: "Roger the Rabbit"),
     Pet(name: "Bucks Bunny"),
 ])
