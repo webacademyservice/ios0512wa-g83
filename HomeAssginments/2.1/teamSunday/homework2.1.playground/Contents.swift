@@ -1,6 +1,11 @@
 import UIKit
 
-struct Actor<ActorType> {
+protocol ActorProtocol {
+    var age: String { get }
+    func playAsActor() -> String
+}
+
+struct Actor<ActorType: ActorProtocol> {
     let actorName: ActorType
     let isMale: Bool
     var salary: Int
@@ -21,8 +26,19 @@ struct Actor<ActorType> {
     }
 }
 
+extension String: ActorProtocol {
+    var age: String {
+        return self
+    }
+    
+    func playAsActor() -> String {
+        return "string: \(self)"
+    }
+    
+    
+}
+
 let actorsList = [
-     Actor(actorName: "John Cena", isMale: true, salary: 1000, age: 36),
      Actor(actorName: "John Snow", isMale: true, salary: 670, age: 30),
      Actor(actorName: "Volodimir Zelenskiy", isMale: true, salary: 200, age: 40),
      Actor(actorName: "Larysa Khorolets", isMale: false, salary: 600, age: 29),
