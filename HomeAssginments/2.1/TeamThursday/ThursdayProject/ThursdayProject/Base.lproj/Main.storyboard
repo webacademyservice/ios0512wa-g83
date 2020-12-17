@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThursdayProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tG4-Tp-H31" userLabel="Container">
+                                <rect key="frame" x="69" y="157" width="276" height="358"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zng-m7-C0U">
+                                        <rect key="frame" x="8" y="8" width="144" height="214.5"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-wr-De4">
+                                        <rect key="frame" x="160" y="8" width="108" height="143"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Title: &lt;Titanic&gt;
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Atr1:&lt; 269m&gt; Atr2:&lt; 600t&gt;
+Atr3:&lt;176men&gt;
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="14" name=".SFNS-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cpf-Sc-pDf">
+                                        <rect key="frame" x="8" y="230.5" width="260" height="119.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="abL-gi-g1V"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="ZzY-Mr-GoR"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">The RMS Titanic was the world's largest passenger ship when it entered service, measuring 269 metres (882 feet) in length, and the largest man-made moving object on Earth. ... The ship burned around 600 tonnes of coal a day – hand shovelled into its furnaces by a team of 176 men.</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="13" name=".SFNS-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="0tH-GM-1fi"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstItem="HT1-wr-De4" firstAttribute="width" secondItem="zng-m7-C0U" secondAttribute="width" multiplier="3/4" id="09o-dq-bYI"/>
+                                    <constraint firstItem="HT1-wr-De4" firstAttribute="top" secondItem="zng-m7-C0U" secondAttribute="top" id="4Zf-Mu-eR5"/>
+                                    <constraint firstItem="HT1-wr-De4" firstAttribute="leading" secondItem="zng-m7-C0U" secondAttribute="trailing" constant="8" id="5ZI-eI-JL0"/>
+                                    <constraint firstItem="Cpf-Sc-pDf" firstAttribute="leading" secondItem="zng-m7-C0U" secondAttribute="leading" id="8h6-lW-kih"/>
+                                    <constraint firstItem="Cpf-Sc-pDf" firstAttribute="leading" secondItem="tG4-Tp-H31" secondAttribute="leading" constant="8" id="Fdi-ac-ueX"/>
+                                    <constraint firstItem="HT1-wr-De4" firstAttribute="top" secondItem="tG4-Tp-H31" secondAttribute="top" constant="8" id="LGL-Ph-UCG"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cpf-Sc-pDf" secondAttribute="bottom" constant="8" id="Ydi-Fe-DuY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cpf-Sc-pDf" secondAttribute="trailing" constant="8" id="Ygg-Iv-bk7"/>
+                                    <constraint firstItem="HT1-wr-De4" firstAttribute="height" secondItem="tG4-Tp-H31" secondAttribute="height" multiplier="2/5" id="cKd-5m-dPs"/>
+                                    <constraint firstAttribute="trailing" secondItem="HT1-wr-De4" secondAttribute="trailing" constant="8" id="jtQ-yV-0PX"/>
+                                    <constraint firstItem="Cpf-Sc-pDf" firstAttribute="top" secondItem="zng-m7-C0U" secondAttribute="bottom" constant="8" id="mhg-dj-bfJ"/>
+                                    <constraint firstItem="zng-m7-C0U" firstAttribute="top" secondItem="tG4-Tp-H31" secondAttribute="top" constant="8" id="tFc-Ac-e4V"/>
+                                    <constraint firstItem="Cpf-Sc-pDf" firstAttribute="height" secondItem="tG4-Tp-H31" secondAttribute="height" multiplier="2/6" id="yMY-en-4vK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUm-TN-AkV" userLabel="Button2">
+                                <rect key="frame" x="146" y="816" width="138" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83q-sb-Aa3" userLabel="Button1">
+                                <rect key="frame" x="146" y="769" width="138" height="39"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dUm-TN-AkV" firstAttribute="top" secondItem="83q-sb-Aa3" secondAttribute="bottom" constant="8" id="3Op-14-71W"/>
+                            <constraint firstItem="dUm-TN-AkV" firstAttribute="top" secondItem="83q-sb-Aa3" secondAttribute="bottom" constant="8" id="3ZK-vr-Hor"/>
+                            <constraint firstItem="tG4-Tp-H31" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3/4" id="5eL-dx-cwi"/>
+                            <constraint firstItem="83q-sb-Aa3" firstAttribute="height" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0345982" constant="8" id="B24-5X-me8"/>
+                            <constraint firstItem="dUm-TN-AkV" firstAttribute="height" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0334821" constant="8" id="Mh6-az-vKU"/>
+                            <constraint firstItem="tG4-Tp-H31" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="2/5" id="SbJ-k7-VeT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="dUm-TN-AkV" secondAttribute="bottom" constant="8" id="UXE-5u-bjd"/>
+                            <constraint firstItem="dUm-TN-AkV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="eHh-F8-oCH"/>
+                            <constraint firstItem="tG4-Tp-H31" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ih0-OQ-ePA"/>
+                            <constraint firstItem="tG4-Tp-H31" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2/3" id="ike-0k-rgx"/>
+                            <constraint firstItem="83q-sb-Aa3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tG4-Tp-H31" secondAttribute="bottom" constant="8" id="kjZ-JH-Ilf"/>
+                            <constraint firstItem="83q-sb-Aa3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="m7w-0N-dOZ"/>
+                            <constraint firstItem="dUm-TN-AkV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="n7V-5h-iLs"/>
+                            <constraint firstItem="83q-sb-Aa3" firstAttribute="leading" secondItem="dUm-TN-AkV" secondAttribute="leading" id="zQ3-MZ-pht"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="30.803571428571427"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="800" height="510.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
