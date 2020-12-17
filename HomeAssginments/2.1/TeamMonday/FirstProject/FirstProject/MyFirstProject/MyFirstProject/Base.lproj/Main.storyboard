@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image1" translatesAutoresizingMaskIntoConstraints="NO" id="Vy5-Sh-4hD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="Інформація про студента" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-14-G0x">
+                                <rect key="frame" x="15" y="84" width="384" height="36"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsh-PN-Tmq">
+                                <rect key="frame" x="0.0" y="167" width="414" height="169"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вік:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJy-J6-hvc">
+                                        <rect key="frame" x="170" y="43.5" width="36" height="21.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="ras-Ti-jyn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcg-SH-MDw">
+                                        <rect key="frame" x="316" y="43.5" width="17" height="21.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21.5" id="8uR-RD-LPj"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="E7T-VU-J02"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВНТУ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzw-YF-SWh">
+                                        <rect key="frame" x="313" y="109" width="81" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="IaH-TX-n5e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="9nB-Gz-SrF">
+                                        <rect key="frame" x="8" y="8" width="151" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="151" id="QtE-7P-HTq"/>
+                                            <constraint firstAttribute="height" constant="140" id="dkY-NI-ity"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чоловіча" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z08-Mx-Hre">
+                                        <rect key="frame" x="313" y="77" width="76" height="25"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="OwR-t3-oCJ"/>
+                                            <constraint firstAttribute="width" constant="76" id="ccO-W5-TOT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Місце навчання:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g9-tF-tLt">
+                                        <rect key="frame" x="167" y="110.5" width="138" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20.5" id="M6V-87-9WJ"/>
+                                            <constraint firstAttribute="height" constant="20.5" id="bnH-yc-aul"/>
+                                            <constraint firstAttribute="width" constant="138" id="nJC-te-kGY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Місто:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4R-Mo-eKw">
+                                        <rect key="frame" x="167.5" y="11" width="57" height="21.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21.5" id="0VI-7u-9gR"/>
+                                            <constraint firstAttribute="height" constant="21.5" id="8EJ-Gv-cg2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <color key="highlightedColor" systemColor="labelColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вінниця" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa0-3G-Cov">
+                                        <rect key="frame" x="316" y="11" width="73" height="21.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Стать:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPH-Pi-1jK">
+                                        <rect key="frame" x="167" y="80" width="63" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="eXL-Z7-KEu"/>
+                                            <constraint firstAttribute="width" constant="63" id="qYi-ZY-czP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bcg-SH-MDw" secondAttribute="trailing" constant="81" id="04d-Bb-fpG"/>
+                                    <constraint firstItem="zzw-YF-SWh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9g9-tF-tLt" secondAttribute="trailing" symbolic="YES" id="1JS-bt-tMM"/>
+                                    <constraint firstItem="zzw-YF-SWh" firstAttribute="leading" secondItem="z08-Mx-Hre" secondAttribute="leading" id="3rA-gg-7LP"/>
+                                    <constraint firstItem="9nB-Gz-SrF" firstAttribute="leading" secondItem="nsh-PN-Tmq" secondAttribute="leadingMargin" id="4hq-Zh-D5l"/>
+                                    <constraint firstItem="p4R-Mo-eKw" firstAttribute="leading" secondItem="9nB-Gz-SrF" secondAttribute="trailing" constant="8.5" id="8vo-eK-ae5"/>
+                                    <constraint firstItem="sa0-3G-Cov" firstAttribute="firstBaseline" secondItem="p4R-Mo-eKw" secondAttribute="baseline" id="9TO-nJ-ySt"/>
+                                    <constraint firstItem="9g9-tF-tLt" firstAttribute="leading" secondItem="9nB-Gz-SrF" secondAttribute="trailing" constant="8" id="ETN-la-dLb"/>
+                                    <constraint firstItem="z08-Mx-Hre" firstAttribute="top" secondItem="bcg-SH-MDw" secondAttribute="bottom" constant="12" id="EY6-2X-rr6"/>
+                                    <constraint firstItem="zzw-YF-SWh" firstAttribute="top" secondItem="z08-Mx-Hre" secondAttribute="bottom" constant="7" id="FQ8-W1-4Cy"/>
+                                    <constraint firstItem="bcg-SH-MDw" firstAttribute="baseline" secondItem="XJy-J6-hvc" secondAttribute="firstBaseline" id="GBa-08-JoH"/>
+                                    <constraint firstAttribute="trailing" secondItem="sa0-3G-Cov" secondAttribute="trailing" constant="25" id="Hdx-bp-vWL"/>
+                                    <constraint firstItem="bcg-SH-MDw" firstAttribute="top" secondItem="sa0-3G-Cov" secondAttribute="bottom" constant="11" id="IYd-R7-kgJ"/>
+                                    <constraint firstItem="9nB-Gz-SrF" firstAttribute="top" secondItem="nsh-PN-Tmq" secondAttribute="topMargin" id="M8n-mZ-d8E"/>
+                                    <constraint firstItem="bcg-SH-MDw" firstAttribute="height" secondItem="p4R-Mo-eKw" secondAttribute="height" id="R5y-Et-cfI"/>
+                                    <constraint firstItem="MPH-Pi-1jK" firstAttribute="top" secondItem="XJy-J6-hvc" secondAttribute="bottom" constant="15" id="UK4-XO-57w"/>
+                                    <constraint firstItem="MPH-Pi-1jK" firstAttribute="baseline" secondItem="z08-Mx-Hre" secondAttribute="baseline" id="VZd-zR-MyI"/>
+                                    <constraint firstItem="bcg-SH-MDw" firstAttribute="centerY" secondItem="XJy-J6-hvc" secondAttribute="centerY" id="XvC-9L-517"/>
+                                    <constraint firstItem="9g9-tF-tLt" firstAttribute="top" secondItem="MPH-Pi-1jK" secondAttribute="bottom" constant="8.5" id="Zw2-kM-rka"/>
+                                    <constraint firstItem="sa0-3G-Cov" firstAttribute="top" secondItem="nsh-PN-Tmq" secondAttribute="top" constant="11" id="efq-0c-riY"/>
+                                    <constraint firstItem="z08-Mx-Hre" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MPH-Pi-1jK" secondAttribute="trailing" symbolic="YES" id="gZI-Kd-rqb"/>
+                                    <constraint firstItem="z08-Mx-Hre" firstAttribute="trailing" secondItem="sa0-3G-Cov" secondAttribute="trailing" id="huR-1o-cLI"/>
+                                    <constraint firstItem="sa0-3G-Cov" firstAttribute="leading" secondItem="bcg-SH-MDw" secondAttribute="leading" id="hwX-ho-Vw3"/>
+                                    <constraint firstAttribute="trailing" secondItem="zzw-YF-SWh" secondAttribute="trailing" constant="20" id="hxG-vS-LiA"/>
+                                    <constraint firstItem="MPH-Pi-1jK" firstAttribute="leading" secondItem="9nB-Gz-SrF" secondAttribute="trailing" constant="8" id="i1L-A9-UWm"/>
+                                    <constraint firstItem="MPH-Pi-1jK" firstAttribute="top" secondItem="XJy-J6-hvc" secondAttribute="bottom" constant="15" id="kcv-1e-ShQ"/>
+                                    <constraint firstItem="XJy-J6-hvc" firstAttribute="leading" secondItem="9nB-Gz-SrF" secondAttribute="trailing" constant="11" id="rOY-UY-hal"/>
+                                    <constraint firstAttribute="width" constant="414" id="slq-MA-fna"/>
+                                    <constraint firstItem="bcg-SH-MDw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XJy-J6-hvc" secondAttribute="trailing" constant="8" symbolic="YES" id="wu3-u8-T7b"/>
+                                    <constraint firstItem="sa0-3G-Cov" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="p4R-Mo-eKw" secondAttribute="trailing" constant="8" symbolic="YES" id="zB0-ew-krt"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A0x-Gi-0wP">
+                                <rect key="frame" x="15" y="345.5" width="384" height="205"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="384" id="1cP-Ym-WNa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="205" id="4Vb-Wu-nXG"/>
+                                    <constraint firstAttribute="width" secondItem="A0x-Gi-0wP" secondAttribute="height" multiplier="384:205" id="9l9-Sk-PFq"/>
+                                    <constraint firstAttribute="width" constant="384" id="PpW-P6-bgh"/>
+                                    <constraint firstAttribute="height" constant="205" id="dTf-sp-OLb"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="384" id="h5w-7C-Gq0"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="205" id="oRJ-2H-IDo"/>
+                                </constraints>
+                                <string key="text">Молодой студент, бывший спортсмен. Занимался 10 лет футболом. После окончания футбола  (Выпуска) пошел в спортивный зал и работал над собой. Поступив в университет, все больше и больше увлекался програмируванием и получал и до этого времени кайфую от того что выучил что-то нове для себя. В планах после успешного окончания курса подаваться на роботу джуном и работать над тем что интерестно и что приносить удовольствие</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b6r-14-G0x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Aw-Ho-pTR"/>
+                            <constraint firstItem="Vy5-Sh-4hD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5cR-Ls-SiA"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="centerX" secondItem="b6r-14-G0x" secondAttribute="centerX" id="AGB-yV-2co"/>
+                            <constraint firstAttribute="trailing" secondItem="nsh-PN-Tmq" secondAttribute="trailing" id="Bak-o1-fR1"/>
+                            <constraint firstAttribute="trailing" secondItem="Vy5-Sh-4hD" secondAttribute="trailing" id="FJz-mU-XL4"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="345.5" id="Fjk-Qv-gSi"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="leading" secondItem="b6r-14-G0x" secondAttribute="leading" id="J44-R8-QuI"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N9I-UF-Fbq"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="centerX" secondItem="nsh-PN-Tmq" secondAttribute="centerX" id="OJf-h7-dLN"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="T0m-iV-ggm"/>
+                            <constraint firstAttribute="trailing" secondItem="A0x-Gi-0wP" secondAttribute="trailing" constant="15" id="Tjc-Rs-S2V"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="top" secondItem="nsh-PN-Tmq" secondAttribute="bottom" constant="9.5" id="UJr-ly-NQc"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Unb-IY-aMT"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="V41-3c-ZNg"/>
+                            <constraint firstItem="b6r-14-G0x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WB1-3D-nET"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ys7-ec-9r4"/>
+                            <constraint firstItem="Vy5-Sh-4hD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="e9p-Dt-OOM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A0x-Gi-0wP" secondAttribute="bottom" constant="311.5" id="gvo-dz-SKE"/>
+                            <constraint firstItem="b6r-14-G0x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="i7k-0m-OTC"/>
+                            <constraint firstAttribute="bottom" secondItem="Vy5-Sh-4hD" secondAttribute="bottom" id="k4z-sP-Utc"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6r-14-G0x" secondAttribute="trailing" id="lBG-0S-mf5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6r-14-G0x" secondAttribute="trailing" id="lad-eJ-mlt"/>
+                            <constraint firstItem="nsh-PN-Tmq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lra-Ih-ynR"/>
+                            <constraint firstItem="A0x-Gi-0wP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o9t-rp-Kk1"/>
+                            <constraint firstItem="nsh-PN-Tmq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="orn-e2-Pti"/>
+                            <constraint firstItem="b6r-14-G0x" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qJL-1A-CdD"/>
+                            <constraint firstItem="nsh-PN-Tmq" firstAttribute="trailing" secondItem="Vy5-Sh-4hD" secondAttribute="trailing" id="tHD-nz-D58"/>
+                            <constraint firstItem="nsh-PN-Tmq" firstAttribute="leading" secondItem="Vy5-Sh-4hD" secondAttribute="leading" id="vul-J6-R6H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6r-14-G0x" secondAttribute="trailing" id="xJK-u8-F66"/>
+                            <constraint firstItem="nsh-PN-Tmq" firstAttribute="top" secondItem="b6r-14-G0x" secondAttribute="bottom" constant="47" id="z7S-ah-qKE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="60.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="erE-Vr-ckD">
+            <objects>
+                <viewController id="C7i-WI-PCC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5J-sX-6Yx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Dy4-LL-Qgc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfl-yZ-o8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y4K-Ty-i5j">
+            <objects>
+                <viewController id="TiK-X9-tCQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RGa-yl-9MQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xOf-na-KB2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eei-3H-vEN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KdP-V8-ddf">
+            <objects>
+                <viewController id="0d1-nd-WRo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qUg-7b-v1t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iwB-mE-8qS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gry-xh-ykI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image1" width="441" height="294"/>
+        <image name="Image2" width="640" height="640"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
