@@ -79,7 +79,7 @@
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-Aq-mcH">
                                         <rect key="frame" x="8" y="136" width="382" height="122"/>
-                                        <string key="text">The Beatles were an English rock band that became arguably the most successful act of the 20th century. They contributed to music, film, literature, art, and fashion, made a continuous impact on popular culture and the lifestyle of several generations.</string>
+                                        <string key="text">The Beatles were an English rock band that became the most successful act of the 20th century. They contributed to music, film, literature, art, and fashion, made a continuous impact on popular culture and the lifestyle of several generations.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
