@@ -25,9 +25,10 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-wr-De4">
                                         <rect key="frame" x="160" y="8" width="108" height="143"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Title: &lt;Titanic&gt;
+                                                <string key="content">Title:&lt;Titanic&gt;
 </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -36,9 +37,9 @@
                                                 </attributes>
                                             </fragment>
                                             <fragment>
-                                                <string key="content">Atr1:&lt; 269m&gt; Atr2:&lt; 600t&gt;
-Atr3:&lt;176men&gt;
-</string>
+                                                <string key="content">Lenght:&lt; 269m&gt; Weight:&lt; 600t&gt;
+Beam:&lt;28m&gt;
+Height:&lt;53m&gt; Draught:&lt;10m&gt; </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name=".SFNS-Regular"/>
