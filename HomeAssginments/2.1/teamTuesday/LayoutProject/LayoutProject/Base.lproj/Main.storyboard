@@ -32,10 +32,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RC8-o3-D4W" userLabel="Container">
-                                <rect key="frame" x="8" y="108" width="398" height="381.5"/>
+                                <rect key="frame" x="8" y="175" width="398" height="247"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" image="imgBeatles" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-vK-mr7">
-                                        <rect key="frame" x="8" y="8" width="199" height="235.5"/>
+                                        <rect key="frame" x="8" y="8" width="199" height="101"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-oj-PQf" userLabel="allStackView">
                                         <rect key="frame" x="215" y="8" width="175" height="101"/>
@@ -78,7 +78,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-Aq-mcH">
-                                        <rect key="frame" x="8" y="251.5" width="382" height="122"/>
+                                        <rect key="frame" x="8" y="117" width="382" height="122"/>
                                         <string key="text">The Beatles were an English rock band that became the most successful act of the 20th century. They contributed to music, film, literature, art, and fashion, made a continuous impact on popular culture and the lifestyle of several generations.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -118,6 +118,10 @@
                                         <state key="highlighted" title="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="redButtonTapped:" destination="zva-sj-V5U" eventType="touchUpInside" id="iJS-TZ-seV"/>
+                                            <action selector="redButtonTouchedUpOutside:" destination="zva-sj-V5U" eventType="touchUpOutside" id="YAq-3E-fob"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-MS-ZGn" userLabel="buttonGreen">
                                         <rect key="frame" x="0.0" y="36" width="140" height="30"/>
@@ -125,6 +129,10 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="greenButtonTapped:" destination="zva-sj-V5U" eventType="touchUpInside" id="iOb-5m-hYQ"/>
+                                            <action selector="greenButtonTouchedUpOutside:" destination="zva-sj-V5U" eventType="touchUpOutside" id="fRZ-BM-zgw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -135,7 +143,7 @@
                             <constraint firstItem="fuC-oa-ptx" firstAttribute="bottom" secondItem="WgK-Lg-iDc" secondAttribute="bottom" constant="-8" id="3tv-Mx-rES"/>
                             <constraint firstItem="WgK-Lg-iDc" firstAttribute="trailing" secondItem="RC8-o3-D4W" secondAttribute="trailing" constant="8" id="RV2-08-yzV"/>
                             <constraint firstItem="fuC-oa-ptx" firstAttribute="centerX" secondItem="AdH-X0-ydq" secondAttribute="centerX" id="SgN-XN-vls"/>
-                            <constraint firstItem="RC8-o3-D4W" firstAttribute="top" secondItem="WgK-Lg-iDc" secondAttribute="top" constant="64" id="Yu8-b1-kUX"/>
+                            <constraint firstItem="RC8-o3-D4W" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WgK-Lg-iDc" secondAttribute="top" constant="32" id="Yu8-b1-kUX"/>
                             <constraint firstItem="RC8-o3-D4W" firstAttribute="leading" secondItem="WgK-Lg-iDc" secondAttribute="leading" constant="8" id="blp-Pf-lzU"/>
                             <constraint firstItem="fuC-oa-ptx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RC8-o3-D4W" secondAttribute="bottom" constant="8" id="rYs-OK-t5Z"/>
                             <constraint firstItem="RC8-o3-D4W" firstAttribute="centerY" secondItem="AdH-X0-ydq" secondAttribute="centerY" multiplier="2/3" priority="750" id="wnH-id-nRS"/>
@@ -145,9 +153,11 @@
                         <outlet property="albumsSubTitleLabel" destination="wUO-FY-PrQ" id="HLY-ze-VDL"/>
                         <outlet property="countrySubTitleLabel" destination="Byf-Lo-Lln" id="nyn-7o-cfG"/>
                         <outlet property="descriptionSubTitleLabel" destination="RH1-Aq-mcH" id="ddG-Wh-kHQ"/>
+                        <outlet property="greenButton" destination="2W4-MS-ZGn" id="z2E-DU-oB2"/>
                         <outlet property="imageView" destination="xKQ-vK-mr7" id="1EV-Xe-Fe6"/>
                         <outlet property="musicianSubTitleLabel" destination="Y2f-Eb-Ok7" id="gud-8j-XY5"/>
                         <outlet property="nameSubTitleLabel" destination="Wvg-eT-sGT" id="nYE-gi-kr3"/>
+                        <outlet property="redButton" destination="OUn-yO-zdg" id="1au-jT-Oqb"/>
                         <outlet property="topTitleLabel" destination="3xf-Bu-zMI" id="jzC-Ka-GEC"/>
                     </connections>
                 </viewController>
