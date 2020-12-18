@@ -31,13 +31,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="RC8-o3-D4W" userLabel="Container">
-                                <rect key="frame" x="8" y="165.5" width="398" height="266"/>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RC8-o3-D4W" userLabel="Container">
+                                <rect key="frame" x="8" y="175" width="398" height="247"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" image="imgBeatles" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-vK-mr7">
-                                        <rect key="frame" x="8" y="8" width="199" height="120"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="100" image="imgBeatles" translatesAutoresizingMaskIntoConstraints="NO" id="xKQ-vK-mr7">
+                                        <rect key="frame" x="8" y="8" width="199" height="101"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-oj-PQf" userLabel="allStackView">
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillProportionally" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-oj-PQf" userLabel="allStackView">
                                         <rect key="frame" x="215" y="8" width="175" height="101"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Beatles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xf-Bu-zMI">
@@ -78,7 +78,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH1-Aq-mcH">
-                                        <rect key="frame" x="8" y="136" width="382" height="122"/>
+                                        <rect key="frame" x="8" y="117" width="382" height="122"/>
                                         <string key="text">The Beatles were an English rock band that became the most successful act of the 20th century. They contributed to music, film, literature, art, and fashion, made a continuous impact on popular culture and the lifestyle of several generations.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -94,7 +94,6 @@
                                     <constraint firstAttribute="bottom" secondItem="RH1-Aq-mcH" secondAttribute="bottom" constant="8" id="Lrz-hf-5Wh"/>
                                     <constraint firstItem="RH1-Aq-mcH" firstAttribute="leading" secondItem="RC8-o3-D4W" secondAttribute="leading" constant="8" id="ZsM-Mn-b07"/>
                                     <constraint firstItem="xKQ-vK-mr7" firstAttribute="leading" secondItem="RC8-o3-D4W" secondAttribute="leading" constant="8" id="fLW-g0-lG2"/>
-                                    <constraint firstAttribute="height" constant="266" id="jsX-7D-CzI"/>
                                     <constraint firstItem="xKQ-vK-mr7" firstAttribute="width" secondItem="RC8-o3-D4W" secondAttribute="width" multiplier="0.5" id="oJC-j7-nsx"/>
                                     <constraint firstAttribute="trailing" secondItem="RH1-Aq-mcH" secondAttribute="trailing" constant="8" id="qIR-wN-ezB"/>
                                     <constraint firstItem="RH1-Aq-mcH" firstAttribute="top" secondItem="xKQ-vK-mr7" secondAttribute="bottom" constant="8" id="qzz-je-Th9"/>
@@ -128,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="WgK-Lg-iDc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WgK-Lg-iDc" firstAttribute="bottom" secondItem="fuC-oa-ptx" secondAttribute="bottom" constant="8" id="3tv-Mx-rES"/>
+                            <constraint firstItem="fuC-oa-ptx" firstAttribute="bottom" secondItem="WgK-Lg-iDc" secondAttribute="bottom" constant="-8" id="3tv-Mx-rES"/>
                             <constraint firstItem="WgK-Lg-iDc" firstAttribute="trailing" secondItem="RC8-o3-D4W" secondAttribute="trailing" constant="8" id="RV2-08-yzV"/>
                             <constraint firstItem="fuC-oa-ptx" firstAttribute="centerX" secondItem="AdH-X0-ydq" secondAttribute="centerX" id="SgN-XN-vls"/>
                             <constraint firstItem="RC8-o3-D4W" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WgK-Lg-iDc" secondAttribute="top" constant="32" id="Yu8-b1-kUX"/>
