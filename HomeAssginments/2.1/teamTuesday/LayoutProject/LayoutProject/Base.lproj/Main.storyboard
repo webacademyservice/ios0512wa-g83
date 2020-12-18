@@ -26,7 +26,7 @@
         <!--bandViewController-->
         <scene sceneID="uFJ-Wb-Bgc">
             <objects>
-                <viewController id="zva-sj-V5U" userLabel="bandViewController" sceneMemberID="viewController">
+                <viewController id="zva-sj-V5U" userLabel="bandViewController" customClass="BandDetailsViewController" customModule="LayoutProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AdH-X0-ydq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,6 +136,15 @@
                             <constraint firstItem="RC8-o3-D4W" firstAttribute="centerY" secondItem="AdH-X0-ydq" secondAttribute="centerY" multiplier="2/3" id="wnH-id-nRS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumsSubTitleLabel" destination="wUO-FY-PrQ" id="HLY-ze-VDL"/>
+                        <outlet property="countrySubTitleLabel" destination="Byf-Lo-Lln" id="nyn-7o-cfG"/>
+                        <outlet property="descriptionSubTitleLabel" destination="RH1-Aq-mcH" id="ddG-Wh-kHQ"/>
+                        <outlet property="imageView" destination="xKQ-vK-mr7" id="1EV-Xe-Fe6"/>
+                        <outlet property="musicianSubTitleLabel" destination="Y2f-Eb-Ok7" id="gud-8j-XY5"/>
+                        <outlet property="nameSubTitleLabel" destination="Wvg-eT-sGT" id="nYE-gi-kr3"/>
+                        <outlet property="topTitleLabel" destination="3xf-Bu-zMI" id="jzC-Ka-GEC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aTr-Ag-NAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
