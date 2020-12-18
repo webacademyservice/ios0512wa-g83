@@ -42,6 +42,7 @@
 		94015678258CC77800595E4D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9401567F258D026900595E4D /* Model */,
 				9401567A258CD17400595E4D /* Controllers */,
 			);
 			path = Sources;
@@ -64,6 +65,13 @@
 				9401567C258CD21E00595E4D /* BandDetailsViewController.swift */,
 			);
 			path = Band;
+			sourceTree = "<group>";
+		};
+		9401567F258D026900595E4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		942FADA32585300E0081214B = {
