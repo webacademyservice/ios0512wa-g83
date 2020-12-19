@@ -16,16 +16,6 @@ protocol GameModelProtocol {
 
 }
 
-
-protocol GameViewControllerProtocol {
-
-    func add(fruit: Fruit)
-    func remove(fruit: Fruit)
-    func move(fruit: Fruit)
-    func update(score: Int)
-
-}
-
 class GameModel: GameModelProtocol {
 
     var fruits: [Fruit] = []
