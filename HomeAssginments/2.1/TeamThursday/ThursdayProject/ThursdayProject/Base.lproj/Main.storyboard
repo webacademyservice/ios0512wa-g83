@@ -19,26 +19,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tG4-Tp-H31" userLabel="Container">
                                 <rect key="frame" x="69" y="157" width="276" height="358"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zng-m7-C0U">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zng-m7-C0U">
                                         <rect key="frame" x="8" y="8" width="144" height="214.5"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HT1-wr-De4">
                                         <rect key="frame" x="160" y="8" width="108" height="143"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Title: &lt;Titanic&gt;
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="14" name=".SFNS-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Atr1:&lt; 269m&gt; Atr2:&lt; 600t&gt;
-Atr3:&lt;176men&gt;
-</string>
+                                                <string key="content">Title:&lt;Titanic&gt;
+Lenght:&lt; 269m&gt; Weight:&lt; 600t&gt;
+Beam:&lt;28m&gt;
+Height:&lt;53m&gt; Draught:&lt;10m&gt; </string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="14" name=".SFNS-Regular"/>
@@ -85,12 +78,12 @@ Atr3:&lt;176men&gt;
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUm-TN-AkV" userLabel="Button2">
-                                <rect key="frame" x="146" y="816" width="138" height="38"/>
+                                <rect key="frame" x="138" y="816" width="138" height="38"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83q-sb-Aa3" userLabel="Button1">
-                                <rect key="frame" x="146" y="769" width="138" height="39"/>
+                                <rect key="frame" x="138" y="769" width="138" height="39"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                             </button>
@@ -102,15 +95,16 @@ Atr3:&lt;176men&gt;
                             <constraint firstItem="dUm-TN-AkV" firstAttribute="top" secondItem="83q-sb-Aa3" secondAttribute="bottom" constant="8" id="3ZK-vr-Hor"/>
                             <constraint firstItem="tG4-Tp-H31" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3/4" id="5eL-dx-cwi"/>
                             <constraint firstItem="83q-sb-Aa3" firstAttribute="height" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0345982" constant="8" id="B24-5X-me8"/>
+                            <constraint firstItem="83q-sb-Aa3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jno-is-F5j"/>
                             <constraint firstItem="dUm-TN-AkV" firstAttribute="height" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0334821" constant="8" id="Mh6-az-vKU"/>
                             <constraint firstItem="tG4-Tp-H31" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="2/5" id="SbJ-k7-VeT"/>
                             <constraint firstAttribute="bottomMargin" secondItem="dUm-TN-AkV" secondAttribute="bottom" constant="8" id="UXE-5u-bjd"/>
-                            <constraint firstItem="dUm-TN-AkV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8" id="eHh-F8-oCH"/>
                             <constraint firstItem="tG4-Tp-H31" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ih0-OQ-ePA"/>
                             <constraint firstItem="tG4-Tp-H31" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2/3" id="ike-0k-rgx"/>
                             <constraint firstItem="83q-sb-Aa3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tG4-Tp-H31" secondAttribute="bottom" constant="8" id="kjZ-JH-Ilf"/>
                             <constraint firstItem="83q-sb-Aa3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="m7w-0N-dOZ"/>
                             <constraint firstItem="dUm-TN-AkV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/3" id="n7V-5h-iLs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dUm-TN-AkV" secondAttribute="trailing" symbolic="YES" id="x2X-Di-sMr"/>
                             <constraint firstItem="83q-sb-Aa3" firstAttribute="leading" secondItem="dUm-TN-AkV" secondAttribute="leading" id="zQ3-MZ-pht"/>
                         </constraints>
                     </view>
