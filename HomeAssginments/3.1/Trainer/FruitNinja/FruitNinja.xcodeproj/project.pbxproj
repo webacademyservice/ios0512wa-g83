@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86C4E57A258E09A800A9386F /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4E579258E09A800A9386F /* GameModel.swift */; };
+		86C4E57E258E0D4200A9386F /* CGPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C4E57D258E0D4200A9386F /* CGPointExtensions.swift */; };
 		86DD1240258E01E600C808E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD123F258E01E600C808E9 /* AppDelegate.swift */; };
 		86DD1242258E01E600C808E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD1241258E01E600C808E9 /* SceneDelegate.swift */; };
 		86DD1244258E01E600C808E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86DD1243258E01E600C808E9 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86C4E579258E09A800A9386F /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		86C4E57D258E0D4200A9386F /* CGPointExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtensions.swift; sourceTree = "<group>"; };
 		86DD123C258E01E600C808E9 /* FruitNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86DD123F258E01E600C808E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86DD1241258E01E600C808E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86C4E57C258E0D2E00A9386F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86C4E57D258E0D4200A9386F /* CGPointExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86C4E581258E0FBB00A9386F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				86DD1243258E01E600C808E9 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		86DD1233258E01E600C808E9 = {
 			isa = PBXGroup;
 			children = (
@@ -68,10 +88,11 @@
 		86DD1254258E02F700C808E9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				86C4E581258E0FBB00A9386F /* ViewControllers */,
+				86C4E57C258E0D2E00A9386F /* Extensions */,
 				86DD1257258E051300C808E9 /* Model */,
 				86DD123F258E01E600C808E9 /* AppDelegate.swift */,
 				86DD1241258E01E600C808E9 /* SceneDelegate.swift */,
-				86DD1243258E01E600C808E9 /* ViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -90,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				86DD1258258E052400C808E9 /* Fruit.swift */,
+				86C4E579258E09A800A9386F /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,9 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86C4E57A258E09A800A9386F /* GameModel.swift in Sources */,
 				86DD1259258E052400C808E9 /* Fruit.swift in Sources */,
 				86DD1244258E01E600C808E9 /* ViewController.swift in Sources */,
 				86DD1240258E01E600C808E9 /* AppDelegate.swift in Sources */,
+				86C4E57E258E0D4200A9386F /* CGPointExtensions.swift in Sources */,
 				86DD1242258E01E600C808E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
