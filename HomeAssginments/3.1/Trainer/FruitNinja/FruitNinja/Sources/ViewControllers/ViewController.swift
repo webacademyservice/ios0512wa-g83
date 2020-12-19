@@ -7,6 +7,15 @@
 
 import UIKit
 
+protocol GameViewControllerProtocol {
+
+    func add(fruit: Fruit)
+    func remove(fruit: Fruit)
+    func move(fruit: Fruit)
+    func update(score: Int)
+
+}
+
 class GameViewController: UIViewController  {
 
     var game: GameModelProtocol!
