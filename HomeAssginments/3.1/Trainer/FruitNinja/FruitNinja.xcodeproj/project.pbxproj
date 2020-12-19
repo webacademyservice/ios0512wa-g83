@@ -56,15 +56,31 @@
 		86DD123E258E01E600C808E9 /* FruitNinja */ = {
 			isa = PBXGroup;
 			children = (
-				86DD123F258E01E600C808E9 /* AppDelegate.swift */,
-				86DD1241258E01E600C808E9 /* SceneDelegate.swift */,
-				86DD1243258E01E600C808E9 /* ViewController.swift */,
-				86DD1245258E01E600C808E9 /* Main.storyboard */,
-				86DD1248258E01E900C808E9 /* Assets.xcassets */,
-				86DD124A258E01E900C808E9 /* LaunchScreen.storyboard */,
+				86DD1255258E030300C808E9 /* Resources */,
+				86DD1254258E02F700C808E9 /* Sources */,
 				86DD124D258E01E900C808E9 /* Info.plist */,
 			);
 			path = FruitNinja;
+			sourceTree = "<group>";
+		};
+		86DD1254258E02F700C808E9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				86DD123F258E01E600C808E9 /* AppDelegate.swift */,
+				86DD1241258E01E600C808E9 /* SceneDelegate.swift */,
+				86DD1243258E01E600C808E9 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		86DD1255258E030300C808E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				86DD1245258E01E600C808E9 /* Main.storyboard */,
+				86DD1248258E01E900C808E9 /* Assets.xcassets */,
+				86DD124A258E01E900C808E9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

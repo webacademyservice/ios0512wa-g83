@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "halfs.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
