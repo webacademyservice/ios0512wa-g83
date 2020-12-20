@@ -65,6 +65,21 @@ extension GameViewController: GameViewControllerProtocol{
 
     }
 
+    // MARK: Actions
+
+    @IBAction
+    func tap(_ sender: UITapGestureRecognizer) {
+        let view = sender.view
+
+        let fruitId = fruitViews
+            .first { $0.value == view }?
+            .key
+
+        guard let id = fruitId else { return }
+
+        game.tap(on: id)
+    }
+
     // MARK: Private
 
     private func viewFor(fruit: Fruit) -> UIView {
@@ -73,7 +88,17 @@ extension GameViewController: GameViewControllerProtocol{
         frame.size = CGSize(width: 100, height: 100)
         frame.origin = translate(fruitPosition: fruit.position)
         imageView.frame = frame
+
+        imageView.isUserInteractionEnabled = true
+
+        addGestureRecogniser(to: imageView)
         return imageView
+
+    }
+
+    private func addGestureRecogniser(to view: UIView) {
+        let recogniser = UITapGestureRecognizer(target: self, action: #selector(tap))
+        view.addGestureRecognizer(recogniser)
     }
 
     private func imageFor(kind: Fruit.Kind) -> UIImage {

@@ -19,7 +19,7 @@ protocol GameModelProtocol {
 class GameModel: GameModelProtocol {
 
     var fruits: [Fruit] = []
-    let timetInterval: TimeInterval = 0.1
+    let timetInterval: TimeInterval = 0.5
     var score: Int = 0
     let force = CGPoint(x: 0.0, y: -0.01)
 
@@ -48,7 +48,13 @@ class GameModel: GameModelProtocol {
     }
 
     func tap(on: UUID) {
+        
+        guard
+            let fruitToCut = fruits.first(where: { $0.id == on }),
+            fruitToCut.kind == .apple
+        else { return }
 
+        cutFruit(fruit: fruitToCut)
     }
 
     //MARK: private
@@ -99,6 +105,30 @@ class GameModel: GameModelProtocol {
         )
         fruits.append(fruit)
         controller?.add(fruit: fruit)
+    }
+
+    private func cutFruit(fruit: Fruit) {
+        let halfLeft = Fruit(
+            id: UUID(),
+            position: fruit.position,
+            velocity: CGPoint(x: -0.01, y: 0.01),
+            kind: .halfApple
+        )
+        fruits.append(halfLeft)
+        controller?.add(fruit: halfLeft)
+
+        let halfRight = Fruit(
+            id: UUID(),
+            position: fruit.position,
+            velocity: CGPoint(x: 0.01, y: 0.01),
+            kind: .halfApple
+        )
+        fruits.append(halfRight)
+        controller?.add(fruit: halfRight)
+
+        controller?.remove(fruit: fruit)
+
+        fruits = fruits.filter{ $0.id != fruit.id }
     }
 
 }
