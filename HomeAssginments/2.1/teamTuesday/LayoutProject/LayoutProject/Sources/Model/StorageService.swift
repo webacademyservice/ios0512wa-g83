@@ -4,14 +4,14 @@
 //
 //  Created by Maryna Snigurska on 18/12/2020.
 //
-//Protocol for Group
+//Protocol for class StorageService
 protocol StorageServiceProtocol {
     associatedtype MusiciansType: GroupProtocol
     associatedtype AlbumsType
     func getBand()-> Band <MusiciansType, AlbumsType>
 }
 
-//Extention for GroupProtocol
+//Extention for protocol StorageServiceProtocol
 extension StorageServiceProtocol where MusiciansType == String, AlbumsType == String{
 }
 import Foundation
