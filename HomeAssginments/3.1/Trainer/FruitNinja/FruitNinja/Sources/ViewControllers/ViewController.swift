@@ -11,7 +11,7 @@ protocol GameViewControllerProtocol {
 
     func add(fruit: Fruit)
     func remove(fruit: Fruit)
-    func move(fruit: Fruit)
+    func move(fruit: Fruit, duration: TimeInterval)
     func update(score: Int)
 
 }
@@ -53,12 +53,19 @@ extension GameViewController: GameViewControllerProtocol{
         viewToRemove.removeFromSuperview()
     }
 
-    func move(fruit: Fruit) {
+    func move(fruit: Fruit, duration: TimeInterval) {
         guard let viewToMove = fruitViews[fruit.id] else { return }
 
         let newPosition = translate(fruitPosition: fruit.position)
 
-        viewToMove.frame.origin = newPosition
+        UIView.animate(
+            withDuration: duration,
+            delay: 0,
+            options: [.curveLinear, .allowUserInteraction]
+        ){
+            viewToMove.frame.origin = newPosition
+        }
+
     }
 
     func update(score: Int) {

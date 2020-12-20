@@ -19,7 +19,7 @@ protocol GameModelProtocol {
 class GameModel: GameModelProtocol {
 
     var fruits: [Fruit] = []
-    let timetInterval: TimeInterval = 0.5
+    let timetInterval: TimeInterval = 0.2
     var score: Int = 0
     let force = CGPoint(x: 0.0, y: -0.01)
 
@@ -92,7 +92,7 @@ class GameModel: GameModelProtocol {
 
     private func updateUI() {
         for eachFruit in fruits {
-            controller?.move(fruit: eachFruit)
+            controller?.move(fruit: eachFruit, duration: timetInterval)
         }
     }
 
