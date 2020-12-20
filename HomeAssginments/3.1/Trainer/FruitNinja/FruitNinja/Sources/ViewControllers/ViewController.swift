@@ -11,7 +11,7 @@ protocol GameViewControllerProtocol {
 
     func add(fruit: Fruit)
     func remove(fruit: Fruit)
-    func move(fruit: Fruit)
+    func move(fruit: Fruit, duration: TimeInterval)
     func update(score: Int)
 
 }
@@ -53,12 +53,19 @@ extension GameViewController: GameViewControllerProtocol{
         viewToRemove.removeFromSuperview()
     }
 
-    func move(fruit: Fruit) {
+    func move(fruit: Fruit, duration: TimeInterval) {
         guard let viewToMove = fruitViews[fruit.id] else { return }
 
         let newPosition = translate(fruitPosition: fruit.position)
 
-        viewToMove.frame.origin = newPosition
+        UIView.animate(
+            withDuration: duration,
+            delay: 0,
+            options: [.curveLinear, .allowUserInteraction]
+        ){
+            viewToMove.frame.origin = newPosition
+        }
+
     }
 
     func update(score: Int) {
@@ -88,8 +95,15 @@ extension GameViewController: GameViewControllerProtocol{
         frame.size = CGSize(width: 100, height: 100)
         frame.origin = translate(fruitPosition: fruit.position)
         imageView.frame = frame
-
         imageView.isUserInteractionEnabled = true
+
+        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+        animation.fromValue = 0
+        animation.toValue = CGFloat.pi * 2
+        animation.duration = 2.5
+        animation.repeatCount = .infinity
+
+        imageView.layer.add(animation, forKey: "rotation")
 
         addGestureRecogniser(to: imageView)
         return imageView
