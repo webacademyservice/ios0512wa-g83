@@ -95,8 +95,15 @@ extension GameViewController: GameViewControllerProtocol{
         frame.size = CGSize(width: 100, height: 100)
         frame.origin = translate(fruitPosition: fruit.position)
         imageView.frame = frame
-
         imageView.isUserInteractionEnabled = true
+
+        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+        animation.fromValue = 0
+        animation.toValue = CGFloat.pi * 2
+        animation.duration = 2.5
+        animation.repeatCount = .infinity
+
+        imageView.layer.add(animation, forKey: "rotation")
 
         addGestureRecogniser(to: imageView)
         return imageView
