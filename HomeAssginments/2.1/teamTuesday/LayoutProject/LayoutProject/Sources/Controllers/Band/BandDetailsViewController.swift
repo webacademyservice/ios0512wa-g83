@@ -68,9 +68,7 @@ class BandDetailsViewController: UIViewController {
         albumsSubTitleLabel.text = "\(band.allBandAlbums.count) albums"
         
         descriptionSubTitleLabel.text = band.description
-//        topTitleLabel.text = "Tapped"
-//        sender.setTitle("Taped!", for: .normal)
-//
+
         
     }
     
