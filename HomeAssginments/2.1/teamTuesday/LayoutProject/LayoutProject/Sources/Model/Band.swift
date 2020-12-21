@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 //Protocol for Group
 protocol GroupProtocol {
     var allpeople: String { get }
@@ -31,15 +31,10 @@ struct Band <MusiciansType: GroupProtocol, AlbumsType> {
     var musicians: Array <MusiciansType>
     var allBandAlbums: Array <AlbumsType>
     let description: String
-    //var Img: UIImage
+//    var Img: UIImage
+    
     // Return band by country
     func bandByCountry() -> String {
         return "\(bandName) is from \(country)"
     }
-
-//let bandsList = [
-//    Band(bandName: "The Beatles", country: "United Kingdom",musicians: ["John Lennon", "Paul McCartney", "George Harrison","Ringo Starr"], allBandAlbums: ["With the Beatles", "Beatles 65", "Help!","Magical Mystery Tour"], description: ""),
-//    Band(bandName: "Guns and Roses", country: "United States", musicians:["Axl Rose", "Duff McKagane", "Slash" ] , allBandAlbums:["Appetite for Destruction", "G N' R Lies", "Use Your Illusion", "The Spaghetti Incident?"], description: ""),
-//    Band(bandName: "Scorpions", country: "Germany", musicians:["Rudolf Schenker", "Klaus Meine", "Matthias Jabs"] , allBandAlbums:["Lonesome Crow", "In Trance", "Animal Magnetism","Blackout"], description: ""),
-//]
 }
