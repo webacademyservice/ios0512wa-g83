@@ -115,11 +115,11 @@
                                             <constraint firstAttribute="width" secondItem="OUn-yO-zdg" secondAttribute="height" multiplier="1/0.2" id="JHv-uh-W9F"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <state key="highlighted" title="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="highlighted" title="Next">
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="redButtonTapped:" destination="zva-sj-V5U" eventType="touchUpInside" id="iJS-TZ-seV"/>
@@ -129,7 +129,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W4-MS-ZGn" userLabel="buttonGreen">
                                         <rect key="frame" x="0.0" y="36" width="140" height="30"/>
                                         <color key="backgroundColor" red="0.1375003159" green="0.48980027440000001" blue="0.1567724049" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Previous">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -171,6 +171,9 @@
     </scenes>
     <resources>
         <image name="imgBeatles" width="284" height="177"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
