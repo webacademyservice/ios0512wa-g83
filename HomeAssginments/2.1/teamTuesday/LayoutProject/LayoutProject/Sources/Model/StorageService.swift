@@ -12,12 +12,15 @@ import UIKit
 protocol StorageServiceProtocol {
     associatedtype MusiciansType: GroupProtocol
     associatedtype AlbumsType
-    func getBand()-> Band <MusiciansType, AlbumsType>
+    func showNextBand()-> Band <MusiciansType, AlbumsType>
+    func showPrevBand()-> Band <MusiciansType, AlbumsType>
 }
+
 
 //Protocol for change type from generic to explicit type "String" in StorageServiceProtocol??
 protocol SpecificBandProtocol {
-    func getBand()-> Band <String, String>
+    func showNextBand()-> Band <String, String>
+    func showPrevBand()-> Band <String, String>
 }
 
 //Extention for StorageService for using SpecificBandProtocol ??
@@ -30,9 +33,14 @@ class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServicePr
     init(band:[Band<MusiciansType, AlbumsType>]){
     self.band = band
     }
-    func getBand()-> Band<MusiciansType, AlbumsType>{
-        return band.randomElement()!
-        
+    var currentIndex:Int = 0
+    func showNextBand()-> Band<MusiciansType, AlbumsType>{
+        currentIndex = (currentIndex + 1) % band.count
+        return band[currentIndex]
+    }
+    func showPrevBand()-> Band<MusiciansType, AlbumsType>{
+        currentIndex = (currentIndex - 1) % band.count
+        return band[currentIndex]
     }
 } 
  

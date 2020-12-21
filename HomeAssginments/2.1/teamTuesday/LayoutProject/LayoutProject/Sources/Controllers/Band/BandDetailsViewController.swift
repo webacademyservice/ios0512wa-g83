@@ -43,7 +43,7 @@ class BandDetailsViewController: UIViewController {
     // MARK: Action
     
     @IBAction func redButtonTapped(_ sender: UIButton) {
-        let band = bandService.getBand()
+        let band = bandService.showNextBand()
         topTitleLabel.text = band.bandName
         
         nameSubTitleLabel.text = band.bandName
@@ -59,13 +59,28 @@ class BandDetailsViewController: UIViewController {
         
     }
     
-    @IBAction func redButtonTouchedUpOutside(_ sender: Any) {
-        topTitleLabel.text = "You tached up outside"
-    }
+//    @IBAction func redButtonTouchedUpOutside(_ sender: Any) {
+//        topTitleLabel.text = "You tached up outside"
+//    }
     @IBAction func greenButtonTapped(_ sender: Any) {
+        let band = bandService.showPrevBand()
+        topTitleLabel.text = band.bandName
+        
+        nameSubTitleLabel.text = band.bandName
+        
+        countrySubTitleLabel.text = band.country
+        
+        musicianSubTitleLabel.text = "\(band.musicians.count) in a group"
+        
+        albumsSubTitleLabel.text = "\(band.allBandAlbums.count) albums"
+        
+        descriptionSubTitleLabel.text = band.description
+        imageView.image = band.img
     }
-    @IBAction func greenButtonTouchedUpOutside(_ sender: Any) {
-    }
+    
+    
+//    @IBAction func greenButtonTouchedUpOutside(_ sender: Any) {
+//    }
     
     // MARK: Custom private functions
 
