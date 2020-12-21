@@ -59,9 +59,7 @@ class BandDetailsViewController: UIViewController {
         
     }
     
-//    @IBAction func redButtonTouchedUpOutside(_ sender: Any) {
-//        topTitleLabel.text = "You tached up outside"
-//    }
+
     @IBAction func greenButtonTapped(_ sender: Any) {
         let band = bandService.showPrevBand()
         topTitleLabel.text = band.bandName
@@ -78,9 +76,6 @@ class BandDetailsViewController: UIViewController {
         imageView.image = band.img
     }
     
-    
-//    @IBAction func greenButtonTouchedUpOutside(_ sender: Any) {
-//    }
     
     // MARK: Custom private functions
 
