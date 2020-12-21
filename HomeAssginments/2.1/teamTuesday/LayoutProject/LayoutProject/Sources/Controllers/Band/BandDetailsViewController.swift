@@ -38,20 +38,6 @@ class BandDetailsViewController: UIViewController {
                                          Band(bandName: "Guns and Roses", country: "United States", musicians:["Axl Rose", "Duff McKagane", "Slash" ] , allBandAlbums:["Appetite for Destruction", "G N' R Lies", "Use Your Illusion", "The Spaghetti Incident?"], description: "Guns N' Roses, often abbreviated as GNR, is an American hard rock band from Los Angeles, California, formed in 1985.", img: UIImage(named: "GunsandRoses")),
              Band(bandName: "Scorpions", country: "Germany", musicians:["Rudolf Schenker", "Klaus Meine", "Matthias Jabs"] , allBandAlbums:["Lonesome Crow", "In Trance", "Animal Magnetism","Blackout"], description: "Scorpions are a German heavy metal band formed in 1965 in Hanover by Rudolf Schenker. Since the band's inception, its musical style has ranged from hard rock to heavy metal", img: UIImage(named: "Scorpions"))
 ])
-                                    
-//        topTitleLabel.text = "Hello world"
-//
-//        nameSubTitleLabel.text = "Hello"
-//
-//        countrySubTitleLabel.text = "UA"
-//
-//        musicianSubTitleLabel.text = "5 musicians"
-//
-//        albumsSubTitleLabel.text = "6 albums"
-//
-//        descriptionSubTitleLabel.text = "hjdbhsdfbhesbdhsbdshdbfsdnbfsdfbshdbfhsdbghjfsbdghjfsdbgjhdbshgbdgsdbghdbghsdbh"
-//
-//        imageView.image = UIImage(named: "imgBeatles")
     }
     
     // MARK: Action
