@@ -40,6 +40,9 @@ class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServicePr
     }
     func showPrevBand()-> Band<MusiciansType, AlbumsType>{
         currentIndex = (currentIndex - 1) % band.count
+        if currentIndex == -1 {
+            currentIndex = band.count - 1
+        }
         return band[currentIndex]
     }
 } 
