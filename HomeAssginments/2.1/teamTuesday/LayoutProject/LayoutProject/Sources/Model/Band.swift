@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 //Protocol for Group
 protocol GroupProtocol {
     var allpeople: String { get }
@@ -31,7 +32,7 @@ struct Band <MusiciansType: GroupProtocol, AlbumsType> {
     var musicians: Array <MusiciansType>
     var allBandAlbums: Array <AlbumsType>
     let description: String
-    var Img: UIImage
+    var img: UIImage?
     
     // Return band by country
     func bandByCountry() -> String {

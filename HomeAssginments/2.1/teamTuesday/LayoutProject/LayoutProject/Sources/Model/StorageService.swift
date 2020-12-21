@@ -36,4 +36,3 @@ class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServicePr
     }
 } 
  
-let ss: SpecificBandProtocol = StorageService(band: [])
