@@ -4,28 +4,26 @@
 //
 //  Created by Maryna Snigurska on 18/12/2020.
 //
-//Protocol for class StorageService
+
 import Foundation
 import UIKit
 
+//Protocol for class StorageService
 protocol StorageServiceProtocol {
     associatedtype MusiciansType: GroupProtocol
     associatedtype AlbumsType
     func getBand()-> Band <MusiciansType, AlbumsType>
 }
+
+//Protocol for change type from generic to explicit type "String" in StorageServiceProtocol??
 protocol SpecificBandProtocol {
     func getBand()-> Band <String, String>
 }
 
-//Extention for protocol StorageService
+//Extention for StorageService for using SpecificBandProtocol ??
 extension StorageService: SpecificBandProtocol where MusiciansType == String, AlbumsType == String{
 
 }
-
-////Extention for protocol SpecificBandProtocol
-//extension SpecificBandProtocol: StorageService where MusiciansType == String, AlbumsType == String{
-//
-//}
 
 class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServiceProtocol{
     private var band: [Band<MusiciansType, AlbumsType>] = []
