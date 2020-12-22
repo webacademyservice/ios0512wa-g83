@@ -15,6 +15,7 @@
 		9432BF8F25921FF700ADE1CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9432BF8D25921FF700ADE1CB /* LaunchScreen.storyboard */; };
 		9450701E25923261001C59D7 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450701D25923261001C59D7 /* Fruit.swift */; };
 		945070212592384F001C59D7 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945070202592384F001C59D7 /* GameModel.swift */; };
+		9450702525925E51001C59D7 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9450702425925E51001C59D7 /* CGPointExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9432BF9025921FF700ADE1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9450701D25923261001C59D7 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		945070202592384F001C59D7 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		9450702425925E51001C59D7 /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		9432BF972592200F00ADE1CB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9450702325925E0E001C59D7 /* Extensions */,
 				9450701C25923249001C59D7 /* Model */,
 				9432BF8225921FF500ADE1CB /* AppDelegate.swift */,
 				9432BF8425921FF500ADE1CB /* SceneDelegate.swift */,
@@ -95,6 +98,14 @@
 				945070202592384F001C59D7 /* GameModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9450702325925E0E001C59D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9450702425925E51001C59D7 /* CGPointExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			files = (
 				945070212592384F001C59D7 /* GameModel.swift in Sources */,
 				9432BF8725921FF500ADE1CB /* ViewController.swift in Sources */,
+				9450702525925E51001C59D7 /* CGPointExtension.swift in Sources */,
 				9450701E25923261001C59D7 /* Fruit.swift in Sources */,
 				9432BF8325921FF500ADE1CB /* AppDelegate.swift in Sources */,
 				9432BF8525921FF500ADE1CB /* SceneDelegate.swift in Sources */,
