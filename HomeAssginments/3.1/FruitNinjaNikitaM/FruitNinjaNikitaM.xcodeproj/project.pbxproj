@@ -57,9 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				04EC10D22592612800EE2D69 /* Sourse */,
-				04EC10C32592610300EE2D69 /* Main.storyboard */,
-				04EC10C62592610400EE2D69 /* Assets.xcassets */,
-				04EC10C82592610400EE2D69 /* LaunchScreen.storyboard */,
+				04EC10D42592689800EE2D69 /* Resourse */,
 				04EC10CB2592610400EE2D69 /* Info.plist */,
 			);
 			path = FruitNinjaNikitaM;
@@ -73,6 +71,16 @@
 				04EC10BF2592610300EE2D69 /* SceneDelegate.swift */,
 			);
 			path = Sourse;
+			sourceTree = "<group>";
+		};
+		04EC10D42592689800EE2D69 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				04EC10C32592610300EE2D69 /* Main.storyboard */,
+				04EC10C62592610400EE2D69 /* Assets.xcassets */,
+				04EC10C82592610400EE2D69 /* LaunchScreen.storyboard */,
+			);
+			path = Resourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
