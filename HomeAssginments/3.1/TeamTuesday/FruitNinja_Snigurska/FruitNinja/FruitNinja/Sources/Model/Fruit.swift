@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import CoreGraphics.CGPoint
+import CoreGraphics
 //import CoreGraphics.CGPoint
 
 struct Fruit {
