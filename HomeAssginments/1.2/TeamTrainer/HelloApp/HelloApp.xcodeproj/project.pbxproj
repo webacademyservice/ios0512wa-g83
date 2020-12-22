@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863E09402592497F00943BF0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E093F2592497F00943BF0 /* UIImageExtensions.swift */; };
 		8641166F25861D81009C9199 /* PetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641166E25861D81009C9199 /* PetDetailsViewController.swift */; };
 		8641167425862623009C9199 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641167325862623009C9199 /* StorageService.swift */; };
 		864116782586265F009C9199 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864116772586265F009C9199 /* Pet.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		863E093F2592497F00943BF0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		8641166E25861D81009C9199 /* PetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsViewController.swift; sourceTree = "<group>"; };
 		8641167325862623009C9199 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		864116772586265F009C9199 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		863E093E2592496D00943BF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				863E093F2592497F00943BF0 /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8641166C25861CFD009C9199 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		868587482584CCCE0033A6E3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				863E093E2592496D00943BF0 /* Extensions */,
 				8641167225862601009C9199 /* Model */,
 				8641166C25861CFD009C9199 /* Controllers */,
 				868587322584CB350033A6E3 /* AppDelegate.swift */,
@@ -180,6 +191,7 @@
 			files = (
 				8641167425862623009C9199 /* StorageService.swift in Sources */,
 				868587372584CB350033A6E3 /* ViewController.swift in Sources */,
+				863E09402592497F00943BF0 /* UIImageExtensions.swift in Sources */,
 				868587332584CB350033A6E3 /* AppDelegate.swift in Sources */,
 				864116782586265F009C9199 /* Pet.swift in Sources */,
 				868587352584CB350033A6E3 /* SceneDelegate.swift in Sources */,
