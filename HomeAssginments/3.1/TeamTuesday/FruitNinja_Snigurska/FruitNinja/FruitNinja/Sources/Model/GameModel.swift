@@ -29,14 +29,26 @@ class GameModel: GameModelProtocol {
     var score: Int = 0
     let force = CGPoint(x: 0.0, y: -0.01)
     
+    var timer: Timer?
+    
     // MARK: public
     
     func start() {
         
+        guard timer == nil else {return}
+        // already started timer
+        timer = Timer.scheduledTimer(
+            withTimeInterval: timeInterval,
+            repeats: true,
+            // weak - dont keep in memory if self destructing
+            block: { [weak self] _ in
+                self?.takeTurn()
+                })
     }
     
     func pause() {
-        
+        timer?.invalidate()
+        timer = nil
     }
     
     func tap(on: UUID) {
