@@ -15,11 +15,10 @@ struct Fruit {
         case halfApple
     }
     
+    let id: UUID = UUID()
     var position: CGPoint
     var velocity: CGPoint
     
     let kind: Kind
-    
-    
     
 }
