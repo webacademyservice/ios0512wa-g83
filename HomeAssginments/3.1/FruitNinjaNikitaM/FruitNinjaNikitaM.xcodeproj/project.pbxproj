@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DD1B212592716500393355 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD1B202592716500393355 /* Fruit.swift */; };
 		04EC10BE2592610300EE2D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC10BD2592610300EE2D69 /* AppDelegate.swift */; };
 		04EC10C02592610300EE2D69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC10BF2592610300EE2D69 /* SceneDelegate.swift */; };
 		04EC10C22592610300EE2D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC10C12592610300EE2D69 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04DD1B202592716500393355 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		04EC10BA2592610300EE2D69 /* FruitNinjaNikitaM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitNinjaNikitaM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EC10BD2592610300EE2D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EC10BF2592610300EE2D69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04DD1B1F2592715200393355 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04DD1B202592716500393355 /* Fruit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		04EC10B12592610300EE2D69 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +66,6 @@
 		04EC10BC2592610300EE2D69 /* FruitNinjaNikitaM */ = {
 			isa = PBXGroup;
 			children = (
-				04EC10D22592612800EE2D69 /* Sourse */,
 				04EC10D42592689800EE2D69 /* Resourse */,
 				04EC10CB2592610400EE2D69 /* Info.plist */,
 			);
@@ -66,6 +75,7 @@
 		04EC10D22592612800EE2D69 /* Sourse */ = {
 			isa = PBXGroup;
 			children = (
+				04DD1B1F2592715200393355 /* Model */,
 				04EC10BD2592610300EE2D69 /* AppDelegate.swift */,
 				04EC10C12592610300EE2D69 /* ViewController.swift */,
 				04EC10BF2592610300EE2D69 /* SceneDelegate.swift */,
@@ -79,6 +89,7 @@
 				04EC10C32592610300EE2D69 /* Main.storyboard */,
 				04EC10C62592610400EE2D69 /* Assets.xcassets */,
 				04EC10C82592610400EE2D69 /* LaunchScreen.storyboard */,
+				04EC10D22592612800EE2D69 /* Sourse */,
 			);
 			path = Resourse;
 			sourceTree = "<group>";
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DD1B212592716500393355 /* Fruit.swift in Sources */,
 				04EC10C22592610300EE2D69 /* ViewController.swift in Sources */,
 				04EC10BE2592610300EE2D69 /* AppDelegate.swift in Sources */,
 				04EC10C02592610300EE2D69 /* SceneDelegate.swift in Sources */,
