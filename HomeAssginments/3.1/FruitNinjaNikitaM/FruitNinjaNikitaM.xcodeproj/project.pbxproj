@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04DD1B212592716500393355 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD1B202592716500393355 /* Fruit.swift */; };
+		04DD1B242592737700393355 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD1B232592737700393355 /* GameModel.swift */; };
+		04DD1B2825936F4500393355 /* CGpointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD1B2725936F4500393355 /* CGpointExtensions.swift */; };
 		04EC10BE2592610300EE2D69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC10BD2592610300EE2D69 /* AppDelegate.swift */; };
 		04EC10C02592610300EE2D69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC10BF2592610300EE2D69 /* SceneDelegate.swift */; };
 		04EC10C22592610300EE2D69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EC10C12592610300EE2D69 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		04DD1B202592716500393355 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		04DD1B232592737700393355 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		04DD1B2725936F4500393355 /* CGpointExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGpointExtensions.swift; sourceTree = "<group>"; };
 		04EC10BA2592610300EE2D69 /* FruitNinjaNikitaM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitNinjaNikitaM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04EC10BD2592610300EE2D69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04EC10BF2592610300EE2D69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +43,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04300B1625937442005EB333 /* ViewControlles */ = {
+			isa = PBXGroup;
+			children = (
+				04EC10C12592610300EE2D69 /* ViewController.swift */,
+			);
+			path = ViewControlles;
+			sourceTree = "<group>";
+		};
 		04DD1B1F2592715200393355 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				04DD1B202592716500393355 /* Fruit.swift */,
+				04DD1B232592737700393355 /* GameModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		04DD1B2625936EF500393355 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04DD1B2725936F4500393355 /* CGpointExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		04EC10B12592610300EE2D69 = {
@@ -66,8 +87,9 @@
 		04EC10BC2592610300EE2D69 /* FruitNinjaNikitaM */ = {
 			isa = PBXGroup;
 			children = (
-				04EC10D42592689800EE2D69 /* Resourse */,
 				04EC10CB2592610400EE2D69 /* Info.plist */,
+				04EC10D42592689800EE2D69 /* Resourse */,
+				04EC10D22592612800EE2D69 /* Sourse */,
 			);
 			path = FruitNinjaNikitaM;
 			sourceTree = "<group>";
@@ -75,9 +97,10 @@
 		04EC10D22592612800EE2D69 /* Sourse */ = {
 			isa = PBXGroup;
 			children = (
+				04300B1625937442005EB333 /* ViewControlles */,
+				04DD1B2625936EF500393355 /* Extensions */,
 				04DD1B1F2592715200393355 /* Model */,
 				04EC10BD2592610300EE2D69 /* AppDelegate.swift */,
-				04EC10C12592610300EE2D69 /* ViewController.swift */,
 				04EC10BF2592610300EE2D69 /* SceneDelegate.swift */,
 			);
 			path = Sourse;
@@ -89,7 +112,6 @@
 				04EC10C32592610300EE2D69 /* Main.storyboard */,
 				04EC10C62592610400EE2D69 /* Assets.xcassets */,
 				04EC10C82592610400EE2D69 /* LaunchScreen.storyboard */,
-				04EC10D22592612800EE2D69 /* Sourse */,
 			);
 			path = Resourse;
 			sourceTree = "<group>";
@@ -164,7 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DD1B242592737700393355 /* GameModel.swift in Sources */,
 				04DD1B212592716500393355 /* Fruit.swift in Sources */,
+				04DD1B2825936F4500393355 /* CGpointExtensions.swift in Sources */,
 				04EC10C22592610300EE2D69 /* ViewController.swift in Sources */,
 				04EC10BE2592610300EE2D69 /* AppDelegate.swift in Sources */,
 				04EC10C02592610300EE2D69 /* SceneDelegate.swift in Sources */,
@@ -315,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FruitNinjaNikitaM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FruitNinjaNikitaM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
