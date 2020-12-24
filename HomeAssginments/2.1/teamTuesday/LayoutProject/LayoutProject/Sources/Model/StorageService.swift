@@ -4,7 +4,7 @@
 //  Created by Maryna Snigurska on 18/12/2020.
 //
 
-import Foundation
+
 import UIKit
 
 //Protocol for class StorageService
