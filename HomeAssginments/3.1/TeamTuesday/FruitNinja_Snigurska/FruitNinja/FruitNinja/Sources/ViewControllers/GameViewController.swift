@@ -10,36 +10,43 @@ import UIKit
 class GameViewController: UIViewController {
     
     var game: GameModelProtocol!
-    var fruitView: [UUID:UIView] = [:]
+    var fruitViews: [UUID:UIView] = [:]
     
     
     override func viewDidLoad() {
         
-        game = GameModel()
-        
+        let game = GameModel()
+        game.controller = self
+        self.game = game
+        self.game.start()
         
         super.viewDidLoad()
     }
 }
 
-extension GameViewControllerProtocol{
+extension GameViewController: GameViewControllerProtocol{
     
     //MARK:GameViewControllerProtocol
     
     func add(fruit: Fruit) {
-        let view = viewFor(fruit: fruit)
-        view.addSubview(view)
-        self.fruitView[fruit.id] = view
+        let fruitview = viewFor(fruit: fruit)
+        view.addSubview(fruitview)
+        fruitViews[fruit.id] = fruitview
         
     }
     
     func remove(fruit: Fruit) {
-        guard let viewToRemove = fruitView[fruit.id] else {return}
-        fruitView.removeValue(forKey: fruit.id)
+        guard let viewToRemove = fruitViews[fruit.id] else {return}
+        fruitViews.removeValue(forKey: fruit.id)
         viewToRemove.removeFromSuperview()
     }
     
     func move(fruit: Fruit) {
+        guard let viewToMove = fruitViews[fruit.id] else {return}
+         
+        fruitViews.removeValue(forKey: fruit.id)
+        let newPosition = translate(fruitPosition: fruit.position)
+        viewToMove.frame.origin = newPosition
         
     }
     
@@ -57,7 +64,12 @@ extension GameViewControllerProtocol{
     }
     
     private func imageFor(kind: Fruit.Kind) -> UIImage{
-        
+        switch kind{
+        case .apple:
+           return #imageLiteral(resourceName: "apple")
+        case .halfApple:
+           return #imageLiteral(resourceName: "half-apple")
+        }
     }
     
     private func translate(fruitPosition:CGPoint) -> CGPoint{

@@ -28,6 +28,8 @@ class GameModel: GameModelProtocol {
     let timeInterval: TimeInterval = 1.0
     var score: Int = 0
     let force = CGPoint(x: 0.0, y: -0.01)
+    var controller:GameViewControllerProtocol? 
+    
     
     var timer: Timer?
     
@@ -94,7 +96,9 @@ class GameModel: GameModelProtocol {
     
     
     private func updateUI(){
-        
+        for eachFruit in fruits{
+            controller?.move(fruit: eachFruit)
+        }
     }
     
     private func throwFruit(){
@@ -105,6 +109,7 @@ class GameModel: GameModelProtocol {
             kind: .apple
             )
             fruits.append(fruit)
+            controller?.add(fruit: fruit)
     }
    
     
