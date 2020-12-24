@@ -14,23 +14,29 @@ protocol GameModelProtocol {
     func tap(on:UUID )
 }
 
+protocol GameViewControllerProtocol {
+    
+    func add(fruit: Fruit)
+    func remove(fruit: Fruit)
+    func move(fruit: Fruit)
+    func update(score: Int)
+}
+
 
 class GameModel: GameModelProtocol {
     
     var fruits: [Fruit] = []
-    let timeInterval: TimeInterval = 1.0
+    let timeInterval: TimeInterval = 0.1
     var score: Int = 0
     let force = CGPoint(x: 0.0, y: -0.01)
-    var controller:GameViewControllerProtocol? 
-    
-    
+    var controller: GameViewControllerProtocol?
     var timer: Timer?
     
     // MARK: public
     
     func start() {
         
-        guard timer == nil else {return}
+        guard timer == nil else { return }
         // already started timer
         timer = Timer.scheduledTimer(
             withTimeInterval: timeInterval,
@@ -38,7 +44,8 @@ class GameModel: GameModelProtocol {
             // weak - dont keep in memory if self destructing
             block: { [weak self] _ in
                 self?.takeTurn()
-                })
+                }
+        )
     }
     
     func pause() {
@@ -77,7 +84,7 @@ class GameModel: GameModelProtocol {
         }
     }
     
-    //Create new fruit
+
     private func moveSingleFruit(_ fruit: Fruit) ->Fruit{
         return Fruit(
             id: fruit.id,

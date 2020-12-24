@@ -7,17 +7,10 @@
 
 import UIKit
 
-protocol GameViewControllerProtocol {
-    
-    func add(fruit: Fruit)
-    func remove(fruit: Fruit)
-    func move(fruit: Fruit)
-    func update(score: Int)
-}
-
-class GameViewController: UIViewController {
+class GameViewController: UIViewController{
     
     var game: GameModelProtocol!
+    
     var fruitViews: [UUID:UIView] = [:]
     
     
@@ -37,9 +30,9 @@ extension GameViewController: GameViewControllerProtocol{
     //MARK:GameViewControllerProtocol
     
     func add(fruit: Fruit) {
-        let fruitview = viewFor(fruit: fruit)
-        view.addSubview(fruitview)
-        fruitViews[fruit.id] = fruitview
+        let fruitView = viewFor(fruit: fruit)
+        view.addSubview(fruitView)
+        fruitViews[fruit.id] = fruitView
         
     }
     
@@ -51,8 +44,6 @@ extension GameViewController: GameViewControllerProtocol{
     
     func move(fruit: Fruit) {
         guard let viewToMove = fruitViews[fruit.id] else { return }
-         
-        fruitViews.removeValue(forKey: fruit.id)
         let newPosition = translate(fruitPosition: fruit.position)
         viewToMove.frame.origin = newPosition
         
@@ -62,16 +53,18 @@ extension GameViewController: GameViewControllerProtocol{
         
     }
     
+    
     //MARK: Private
     private func viewFor(fruit:Fruit)  -> UIView {
         let imageView = UIImageView(image: imageFor(kind: fruit.kind))
         var frame = imageView.frame
+        frame.size = CGSize(width: 100, height: 100)
         frame.origin = translate(fruitPosition: fruit.position)
         imageView.frame = frame
         return imageView
     }
     
-    private func imageFor(kind: Fruit.Kind) -> UIImage{
+    private func imageFor(kind: Fruit.Kind) -> UIImage {
         switch kind{
         case .apple:
            return #imageLiteral(resourceName: "apple")
