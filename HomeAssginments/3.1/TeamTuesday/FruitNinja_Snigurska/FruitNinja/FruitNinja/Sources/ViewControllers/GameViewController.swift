@@ -7,6 +7,14 @@
 
 import UIKit
 
+protocol GameViewControllerProtocol {
+    
+    func add(fruit: Fruit)
+    func remove(fruit: Fruit)
+    func move(fruit: Fruit)
+    func update(score: Int)
+}
+
 class GameViewController: UIViewController {
     
     var game: GameModelProtocol!
@@ -36,13 +44,13 @@ extension GameViewController: GameViewControllerProtocol{
     }
     
     func remove(fruit: Fruit) {
-        guard let viewToRemove = fruitViews[fruit.id] else {return}
+        guard let viewToRemove = fruitViews[fruit.id] else { return }
         fruitViews.removeValue(forKey: fruit.id)
         viewToRemove.removeFromSuperview()
     }
     
     func move(fruit: Fruit) {
-        guard let viewToMove = fruitViews[fruit.id] else {return}
+        guard let viewToMove = fruitViews[fruit.id] else { return }
          
         fruitViews.removeValue(forKey: fruit.id)
         let newPosition = translate(fruitPosition: fruit.position)

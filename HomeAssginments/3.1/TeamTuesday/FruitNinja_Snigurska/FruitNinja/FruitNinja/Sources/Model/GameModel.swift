@@ -5,8 +5,7 @@
 //  Created by Maryna Snigurska on 22/12/2020.
 //
 
-import Foundation
-import CoreGraphics
+import UIKit
 
 protocol GameModelProtocol {
     
@@ -15,13 +14,7 @@ protocol GameModelProtocol {
     func tap(on:UUID )
 }
 
-protocol GameViewControllerProtocol {
-    
-    func add(fruit: Fruit)
-    func remove(fruit: Fruit)
-    func move(fruit: Fruit)
-    func update(score: Int)
-}
+
 class GameModel: GameModelProtocol {
     
     var fruits: [Fruit] = []
