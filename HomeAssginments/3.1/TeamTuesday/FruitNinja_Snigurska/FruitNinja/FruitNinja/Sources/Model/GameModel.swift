@@ -14,14 +14,6 @@ protocol GameModelProtocol {
     func tap(on:UUID )
 }
 
-protocol GameViewControllerProtocol {
-    
-    func add(fruit: Fruit)
-    func remove(fruit: Fruit)
-    func move(fruit: Fruit)
-    func update(score: Int)
-}
-
 
 class GameModel: GameModelProtocol {
     
@@ -102,7 +94,7 @@ class GameModel: GameModelProtocol {
     
     private func updateUI(){
         for eachFruit in fruits{
-            controller?.move(fruit: eachFruit)
+            controller?.move(fruit: eachFruit, duration: timeInterval)
         }
     }
     
