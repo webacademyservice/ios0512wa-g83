@@ -26,7 +26,7 @@ protocol GameViewControllerProtocol {
 class GameModel: GameModelProtocol {
     
     var fruits: [Fruit] = []
-    let timeInterval: TimeInterval = 0.1
+    let timeInterval: TimeInterval = 0.5
     var score: Int = 0
     let force = CGPoint(x: 0.0, y: -0.01)
     var controller: GameViewControllerProtocol?
@@ -44,7 +44,7 @@ class GameModel: GameModelProtocol {
             // weak - dont keep in memory if self destructing
             block: { [weak self] _ in
                 self?.takeTurn()
-                }
+            }
         )
     }
     
@@ -54,6 +54,11 @@ class GameModel: GameModelProtocol {
     }
     
     func tap(on: UUID) {
+        guard
+            let fruitToCut = fruits.first(where: { $0.id == on }),
+            fruitToCut.kind == .apple
+        else { return }
+        cutFruit(fruit: fruitToCut)
         
     }
     
@@ -73,7 +78,7 @@ class GameModel: GameModelProtocol {
         if fruits.count < 1{
             throwFruit()
         }
-    
+        
     }
     
     private func moveFruits(){
@@ -84,7 +89,7 @@ class GameModel: GameModelProtocol {
         }
     }
     
-
+    
     private func moveSingleFruit(_ fruit: Fruit) ->Fruit{
         return Fruit(
             id: fruit.id,
@@ -107,10 +112,37 @@ class GameModel: GameModelProtocol {
             position:CGPoint(x: -0.4, y: 0),
             velocity: CGPoint(x: 0.01, y: 0.1),
             kind: .apple
-            )
-            fruits.append(fruit)
-            controller?.add(fruit: fruit)
+        )
+        fruits.append(fruit)
+        controller?.add(fruit: fruit)
     }
-   
+    
+    private func cutFruit(fruit:Fruit){
+        let halfLeft = Fruit(
+            id: UUID(),
+            position:fruit.position,
+            velocity: CGPoint(x: -0.01, y: 0.01),
+            kind: .halfApple
+        )
+        fruits.append(halfLeft)
+        controller?.add(fruit: halfLeft)
+        
+        let halfRight = Fruit(
+            id: UUID(),
+            position:fruit.position,
+            velocity: CGPoint(x: 0.01, y: 0.01),
+            kind: .halfApple
+        )
+        fruits.append(halfRight)
+        controller?.add(fruit: halfRight)
+        controller?.remove(fruit: fruit)
+        fruits = fruits.filter{$0.id != fruit.id}
+        
+        //            let index = fruits.firstIndex { $0.id == fruit.id}
+        //            fruits.remove(at: index)
+    }
+    
+    
+    
     
 }
