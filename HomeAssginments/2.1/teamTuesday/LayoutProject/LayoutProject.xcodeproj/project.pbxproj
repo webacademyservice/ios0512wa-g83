@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9401567D258CD21E00595E4D /* BandDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9401567C258CD21E00595E4D /* BandDetailsViewController.swift */; };
+		94015681258D02FA00595E4D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94015680258D02FA00595E4D /* StorageService.swift */; };
+		94015685258D034D00595E4D /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94015684258D034D00595E4D /* Band.swift */; };
 		942FADB02585300E0081214B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FADAF2585300E0081214B /* AppDelegate.swift */; };
 		942FADB22585300E0081214B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FADB12585300E0081214B /* SceneDelegate.swift */; };
 		942FADB42585300E0081214B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942FADB32585300E0081214B /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9401567C258CD21E00595E4D /* BandDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandDetailsViewController.swift; sourceTree = "<group>"; };
+		94015680258D02FA00595E4D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		94015684258D034D00595E4D /* Band.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
 		942FADAC2585300E0081214B /* LayoutProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		942FADAF2585300E0081214B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		942FADB12585300E0081214B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94015678258CC77800595E4D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9401567F258D026900595E4D /* Model */,
+				9401567A258CD17400595E4D /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9401567A258CD17400595E4D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9401567B258CD18900595E4D /* Band */,
+				942FADAF2585300E0081214B /* AppDelegate.swift */,
+				942FADB12585300E0081214B /* SceneDelegate.swift */,
+				942FADB32585300E0081214B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9401567B258CD18900595E4D /* Band */ = {
+			isa = PBXGroup;
+			children = (
+				9401567C258CD21E00595E4D /* BandDetailsViewController.swift */,
+			);
+			path = Band;
+			sourceTree = "<group>";
+		};
+		9401567F258D026900595E4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94015680258D02FA00595E4D /* StorageService.swift */,
+				94015684258D034D00595E4D /* Band.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		942FADA32585300E0081214B = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +99,7 @@
 		942FADAE2585300E0081214B /* LayoutProject */ = {
 			isa = PBXGroup;
 			children = (
-				942FADAF2585300E0081214B /* AppDelegate.swift */,
-				942FADB12585300E0081214B /* SceneDelegate.swift */,
-				942FADB32585300E0081214B /* ViewController.swift */,
+				94015678258CC77800595E4D /* Sources */,
 				942FADB52585300E0081214B /* Main.storyboard */,
 				942FADB8258530110081214B /* Assets.xcassets */,
 				942FADBA258530110081214B /* LaunchScreen.storyboard */,
@@ -137,6 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94015685258D034D00595E4D /* Band.swift in Sources */,
+				94015681258D02FA00595E4D /* StorageService.swift in Sources */,
+				9401567D258CD21E00595E4D /* BandDetailsViewController.swift in Sources */,
 				942FADB42585300E0081214B /* ViewController.swift in Sources */,
 				942FADB02585300E0081214B /* AppDelegate.swift in Sources */,
 				942FADB22585300E0081214B /* SceneDelegate.swift in Sources */,
