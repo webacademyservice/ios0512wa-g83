@@ -129,9 +129,6 @@ class GameModel: GameModelProtocol {
         controller?.add(fruit: halfRight)
         controller?.remove(fruit: fruit)
         fruits = fruits.filter{$0.id != fruit.id}
-        
-        //            let index = fruits.firstIndex { $0.id == fruit.id}
-        //            fruits.remove(at: index)
     }
     
     
