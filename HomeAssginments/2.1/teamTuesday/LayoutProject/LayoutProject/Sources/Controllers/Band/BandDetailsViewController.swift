@@ -29,6 +29,10 @@ class BandDetailsViewController: UIViewController {
     
     var bandService: SpecificBandProtocol!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    
     //MARK:Ovverridies
     
     var currentBand: Band<String, String>?
@@ -83,6 +87,7 @@ class BandDetailsViewController: UIViewController {
                                               description: "Scorpions are a German heavy metal band formed in 1965 in Hanover by Rudolf Schenker. Since the band's inception, its musical style has ranged from hard rock to heavy metal",
                                               img: UIImage(named: "Scorpions"), teg: ["Hard rock", "Heavy metal", "Glam metal"])
 ])
+    
     }
     
     // MARK: Action
@@ -117,6 +122,8 @@ class BandDetailsViewController: UIViewController {
         imageView.image = band.img
          
         currentBand = band
+        collectionView.reloadData()
+        
         
       
       
@@ -125,10 +132,12 @@ class BandDetailsViewController: UIViewController {
 extension BandDetailsViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        currentBand = bandService.band[0]
+//        currentBand = bandService.getInitialBand()
         guard let band = currentBand else {return 0 }
         return band.teg.count
     }

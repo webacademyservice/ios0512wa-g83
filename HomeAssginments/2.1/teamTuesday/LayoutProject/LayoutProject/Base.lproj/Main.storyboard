@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -34,7 +35,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yzk-hW-t1u">
                                 <rect key="frame" x="8" y="438" width="398" height="60"/>
-                                <color key="backgroundColor" red="0.87457144259999997" green="0.17367810010000001" blue="0.1881817579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="DG7-kG-pRA"/>
                                 </constraints>
@@ -54,8 +55,9 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loe-eL-bwG">
                                                     <rect key="frame" x="8" y="8" width="88" height="44"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -66,7 +68,7 @@
                                                 <constraint firstItem="Loe-eL-bwG" firstAttribute="leading" secondItem="efC-yg-4wr" secondAttribute="leading" constant="8" id="cZZ-HE-j8q"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.1375003159" green="0.48980027440000001" blue="0.1567724049" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <size key="customSize" width="104" height="60"/>
                                         <connections>
                                             <outlet property="tagLabel" destination="Loe-eL-bwG" id="haa-ED-c8B"/>
@@ -203,6 +205,7 @@
                     </view>
                     <connections>
                         <outlet property="albumsSubTitleLabel" destination="wUO-FY-PrQ" id="HLY-ze-VDL"/>
+                        <outlet property="collectionView" destination="yzk-hW-t1u" id="kqG-rT-C2g"/>
                         <outlet property="countrySubTitleLabel" destination="Byf-Lo-Lln" id="nyn-7o-cfG"/>
                         <outlet property="descriptionSubTitleLabel" destination="RH1-Aq-mcH" id="ddG-Wh-kHQ"/>
                         <outlet property="greenButton" destination="2W4-MS-ZGn" id="z2E-DU-oB2"/>
@@ -220,6 +223,9 @@
     </scenes>
     <resources>
         <image name="imgBeatles" width="284" height="177"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
