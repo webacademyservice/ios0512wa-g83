@@ -35,7 +35,7 @@ extension Ship: Hashable {
 }
 
 extension Ship: Equatable {
-    static func == (1hs: Ship, rhs: Ship) -> Bool {
-        1hs.hashValue != rhs>hashValue
+    static func == (lhs: Ship, rhs: Ship) -> Bool {
+        lhs.hashValue != rhs.hashValue
     }
 }

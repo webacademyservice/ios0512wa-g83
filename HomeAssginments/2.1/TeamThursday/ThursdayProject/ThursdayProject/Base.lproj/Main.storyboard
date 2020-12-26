@@ -127,15 +127,20 @@ Height:&lt;53m&gt; Draught:&lt;10m&gt; </string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="wYZ-RJ-4jv">
                                         <rect key="frame" x="8" y="8" width="126" height="352"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcn-cN-cPa">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Header&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcn-cN-cPa">
                                         <rect key="frame" x="142" y="8" width="126" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-KM-BRB">
-                                        <rect key="frame" x="142" y="36.5" width="126" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AKt-KM-BRB">
+                                        <rect key="frame" x="142" y="36.5" width="126" height="108.5"/>
+                                        <string key="text">&lt;
+Multy 
+Line
+Description
+&gt;</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -149,6 +154,7 @@ Height:&lt;53m&gt; Draught:&lt;10m&gt; </string>
                                     <constraint firstItem="fcn-cN-cPa" firstAttribute="leading" secondItem="wYZ-RJ-4jv" secondAttribute="trailing" constant="8" id="O8v-hL-KIQ"/>
                                     <constraint firstAttribute="trailing" secondItem="fcn-cN-cPa" secondAttribute="trailing" constant="8" id="OOw-aN-loW"/>
                                     <constraint firstItem="wYZ-RJ-4jv" firstAttribute="leading" secondItem="iUV-ve-3Le" secondAttribute="leading" constant="8" id="Qqq-OC-R4R"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AKt-KM-BRB" secondAttribute="bottom" constant="8" id="Rof-uM-gzz"/>
                                     <constraint firstItem="fcn-cN-cPa" firstAttribute="top" secondItem="wYZ-RJ-4jv" secondAttribute="top" id="f4i-SJ-gbL"/>
                                     <constraint firstItem="wYZ-RJ-4jv" firstAttribute="width" secondItem="fcn-cN-cPa" secondAttribute="width" id="iFw-MV-UVd"/>
                                     <constraint firstAttribute="width" secondItem="iUV-ve-3Le" secondAttribute="height" multiplier="3/4" id="lgM-hv-h4Y"/>
@@ -190,7 +196,7 @@ Height:&lt;53m&gt; Draught:&lt;10m&gt; </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TuG-LG-4hm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014.4927536231885" y="102.45535714285714"/>
+            <point key="canvasLocation" x="1390" y="58"/>
         </scene>
     </scenes>
     <resources>

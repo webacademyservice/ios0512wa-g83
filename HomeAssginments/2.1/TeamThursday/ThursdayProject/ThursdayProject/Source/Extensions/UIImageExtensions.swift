@@ -5,6 +5,7 @@
 //  Created by admin on 12/23/20.
 //
 
-import Foundation
+import UIKit.UIImage
 
 typealias Image = UIImage
+
