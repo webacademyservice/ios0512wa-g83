@@ -45,7 +45,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jJm-JC-2PJ">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BandCell" id="jJm-JC-2PJ" customClass="BandTegCollectionViewCell" customModule="LayoutProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="efC-yg-4wr">
@@ -68,8 +68,14 @@
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.1375003159" green="0.48980027440000001" blue="0.1567724049" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="104" height="60"/>
+                                        <connections>
+                                            <outlet property="tagLabel" destination="Loe-eL-bwG" id="haa-ED-c8B"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="zva-sj-V5U" id="KCo-gT-THy"/>
+                                </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RC8-o3-D4W" userLabel="Container">
                                 <rect key="frame" x="8" y="175" width="398" height="247"/>

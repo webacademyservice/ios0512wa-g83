@@ -31,8 +31,10 @@ class BandDetailsViewController: UIViewController {
     
     //MARK:Ovverridies
     
+    var currentBand: Band<String, String>?
+    
     override func viewDidLoad(){ super.viewDidLoad()
-        
+    
         bandService = StorageService(band:
                                         [Band(bandName: "The Beatles",
                                               country: "United Kingdom",
@@ -113,7 +115,38 @@ class BandDetailsViewController: UIViewController {
         descriptionSubTitleLabel.text = band.description
         
         imageView.image = band.img
+         
+        currentBand = band
+        
+      
+      
     }
-
-
+}
+extension BandDetailsViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let band = currentBand else {return 0 }
+        return band.teg.count
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell =
+            collectionView.dequeueReusableCell(withReuseIdentifier: "BandCell", for: indexPath)
+        
+        guard let tag = currentBand?.teg[indexPath.item] else { return cell }
+        
+        let bandTagCell = cell as? BandTegCollectionViewCell
+        bandTagCell?.tagLabel.text = tag
+        
+        return cell
+        
+    }
+    
+    
 }

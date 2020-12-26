@@ -9,4 +9,5 @@ import UIKit
 
 class BandTegCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var tagLabel: UILabel!
 }
