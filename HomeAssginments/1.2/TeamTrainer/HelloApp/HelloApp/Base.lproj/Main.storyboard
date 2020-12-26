@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ww9-6U-mkg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ww9-6U-mkg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -75,6 +76,51 @@ Description
                                     <action selector="buttonTapped:" destination="ww9-6U-mkg" eventType="touchUpInside" id="9Q9-TR-8eC"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cQk-uZ-oHQ">
+                                <rect key="frame" x="69" y="548" width="276" height="60"/>
+                                <color key="backgroundColor" red="0.84437781570000003" green="0.18049647129999999" blue="0.092229486149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="KCX-t8-8RO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MRQ-LV-m6z">
+                                    <size key="itemSize" width="81" height="56"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PetCell" id="oUb-wH-1Pb" customClass="PetTagCollectionViewCell" customModule="HelloApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="81" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="r41-lY-2xB">
+                                            <rect key="frame" x="0.0" y="0.0" width="81" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf7-4N-wWe">
+                                                    <rect key="frame" x="8" y="8" width="65" height="40"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sf7-4N-wWe" firstAttribute="top" secondItem="r41-lY-2xB" secondAttribute="top" constant="8" id="54p-FC-rPH"/>
+                                                <constraint firstItem="sf7-4N-wWe" firstAttribute="centerX" secondItem="r41-lY-2xB" secondAttribute="centerX" id="7oQ-tG-YcM"/>
+                                                <constraint firstItem="sf7-4N-wWe" firstAttribute="leading" secondItem="r41-lY-2xB" secondAttribute="leading" constant="8" id="STX-UE-wno"/>
+                                                <constraint firstItem="sf7-4N-wWe" firstAttribute="centerY" secondItem="r41-lY-2xB" secondAttribute="centerY" id="c95-WW-j41"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <size key="customSize" width="81" height="56"/>
+                                        <connections>
+                                            <outlet property="tagLabel" destination="sf7-4N-wWe" id="BiY-dB-bjr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ww9-6U-mkg" id="5bG-Dk-nIh"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZXm-FZ-q3b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -84,15 +130,19 @@ Description
                             <constraint firstItem="ZXm-FZ-q3b" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aOt-7y-TDB" secondAttribute="bottom" constant="8" id="2xF-3v-pX5"/>
                             <constraint firstItem="VZw-Lg-RvK" firstAttribute="centerX" secondItem="yQk-nt-5c3" secondAttribute="centerX" id="KvY-kT-ORy"/>
                             <constraint firstItem="VZw-Lg-RvK" firstAttribute="height" relation="lessThanOrEqual" secondItem="yQk-nt-5c3" secondAttribute="height" multiplier="2/3" id="YVt-br-Y6A"/>
+                            <constraint firstItem="cQk-uZ-oHQ" firstAttribute="centerX" secondItem="yQk-nt-5c3" secondAttribute="centerX" id="aRo-10-T3n"/>
                             <constraint firstItem="VZw-Lg-RvK" firstAttribute="width" relation="lessThanOrEqual" secondItem="yQk-nt-5c3" secondAttribute="width" multiplier="0.95" id="fFF-jR-HOF"/>
                             <constraint firstItem="VZw-Lg-RvK" firstAttribute="width" secondItem="yQk-nt-5c3" secondAttribute="width" multiplier="2/3" priority="750" id="lBv-wE-e4R"/>
                             <constraint firstItem="VZw-Lg-RvK" firstAttribute="centerY" secondItem="yQk-nt-5c3" secondAttribute="centerY" id="mGj-Ut-NDu"/>
                             <constraint firstItem="aOt-7y-TDB" firstAttribute="width" secondItem="VZw-Lg-RvK" secondAttribute="width" id="nqC-7e-EcL"/>
+                            <constraint firstItem="cQk-uZ-oHQ" firstAttribute="width" secondItem="VZw-Lg-RvK" secondAttribute="width" id="rEV-cD-1RP"/>
                             <constraint firstItem="aOt-7y-TDB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VZw-Lg-RvK" secondAttribute="bottom" constant="8" id="tVT-9E-31J"/>
+                            <constraint firstItem="cQk-uZ-oHQ" firstAttribute="top" secondItem="VZw-Lg-RvK" secondAttribute="bottom" constant="8" symbolic="YES" id="zg9-5f-aDK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="aOt-7y-TDB" id="p4P-fM-paq"/>
+                        <outlet property="collectionView" destination="cQk-uZ-oHQ" id="LsX-gz-QZo"/>
                         <outlet property="imageView" destination="Yd0-oc-HSG" id="cSv-Xs-ov0"/>
                         <outlet property="subTitleLabel" destination="hGr-Er-Mgs" id="Md5-zE-r8V"/>
                         <outlet property="topTitleLabel" destination="QHM-qQ-CW5" id="eFE-iM-nux"/>
@@ -109,6 +159,9 @@ Description
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

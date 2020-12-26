@@ -13,6 +13,9 @@ class PetDetailsViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+
+    var currentPet: Pet?
 
     var petService: StorageServiceProtocol!
 
@@ -71,5 +74,38 @@ class PetDetailsViewController: UIViewController {
         topTitleLabel.text = pet.name
         imageView.image = pet.image ?? #imageLiteral(resourceName: "default")
         subTitleLabel.text = pet.shortDescription
+        currentPet = pet
+
+        collectionView.reloadData()
     }
+}
+
+// MARK: CollectionView DataSource
+extension PetDetailsViewController: UICollectionViewDataSource {
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+
+        guard let pet = currentPet else { return 0 }
+
+        return pet.tags.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        // ! не зыбываем добавить ReuseIndetifier в StoryBoard !
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PetCell", for: indexPath)
+
+        guard let tag = currentPet?.tags[indexPath.item] else { return cell}
+
+        let petTagCell = cell as? PetTagCollectionViewCell
+
+        petTagCell?.tagLabel.text = tag
+
+        return cell
+    }
+
 }
