@@ -8,7 +8,7 @@
 import UIKit
 
 class BandDetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var topTitleLabel: UILabel!
@@ -38,7 +38,7 @@ class BandDetailsViewController: UIViewController {
     var currentBand: Band<String, String>?
     
     override func viewDidLoad(){ super.viewDidLoad()
-    
+        
         bandService = StorageService(band:
                                         [Band(bandName: "The Beatles",
                                               country: "United Kingdom",
@@ -86,8 +86,8 @@ class BandDetailsViewController: UIViewController {
                                               ],
                                               description: "Scorpions are a German heavy metal band formed in 1965 in Hanover by Rudolf Schenker. Since the band's inception, its musical style has ranged from hard rock to heavy metal",
                                               img: UIImage(named: "Scorpions"), teg: ["Hard rock", "Heavy metal", "Glam metal"])
-])
-    
+                                        ])
+        
     }
     
     // MARK: Action
@@ -97,7 +97,7 @@ class BandDetailsViewController: UIViewController {
         self.setBandInfo(band: band)
     }
     
-
+    
     @IBAction func greenButtonTapped(_ sender: Any) {
         let band = bandService.showPrevBand()
         self.setBandInfo(band: band)
@@ -120,13 +120,13 @@ class BandDetailsViewController: UIViewController {
         descriptionSubTitleLabel.text = band.description
         
         imageView.image = band.img
-         
+        
         currentBand = band
         collectionView.reloadData()
         
         
-      
-      
+        
+        
     }
 }
 extension BandDetailsViewController: UICollectionViewDataSource {
@@ -136,8 +136,6 @@ extension BandDetailsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        currentBand = bandService.band[0]
-//        currentBand = bandService.getInitialBand()
         guard let band = currentBand else {return 0 }
         return band.teg.count
     }
