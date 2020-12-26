@@ -33,6 +33,7 @@ struct Band <MusiciansType: GroupProtocol, AlbumsType> {
     var allBandAlbums: Array <AlbumsType>
     let description: String
     var img: UIImage?
+    var teg: [String]
     
     // Return band by country
     func bandByCountry() -> String {

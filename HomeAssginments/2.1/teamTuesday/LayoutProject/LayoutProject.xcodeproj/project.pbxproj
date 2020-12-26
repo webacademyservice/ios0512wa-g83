@@ -16,6 +16,7 @@
 		942FADB72585300E0081214B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FADB52585300E0081214B /* Main.storyboard */; };
 		942FADB9258530110081214B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942FADB8258530110081214B /* Assets.xcassets */; };
 		942FADBC258530110081214B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942FADBA258530110081214B /* LaunchScreen.storyboard */; };
+		94759C6A2597D80F00550D29 /* BandTegCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94759C692597D80F00550D29 /* BandTegCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		942FADB8258530110081214B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		942FADBB258530110081214B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		942FADBD258530110081214B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94759C692597D80F00550D29 /* BandTegCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandTegCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9401567C258CD21E00595E4D /* BandDetailsViewController.swift */,
+				94759C692597D80F00550D29 /* BandTegCollectionViewCell.swift */,
 			);
 			path = Band;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				94015685258D034D00595E4D /* Band.swift in Sources */,
 				94015681258D02FA00595E4D /* StorageService.swift in Sources */,
 				9401567D258CD21E00595E4D /* BandDetailsViewController.swift in Sources */,
+				94759C6A2597D80F00550D29 /* BandTegCollectionViewCell.swift in Sources */,
 				942FADB42585300E0081214B /* ViewController.swift in Sources */,
 				942FADB02585300E0081214B /* AppDelegate.swift in Sources */,
 				942FADB22585300E0081214B /* SceneDelegate.swift in Sources */,
