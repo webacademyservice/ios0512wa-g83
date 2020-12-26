@@ -16,6 +16,7 @@
 		8685873A2584CB350033A6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868587382584CB350033A6E3 /* Main.storyboard */; };
 		8685873C2584CB370033A6E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8685873B2584CB370033A6E3 /* Assets.xcassets */; };
 		8685873F2584CB370033A6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685873D2584CB370033A6E3 /* LaunchScreen.storyboard */; };
+		86C1800825974CFF00C08D20 /* PetTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1800725974CFF00C08D20 /* PetTagCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8685873B2584CB370033A6E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8685873E2584CB370033A6E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		868587402584CB370033A6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86C1800725974CFF00C08D20 /* PetTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTagCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				8641166E25861D81009C9199 /* PetDetailsViewController.swift */,
+				86C1800725974CFF00C08D20 /* PetTagCollectionViewCell.swift */,
 			);
 			path = Pet;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				8641167425862623009C9199 /* StorageService.swift in Sources */,
 				863E09402592497F00943BF0 /* UIImageExtensions.swift in Sources */,
+				86C1800825974CFF00C08D20 /* PetTagCollectionViewCell.swift in Sources */,
 				868587332584CB350033A6E3 /* AppDelegate.swift in Sources */,
 				864116782586265F009C9199 /* Pet.swift in Sources */,
 				868587352584CB350033A6E3 /* SceneDelegate.swift in Sources */,
