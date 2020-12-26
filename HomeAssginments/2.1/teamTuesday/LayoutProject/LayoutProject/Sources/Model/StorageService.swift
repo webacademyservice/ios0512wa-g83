@@ -13,7 +13,6 @@ protocol StorageServiceProtocol {
     associatedtype AlbumsType
     func showNextBand()-> Band <MusiciansType, AlbumsType>
     func showPrevBand()-> Band <MusiciansType, AlbumsType>
-    func getInitialBand()-> Band <MusiciansType, AlbumsType>
 }
 
 
@@ -21,23 +20,19 @@ protocol StorageServiceProtocol {
 protocol SpecificBandProtocol {
     func showNextBand()-> Band <String, String>
     func showPrevBand()-> Band <String, String>
-    func getInitialBand()-> Band <String, String>
 }
 
 //Extention for StorageService for using SpecificBandProtocol ??
 extension StorageService: SpecificBandProtocol where MusiciansType == String, AlbumsType == String{
-
+    
 }
 
 class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServiceProtocol{
     private var band: [Band<MusiciansType, AlbumsType>] = []
     init(band:[Band<MusiciansType, AlbumsType>]){
-    self.band = band
+        self.band = band
     }
     var currentIndex:Int = 0
-    func getInitialBand()-> Band<MusiciansType, AlbumsType>{
-        return band[0]
-    }
     func showNextBand()-> Band<MusiciansType, AlbumsType>{
         currentIndex = (currentIndex + 1) % band.count
         return band[currentIndex]
@@ -50,4 +45,4 @@ class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServicePr
         return band[currentIndex]
     }
 } 
- 
+
