@@ -7,18 +7,19 @@
 
 import Foundation
 import UIKit
-//import CoreGraphics.CGPoint
 
 struct Fruit {
     
     enum Kind {
         case apple
         case halfApple
+        case banana
+        case halfBanana
     }
     
-    let id: UUID 
+    var id: UUID
     var position: CGPoint
     var velocity: CGPoint
-    let kind: Kind
+    var kind: Kind
     
 }
