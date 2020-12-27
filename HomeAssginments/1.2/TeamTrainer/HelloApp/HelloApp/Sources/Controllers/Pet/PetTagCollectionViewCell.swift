@@ -10,4 +10,14 @@ import UIKit
 class PetTagCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var tagLabel: UILabel!
+
+    override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                self.backgroundColor = .systemPink
+            } else {
+                self.backgroundColor = .orange
+            }
+        }
+    }
 }

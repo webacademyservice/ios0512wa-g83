@@ -23,9 +23,14 @@ class PetDetailsViewController: UIViewController {
     override func viewDidLoad() {
         petService = StorageService()
         petService.loadPets()
+        collectionView.allowsMultipleSelection = false
 
         super.viewDidLoad()
-        refresh()
+        if let currentPet = currentPet {
+            updateUI(for: currentPet)
+        } else {
+            refresh()
+        }
     }
 
     // MARK: Action
@@ -69,14 +74,19 @@ class PetDetailsViewController: UIViewController {
 
     // MARK: Custom private functions
 
-    fileprivate func refresh() {
-        let pet = petService.getPet()
+    fileprivate func updateUI(for pet: Pet) {
         topTitleLabel.text = pet.name
         imageView.image = pet.image ?? #imageLiteral(resourceName: "default")
         subTitleLabel.text = pet.shortDescription
-        currentPet = pet
 
         collectionView.reloadData()
+    }
+
+    fileprivate func refresh() {
+        let pet = petService.getPet()
+        currentPet = pet
+
+        updateUI(for: pet)
     }
 }
 
@@ -109,3 +119,23 @@ extension PetDetailsViewController: UICollectionViewDataSource {
     }
 
 }
+
+extension PetDetailsViewController: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+
+        guard let tag = currentPet?.tags[indexPath.item] else { return }
+        print("tag selected \(tag)")
+
+        view.backgroundColor = (indexPath.item % 2 == 0) ? .systemRed : .systemGreen
+
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+
+        if collectionView.indexPathsForSelectedItems?.count == 0 {
+            view.backgroundColor = .white
+        }
+    }
+}
+
