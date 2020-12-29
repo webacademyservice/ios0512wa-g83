@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "banana_PNG852.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
