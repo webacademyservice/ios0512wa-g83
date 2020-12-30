@@ -24,13 +24,13 @@ protocol SpecificBandProtocol {
 
 //Extention for StorageService for using SpecificBandProtocol ??
 extension StorageService: SpecificBandProtocol where MusiciansType == String, AlbumsType == String{
-
+    
 }
 
 class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServiceProtocol{
     private var band: [Band<MusiciansType, AlbumsType>] = []
     init(band:[Band<MusiciansType, AlbumsType>]){
-    self.band = band
+        self.band = band
     }
     var currentIndex:Int = 0
     func showNextBand()-> Band<MusiciansType, AlbumsType>{
@@ -45,4 +45,4 @@ class StorageService<MusiciansType: GroupProtocol, AlbumsType>: StorageServicePr
         return band[currentIndex]
     }
 } 
- 
+
