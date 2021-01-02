@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Hf-eDu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-E3-q8K">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2400"/>
@@ -164,8 +164,8 @@
                         <viewLayoutGuide key="safeArea" id="dm6-b3-nXP"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bz3-Hf-eDu" firstAttribute="top" secondItem="clb-B5-J1w" secondAttribute="top" id="Exs-q3-gTM"/>
-                            <constraint firstAttribute="bottom" secondItem="bz3-Hf-eDu" secondAttribute="bottom" id="Qay-r6-Ob8"/>
+                            <constraint firstItem="bz3-Hf-eDu" firstAttribute="top" secondItem="dm6-b3-nXP" secondAttribute="top" id="Exs-q3-gTM"/>
+                            <constraint firstItem="dm6-b3-nXP" firstAttribute="bottom" secondItem="bz3-Hf-eDu" secondAttribute="bottom" id="Qay-r6-Ob8"/>
                             <constraint firstAttribute="trailing" secondItem="bz3-Hf-eDu" secondAttribute="trailing" id="oLo-hz-OJs"/>
                             <constraint firstItem="bz3-Hf-eDu" firstAttribute="leading" secondItem="clb-B5-J1w" secondAttribute="leading" id="pB0-tE-bua"/>
                         </constraints>

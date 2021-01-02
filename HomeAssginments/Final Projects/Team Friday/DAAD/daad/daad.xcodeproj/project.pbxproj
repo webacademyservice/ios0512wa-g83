@@ -76,13 +76,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0404D11C25A09002008E82FA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				807CCA9B259A40F40032898C /* Products */,
+				807CCABE259A40F90032898C /* daadUITests */,
+				807CCAB3259A40F90032898C /* daadTests */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		0404D12025A0903D008E82FA /* Sourse */ = {
+			isa = PBXGroup;
+			children = (
+				807CCA9D259A40F40032898C /* AppDelegate.swift */,
+				807CCA9F259A40F40032898C /* SceneDelegate.swift */,
+				807CCAA1259A40F40032898C /* ViewController.swift */,
+			);
+			path = Sourse;
+			sourceTree = "<group>";
+		};
 		807CCA91259A40F40032898C = {
 			isa = PBXGroup;
 			children = (
 				807CCA9C259A40F40032898C /* daad */,
-				807CCAB3259A40F90032898C /* daadTests */,
-				807CCABE259A40F90032898C /* daadUITests */,
-				807CCA9B259A40F40032898C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,18 +111,18 @@
 				807CCABB259A40F90032898C /* daadUITests.xctest */,
 			);
 			name = Products;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		807CCA9C259A40F40032898C /* daad */ = {
 			isa = PBXGroup;
 			children = (
-				807CCA9D259A40F40032898C /* AppDelegate.swift */,
-				807CCA9F259A40F40032898C /* SceneDelegate.swift */,
-				807CCAA1259A40F40032898C /* ViewController.swift */,
+				0404D12025A0903D008E82FA /* Sourse */,
 				807CCAA3259A40F40032898C /* Main.storyboard */,
 				807CCAA6259A40F80032898C /* Assets.xcassets */,
 				807CCAA8259A40F80032898C /* LaunchScreen.storyboard */,
 				807CCAAB259A40F80032898C /* Info.plist */,
+				0404D11C25A09002008E82FA /* Test */,
 			);
 			path = daad;
 			sourceTree = "<group>";
