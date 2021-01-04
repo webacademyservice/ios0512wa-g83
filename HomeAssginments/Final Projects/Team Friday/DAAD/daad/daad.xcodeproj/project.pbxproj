@@ -15,6 +15,10 @@
 		807CCAAA259A40F80032898C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807CCAA8259A40F80032898C /* LaunchScreen.storyboard */; };
 		807CCAB5259A40F90032898C /* daadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCAB4259A40F90032898C /* daadTests.swift */; };
 		807CCAC0259A40F90032898C /* daadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCABF259A40F90032898C /* daadUITests.swift */; };
+		80A7B5DD25A1E8BD001DF9CA /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5DC25A1E8BD001DF9CA /* MainScreenViewController.swift */; };
+		80A7B5E225A1E8D8001DF9CA /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */; };
+		80A7B5E725A1F16D001DF9CA /* FindMyWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */; };
+		80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		807CCABB259A40F90032898C /* daadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		807CCABF259A40F90032898C /* daadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daadUITests.swift; sourceTree = "<group>"; };
 		807CCAC1259A40F90032898C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A7B5DC25A1E8BD001DF9CA /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyWatchViewController.swift; sourceTree = "<group>"; };
+		80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				807CCA9F259A40F40032898C /* SceneDelegate.swift */,
 				807CCAA1259A40F40032898C /* ViewController.swift */,
 				807CCAA3259A40F40032898C /* Main.storyboard */,
+				80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */,
+				80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */,
+				80A7B5DC25A1E8BD001DF9CA /* MainScreenViewController.swift */,
+				80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */,
 				807CCAA6259A40F80032898C /* Assets.xcassets */,
 				807CCAA8259A40F80032898C /* LaunchScreen.storyboard */,
 				807CCAAB259A40F80032898C /* Info.plist */,
@@ -259,8 +271,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				807CCAA2259A40F40032898C /* ViewController.swift in Sources */,
+				80A7B5DD25A1E8BD001DF9CA /* MainScreenViewController.swift in Sources */,
 				807CCA9E259A40F40032898C /* AppDelegate.swift in Sources */,
 				807CCAA0259A40F40032898C /* SceneDelegate.swift in Sources */,
+				80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */,
+				80A7B5E225A1E8D8001DF9CA /* BrowseViewController.swift in Sources */,
+				80A7B5E725A1F16D001DF9CA /* FindMyWatchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
