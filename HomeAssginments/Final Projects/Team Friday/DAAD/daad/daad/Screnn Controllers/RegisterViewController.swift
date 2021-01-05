@@ -8,9 +8,12 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    @IBOutlet weak var enterButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        enterButton.layer.cornerRadius = 15
+        enterButton.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }
