@@ -59,7 +59,11 @@ class GameModel: GameModelProtocol {
     }
     
     func tap(on: UUID) {
+        guard let fruitToCut = fruits.first(where: { $0.id == on }),
+              fruitToCut.kind == .apple
+              else { return }
         
+        cutFruit(fruit: fruitToCut)
     }
     
         //MARK: private
@@ -111,5 +115,28 @@ class GameModel: GameModelProtocol {
         )
         fruits.append(fruit)
         controller?.add(fruit: fruit)
+    }
+    
+    private func cutFruit(fruit: Fruit) {
+        let halfLeft = Fruit(
+            id: UUID(),
+            kind: .halfApple,
+            position: fruit.position,
+            vilocity: CGPoint(x: -0.01, y: 0.01)
+        )
+        fruits.append(halfLeft)
+        controller?.add(fruit: halfLeft)
+        
+        let halfRight = Fruit(
+            id: UUID(),
+            kind: .halfApple,
+            position: fruit.position,
+            vilocity: CGPoint(x: 0.01, y: 0.01)
+        )
+        fruits.append(halfRight)
+        controller?.add(fruit: halfRight)
+        
+        controller?.remove(fruit: fruit)
+        fruits = fruits.filter { $0.id != fruit.id }
     }
 }
