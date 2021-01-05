@@ -9,7 +9,10 @@ import Foundation
 
 protocol StorageServiceProtocol {
     func getPet() -> Pet
+
     func loadPets()
+
+    var allPets: [Pet] { get }
 }
 
 class StorageService: StorageServiceProtocol {
@@ -18,6 +21,10 @@ class StorageService: StorageServiceProtocol {
 
     func getPet() -> Pet {
         return pets.randomElement()!
+    }
+
+    var allPets: [Pet] {
+        get { return pets }
     }
 
     func loadPets() {
