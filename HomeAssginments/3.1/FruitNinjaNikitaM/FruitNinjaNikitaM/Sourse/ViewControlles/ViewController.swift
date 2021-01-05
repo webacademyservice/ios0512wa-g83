@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class GameViewController: UIViewController {
     
     var game: GameModelProtocol!
@@ -25,6 +27,7 @@ class GameViewController: UIViewController {
 }
 
 extension GameViewController: GameViewControllerProtocol {
+    
     // GameViewControllerProtocol
 
     func add(fruit: Fruit) {
@@ -44,7 +47,7 @@ extension GameViewController: GameViewControllerProtocol {
         viewToRemove.removeFromSuperview()
         
 }
-    func move(fruit: Fruit) {
+    func move(fruit: Fruit, duration: TimeInterval) {
         
         guard let viewToMove = fruitViews[fruit.id]
         else {
@@ -52,12 +55,18 @@ extension GameViewController: GameViewControllerProtocol {
        }
         let newPosition = translate(fruitPosition: fruit.position)
         
-        viewToMove.frame.origin = newPosition
+        UIView.animate(withDuration: duration, delay: 0, options:[.curveLinear, .allowUserInteraction]) {
+            viewToMove.frame.origin = newPosition
+        }
+        
+       
         
 }
     func update(score: Int) {
 
 }
+
+
     
     // Action
     @IBAction
@@ -78,6 +87,14 @@ extension GameViewController: GameViewControllerProtocol {
         frame.origin = translate(fruitPosition: fruit.position)
         imageView.frame = frame
         imageView.isUserInteractionEnabled = true
+        
+        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+        animation.fromValue = 0
+        animation.toValue = CGFloat.pi * 2
+        animation.duration = 0.5
+        animation.repeatCount = .infinity
+        imageView.layer.add(animation, forKey: "rotation")
+        
         addGestureRecogniser(to: imageView)
         return imageView
     }
