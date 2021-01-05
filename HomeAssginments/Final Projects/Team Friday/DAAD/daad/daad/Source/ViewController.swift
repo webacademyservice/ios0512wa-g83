@@ -8,9 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var logInButton: UIButton!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        logInButton.layer.cornerRadius = 15
+        logInButton.layer.masksToBounds = true
         
     }
 
