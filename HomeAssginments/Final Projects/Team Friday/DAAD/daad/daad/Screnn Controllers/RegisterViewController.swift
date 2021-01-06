@@ -12,6 +12,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Welcome"
         enterButton.layer.cornerRadius = 15
         enterButton.layer.masksToBounds = true
 

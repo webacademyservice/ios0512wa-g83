@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -300,34 +299,37 @@
                                 <state key="normal" title="SIGN UP FREE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hLB-K5-xfg" kind="show" id="0C2-gJ-8ch"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-m5-y9t">
-                                <rect key="frame" x="67" y="812" width="280" height="50"/>
+                                <rect key="frame" x="80" y="822" width="254" height="40"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="a8p-nl-Rsp"/>
+                                    <constraint firstAttribute="height" constant="40" id="hp0-Pn-OwD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="LOG IN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hLB-K5-xfg" kind="show" id="kX2-mj-fph"/>
+                                    <segue destination="gue-sT-ZNN" kind="show" id="ldo-M0-ua7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="EMj-by-Gnb"/>
+                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="6LW-aA-ZBx"/>
+                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="centerX" secondItem="IGm-bm-yca" secondAttribute="centerX" id="EFl-Yn-Tdr"/>
                             <constraint firstItem="IGm-bm-yca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="F5Y-5h-RX4"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMG-w2-314"/>
+                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ITC-f0-G6Q"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Jni-cg-xP5"/>
-                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="W0h-eY-JUQ"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="91" id="b2C-NF-bnn"/>
-                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="top" secondItem="IGm-bm-yca" secondAttribute="bottom" constant="62" id="g1x-wi-8DF"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="centerX" secondItem="IGm-bm-yca" secondAttribute="centerX" id="g9W-6U-hrp"/>
-                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="centerX" secondItem="IGm-bm-yca" secondAttribute="centerX" id="wTI-EC-zjZ"/>
+                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="top" secondItem="IGm-bm-yca" secondAttribute="bottom" constant="72" id="oZF-E3-WkX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ipn-Wy-Qw5"/>
@@ -337,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="96"/>
+            <point key="canvasLocation" x="225" y="96"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="y94-IU-j3F">
@@ -407,11 +409,11 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="gue-sT-ZNN" kind="show" id="yBL-eE-yPX"/>
+                                                    <segue destination="gue-sT-ZNN" kind="show" id="Mp0-mm-aX6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="b7z-nD-gph" firstAttribute="leading" secondItem="D3s-qj-WY9" secondAttribute="leading" constant="40" id="1b7-SW-noE"/>
                                             <constraint firstItem="b7z-nD-gph" firstAttribute="top" secondItem="D3s-qj-WY9" secondAttribute="top" constant="80" id="UzR-Zm-Kbk"/>
@@ -426,7 +428,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K8I-xd-EOr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="K8I-xd-EOr" firstAttribute="bottom" secondItem="F1d-59-Ln3" secondAttribute="bottom" id="FaZ-ki-dVf"/>
                             <constraint firstItem="F1d-59-Ln3" firstAttribute="top" secondItem="K8I-xd-EOr" secondAttribute="top" id="iLn-gi-cBW"/>
@@ -441,7 +443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJU-Y5-mEl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1325" y="96"/>
+            <point key="canvasLocation" x="1217" y="96"/>
         </scene>
         <!--Main-->
         <scene sceneID="iMI-ob-6m6">
@@ -494,9 +496,12 @@
                 </button>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUe-ue-7gG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-448" y="96"/>
+            <point key="canvasLocation" x="-649" y="96"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mp0-mm-aX6"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bag" catalog="system" width="128" height="128"/>
         <image name="cart" catalog="system" width="128" height="102"/>
@@ -506,8 +511,5 @@
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="watch-black" width="311.66665649414062" height="337.66665649414062"/>
         <image name="watch-red" width="155" height="242"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
