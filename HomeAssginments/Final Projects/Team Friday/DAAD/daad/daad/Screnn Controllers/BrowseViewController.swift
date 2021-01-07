@@ -8,10 +8,22 @@
 import UIKit
 
 class BrowseViewController: UIViewController {
-
+    @IBOutlet weak var goldenCell: UIView!
+    @IBOutlet weak var blackyCell: UIView!
+    @IBOutlet weak var silverCell: UIView!
+    @IBOutlet weak var silverBigCell: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Browse"
+        goldenCell.layer.cornerRadius = 25
+        goldenCell.layer.masksToBounds = true
+        blackyCell.layer.cornerRadius = 25
+        blackyCell.layer.masksToBounds = true
+        silverCell.layer.cornerRadius = 25
+        silverCell.layer.masksToBounds = true
+        silverBigCell.layer.cornerRadius = 25
+        silverBigCell.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }
