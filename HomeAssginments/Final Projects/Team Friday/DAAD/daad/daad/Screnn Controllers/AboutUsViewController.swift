@@ -8,10 +8,13 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
-
+    @IBOutlet weak var cellGreen: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "About Us"
+        cellGreen.layer.cornerRadius = 25
+        cellGreen.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }
