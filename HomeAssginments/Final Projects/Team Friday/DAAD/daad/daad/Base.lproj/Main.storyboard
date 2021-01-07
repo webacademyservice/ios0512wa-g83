@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Hf-eDu">
-                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="703"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-E3-q8K">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="2400"/>
@@ -208,17 +208,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGn-jG-rVF">
-                                <rect key="frame" x="20" y="140" width="388" height="350"/>
+                                <rect key="frame" x="20" y="140" width="388" height="360"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Z-OZ-Qeb">
-                                        <rect key="frame" x="0.0" y="0.0" width="1438" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1438" height="360"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gld-E5-FMU">
-                                                <rect key="frame" x="0.0" y="0.0" width="344" height="350"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="344" height="360"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-e7-jSq">
-                                                        <rect key="frame" x="52" y="0.0" width="240" height="350"/>
+                                                        <rect key="frame" x="52" y="0.0" width="240" height="360"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="240" id="Dw5-Wb-95m"/>
                                                         </constraints>
@@ -228,7 +228,6 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="Wc4-e7-jSq" firstAttribute="leading" secondItem="gld-E5-FMU" secondAttribute="leading" constant="52" id="8ol-OW-TyA"/>
                                                     <constraint firstItem="Wc4-e7-jSq" firstAttribute="centerY" secondItem="gld-E5-FMU" secondAttribute="centerY" id="OKi-W8-QGg"/>
@@ -237,10 +236,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ5-EF-svR">
-                                                <rect key="frame" x="364" y="0.0" width="344" height="350"/>
+                                                <rect key="frame" x="364" y="0.0" width="344" height="360"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMq-Mt-fxE">
-                                                        <rect key="frame" x="57" y="4" width="230" height="346"/>
+                                                        <rect key="frame" x="57" y="4" width="230" height="356"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="230" id="9mj-Ok-p7O"/>
                                                         </constraints>
@@ -256,10 +255,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0K-Jy-h7F">
-                                                <rect key="frame" x="728" y="0.0" width="346" height="350"/>
+                                                <rect key="frame" x="728" y="0.0" width="346" height="360"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsN-og-oei">
-                                                        <rect key="frame" x="68" y="8" width="210" height="334"/>
+                                                        <rect key="frame" x="68" y="8" width="210" height="344"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="210" id="fhK-sn-tzb"/>
                                                         </constraints>
@@ -275,10 +274,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ho-d7-jM5">
-                                                <rect key="frame" x="1094" y="0.0" width="344" height="350"/>
+                                                <rect key="frame" x="1094" y="0.0" width="344" height="360"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTC-eX-jla">
-                                                        <rect key="frame" x="47" y="1" width="250" height="348"/>
+                                                        <rect key="frame" x="47" y="1" width="250" height="358"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="250" id="pmP-qZ-gaa"/>
                                                         </constraints>
@@ -306,6 +305,14 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="BOr-VB-Ksz"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="282-ut-eJh"/>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L3-kT-Jlv">
+                                <rect key="frame" x="20" y="531" width="388" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">High quality, affordable and fashionable watches for men and women. Our watches are reliable and have high quality, but they are still eco friendly.</string>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z63-mn-aej"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -423,19 +430,8 @@
                                     <constraint firstAttribute="height" constant="332" id="HXF-cw-Bhs"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-bm-yca">
-                                <rect key="frame" x="150" y="748" width="128" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="SIGN UP FREE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="hLB-K5-xfg" kind="show" id="2yi-Sg-bAf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-m5-y9t">
                                 <rect key="frame" x="80" y="852" width="268" height="40"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hp0-Pn-OwD"/>
                                 </constraints>
@@ -447,24 +443,38 @@
                                     <segue destination="gue-sT-ZNN" kind="show" id="5Wz-bc-DiT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-bm-yca">
+                                <rect key="frame" x="80" y="748" width="268" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="s9M-ta-UXY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="SIGN UP FREE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hLB-K5-xfg" kind="show" id="2yi-Sg-bAf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9Gw-m5-y9t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="6LW-aA-ZBx"/>
-                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="centerX" secondItem="IGm-bm-yca" secondAttribute="centerX" id="EFl-Yn-Tdr"/>
-                            <constraint firstItem="IGm-bm-yca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="F5Y-5h-RX4"/>
+                            <constraint firstItem="IGm-bm-yca" firstAttribute="trailing" secondItem="9Gw-m5-y9t" secondAttribute="trailing" id="FIZ-Sb-Q3T"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMG-w2-314"/>
                             <constraint firstItem="9Gw-m5-y9t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ITC-f0-G6Q"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="Jni-cg-xP5"/>
+                            <constraint firstItem="IGm-bm-yca" firstAttribute="centerX" secondItem="naO-ch-OuU" secondAttribute="centerX" id="Owm-26-DZc"/>
+                            <constraint firstItem="IGm-bm-yca" firstAttribute="leading" secondItem="9Gw-m5-y9t" secondAttribute="leading" id="ZKH-Cr-S6U"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="b2C-NF-bnn"/>
-                            <constraint firstItem="naO-ch-OuU" firstAttribute="centerX" secondItem="IGm-bm-yca" secondAttribute="centerX" id="g9W-6U-hrp"/>
-                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="top" secondItem="IGm-bm-yca" secondAttribute="bottom" constant="72" id="oZF-E3-WkX"/>
+                            <constraint firstItem="9Gw-m5-y9t" firstAttribute="top" secondItem="IGm-bm-yca" secondAttribute="bottom" constant="64" id="hJO-NR-cBf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ipn-Wy-Qw5"/>
                     <connections>
                         <outlet property="LogInButton" destination="9Gw-m5-y9t" id="gC5-xa-VMK"/>
+                        <outlet property="signInButton" destination="IGm-bm-yca" id="lRg-xm-z3o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

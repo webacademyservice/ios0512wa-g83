@@ -18,6 +18,8 @@ class BrowseViewController: UIViewController {
         title = "Browse"
         goldenCell.layer.cornerRadius = 25
         goldenCell.layer.masksToBounds = true
+        goldenCell.layer.borderWidth = 1
+        goldenCell.layer.borderColor = UIColor.white.cgColor
         blackyCell.layer.cornerRadius = 25
         blackyCell.layer.masksToBounds = true
         silverCell.layer.cornerRadius = 25

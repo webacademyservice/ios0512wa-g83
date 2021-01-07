@@ -15,6 +15,9 @@ class RegisterViewController: UIViewController {
         title = "Welcome"
         enterButton.layer.cornerRadius = 15
         enterButton.layer.masksToBounds = true
+        enterButton.layer.borderWidth = 1
+        enterButton.layer.borderColor = UIColor.white.cgColor
+        
 
         // Do any additional setup after loading the view.
     }
