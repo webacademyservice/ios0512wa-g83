@@ -22,10 +22,16 @@ class BrowseViewController: UIViewController {
         goldenCell.layer.borderColor = UIColor.white.cgColor
         blackyCell.layer.cornerRadius = 25
         blackyCell.layer.masksToBounds = true
+        blackyCell.layer.borderWidth = 1
+        blackyCell.layer.borderColor = UIColor.white.cgColor
         silverCell.layer.cornerRadius = 25
         silverCell.layer.masksToBounds = true
+        silverCell.layer.borderWidth = 1
+        silverCell.layer.borderColor = UIColor.white.cgColor
         silverBigCell.layer.cornerRadius = 25
         silverBigCell.layer.masksToBounds = true
+        silverBigCell.layer.borderWidth = 1
+        silverBigCell.layer.borderColor = UIColor.white.cgColor
 
         // Do any additional setup after loading the view.
     }
