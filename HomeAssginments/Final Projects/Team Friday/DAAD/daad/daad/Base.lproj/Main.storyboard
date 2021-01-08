@@ -70,8 +70,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Hf-eDu">
-                                <rect key="frame" x="0.0" y="140" width="428" height="703"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Hf-eDu">
+                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-E3-q8K">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="2400"/>
@@ -95,7 +95,7 @@
                                                             <constraint firstAttribute="width" constant="388" id="4qy-iK-nZV"/>
                                                             <constraint firstAttribute="height" constant="275" id="Ntq-fZ-tJl"/>
                                                         </constraints>
-                                                        <state key="normal" image="main-image"/>
+                                                        <state key="normal" backgroundImage="main-image"/>
                                                         <connections>
                                                             <segue destination="dzg-7n-mx1" kind="modal" modalTransitionStyle="flipHorizontal" id="Au0-Q3-KwX"/>
                                                         </connections>
@@ -114,13 +114,6 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJw-hl-FYx">
                                                 <rect key="frame" x="0.0" y="800" width="428" height="800"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch-black" translatesAutoresizingMaskIntoConstraints="NO" id="LpM-hd-zjn">
-                                                        <rect key="frame" x="15" y="386" width="398" height="428"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="398" id="2fX-HE-dSV"/>
-                                                            <constraint firstAttribute="height" constant="428" id="qcY-1I-rBJ"/>
-                                                        </constraints>
-                                                    </imageView>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Our goal is to produce reliable and eco-friendly premium product" translatesAutoresizingMaskIntoConstraints="NO" id="zrA-pH-DQS">
                                                         <rect key="frame" x="16" y="61" width="412" height="120"/>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,26 +124,31 @@
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKi-j7-YQB">
+                                                        <rect key="frame" x="57" y="444" width="314" height="338"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="338" id="BmW-ZA-1YB"/>
+                                                            <constraint firstAttribute="width" constant="314" id="gix-mj-jKU"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="watch-black"/>
+                                                        <connections>
+                                                            <segue destination="UFV-5w-1Ls" kind="modal" modalTransitionStyle="flipHorizontal" id="z0G-12-RKk"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="LpM-hd-zjn" firstAttribute="centerY" secondItem="xJw-hl-FYx" secondAttribute="centerY" multiplier="3/2" id="2Ww-vU-Erw"/>
                                                     <constraint firstAttribute="height" constant="800" id="NWS-RY-BU7"/>
-                                                    <constraint firstItem="LpM-hd-zjn" firstAttribute="centerX" secondItem="xJw-hl-FYx" secondAttribute="centerX" id="TJ4-Gz-oWI"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DKi-j7-YQB" secondAttribute="bottom" constant="18" id="R1P-mQ-aUv"/>
                                                     <constraint firstAttribute="trailing" secondItem="zrA-pH-DQS" secondAttribute="trailing" id="bPQ-27-9Dg"/>
                                                     <constraint firstItem="zrA-pH-DQS" firstAttribute="top" secondItem="xJw-hl-FYx" secondAttribute="top" constant="61" id="uay-Sv-T6P"/>
                                                     <constraint firstItem="zrA-pH-DQS" firstAttribute="leading" secondItem="xJw-hl-FYx" secondAttribute="leading" constant="16" id="w4x-JG-iVB"/>
+                                                    <constraint firstItem="DKi-j7-YQB" firstAttribute="centerX" secondItem="xJw-hl-FYx" secondAttribute="centerX" id="zXG-xl-dKG"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cP-kq-pmG">
                                                 <rect key="frame" x="0.0" y="1600" width="428" height="800"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watch-red" translatesAutoresizingMaskIntoConstraints="NO" id="aS7-Oq-riE">
-                                                        <rect key="frame" x="8" y="316" width="412" height="496"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="496" id="I2R-e2-XIc"/>
-                                                        </constraints>
-                                                    </imageView>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="We want to change our attitude to the watch" translatesAutoresizingMaskIntoConstraints="NO" id="kk4-k5-2Xd">
                                                         <rect key="frame" x="16" y="80" width="412" height="76"/>
                                                         <constraints>
@@ -160,16 +158,21 @@
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwZ-fc-LfZ">
+                                                        <rect key="frame" x="68" y="336" width="293" height="457"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" backgroundImage="watch-red"/>
+                                                        <connections>
+                                                            <segue destination="wv3-sL-abK" kind="modal" modalTransitionStyle="flipHorizontal" id="Mo1-vA-zXU"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="kk4-k5-2Xd" secondAttribute="trailing" id="InB-v0-eJt"/>
                                                     <constraint firstAttribute="height" constant="800" id="M2G-BU-wta"/>
                                                     <constraint firstItem="kk4-k5-2Xd" firstAttribute="leading" secondItem="9cP-kq-pmG" secondAttribute="leading" constant="16" id="YzQ-VH-Bbr"/>
-                                                    <constraint firstItem="aS7-Oq-riE" firstAttribute="trailing" secondItem="9cP-kq-pmG" secondAttribute="trailingMargin" id="eud-g2-yP9"/>
-                                                    <constraint firstItem="aS7-Oq-riE" firstAttribute="leading" secondItem="9cP-kq-pmG" secondAttribute="leadingMargin" id="gIQ-pj-AYQ"/>
                                                     <constraint firstItem="kk4-k5-2Xd" firstAttribute="top" secondItem="9cP-kq-pmG" secondAttribute="top" constant="80" id="sDm-Fl-jTN"/>
-                                                    <constraint firstAttribute="bottom" secondItem="aS7-Oq-riE" secondAttribute="bottom" constant="-12" id="xGp-7E-CKr"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -200,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Daf-b7-qku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4362.6168224299063" y="-549.46004319654435"/>
+            <point key="canvasLocation" x="4363" y="-1381"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tSy-16-UjD">
@@ -222,7 +225,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnE-ui-lab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5796.7289719626169" y="-549.46004319654435"/>
+            <point key="canvasLocation" x="5274" y="-1381"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NtQ-8U-x8Q">
+            <objects>
+                <viewController id="wv3-sL-abK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekj-2T-JjX">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-red" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-9b-KkO">
+                                <rect key="frame" x="68" y="20" width="293" height="457"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gY8-vl-iQv"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6OF-N0-ckr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9WS-IX-ixf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4363" y="-619"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qvV-0i-ixg">
+            <objects>
+                <viewController id="UFV-5w-1Ls" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MtM-lM-ppz">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-black" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-fs-wT6">
+                                <rect key="frame" x="57" y="44" width="314" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AGn-Qh-ggF"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rQI-jW-N7z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnv-6s-dDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5274" y="-619"/>
         </scene>
         <!--Browse-->
         <scene sceneID="RSm-gQ-aci">
@@ -372,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rvd-IT-mtD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5797" y="89"/>
+            <point key="canvasLocation" x="5274" y="96"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lme-3G-U1F">
@@ -625,7 +672,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUP-KT-Wve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3414" y="-549"/>
+            <point key="canvasLocation" x="3409" y="-619"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FyL-Tv-AWj">
