@@ -16,11 +16,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        logInButton.layer.cornerRadius = 15
+        logInButton.layer.cornerRadius = 20
         logInButton.layer.masksToBounds = true
         logInButton.layer.borderWidth = 1
         logInButton.layer.borderColor = UIColor.white.cgColor
-        signInButton.layer.cornerRadius = 15
+        signInButton.layer.cornerRadius = 20
         signInButton.layer.masksToBounds = true
         signInButton.layer.borderWidth = 1
         signInButton.layer.borderColor = UIColor.white.cgColor
