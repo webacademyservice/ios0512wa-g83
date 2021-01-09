@@ -9,12 +9,21 @@ import UIKit
 
 class PetSelectionViewController: UIViewController {
 
-    typealias DataSource = UITableViewDiffableDataSource<Int, Pet>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Pet>
+    // MARK: Embedded Types
+    private typealias DataSource = UITableViewDiffableDataSource<Int, Pet>
+    private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Pet>
 
+    // MARK: Outlets
+    @IBOutlet weak var bottonConstraint: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchField: UITextField!
 
+    // MARK: Public variables
     var petService: StorageServiceProtocol!
+    lazy var notificationCenter: NotificationCenter = .default
+
+    // MARK: Private variables
+    private var tokens: [AnyObject] = []
 
     private lazy var dataSource: DataSource = {
         return DataSource(tableView: tableView) { (tableView, indexPath, pet) -> UITableViewCell? in
@@ -28,6 +37,7 @@ class PetSelectionViewController: UIViewController {
         }
     }()
 
+    // MARK: Dynamic properties
     private var pets: [Pet] {
         set {
             var snapshot = Snapshot()
@@ -40,14 +50,20 @@ class PetSelectionViewController: UIViewController {
         }
     }
 
+    // MARK: Overrides
+
+    deinit {
+        tokens.forEach{ notificationCenter.removeObserver($0) }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
         petService = StorageService()
         petService.loadPets()
         pets = petService.allPets
+        subscribe()
     }
-
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -64,8 +80,67 @@ class PetSelectionViewController: UIViewController {
         destination.currentPet = pet
     }
 
+    // Подключен к строке поиска и кнопке
+    @IBAction func search(_ sender: Any) {
+        guard let query = searchField.text, query.count > 0 else {
+            pets = petService.allPets
+            return
+        }
+
+        pets = petService.search(for: query)
+    }
+
+    // MARK: Private functions
+    private func subscribe() {
+
+        // Подписаться на изменения клавиатуры
+        let keyboardToken = notificationCenter.addObserver(
+            forName: UITextField.keyboardWillChangeFrameNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] (notifcation) in
+            guard
+                let self = self,
+                let info = notifcation.userInfo,
+                let frame = info[UITextField.keyboardFrameEndUserInfoKey] as? CGRect,
+                let duration = info[UITextField.keyboardAnimationDurationUserInfoKey] as? TimeInterval
+            else {
+                assertionFailure("Notification info is incorrect")
+                return
+            }
+
+            // Установить начальное состояние таблицы
+            self.bottonConstraint.constant = 0
+            self.view.layoutIfNeeded()
+
+            // Расчитать прересечение таблицы с клавиатурой
+            let viewFrame = self.view.convert(self.tableView.frame, to: nil)
+            let intersection = (viewFrame).intersection(frame)
+
+            // Сдавинуть таблицу на высоту пересечения
+            self.bottonConstraint.constant = intersection.height
+
+            // Обновить лейаут с анимацией заданой длительности
+            UIView.animate(withDuration: duration) {
+                self.view.layoutIfNeeded()
+            }
+        }
+        tokens.append(keyboardToken)
+
+        // Подписаться на изменение состояния аппки
+        let appStateToken = notificationCenter.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: .main) { [weak self] _ in
+
+            // Сбросить строку поиска
+            self?.searchField.text = nil
+            // Загрузить всех петов
+            self?.pets = self?.petService.allPets ?? []
+        }
+        tokens.append(appStateToken)
+    }
+
 }
 
+// MARK: Старый дата сорс, оставлен для сравнения с Diffable
 //extension PetSelectionViewController: UITableViewDataSource {
 //    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //
