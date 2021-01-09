@@ -97,7 +97,7 @@
                                                         </constraints>
                                                         <state key="normal" backgroundImage="main-image"/>
                                                         <connections>
-                                                            <segue destination="dzg-7n-mx1" kind="modal" modalTransitionStyle="flipHorizontal" id="Au0-Q3-KwX"/>
+                                                            <segue destination="dzg-7n-mx1" kind="show" id="Au0-Q3-KwX"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -132,7 +132,7 @@
                                                         </constraints>
                                                         <state key="normal" backgroundImage="watch-black"/>
                                                         <connections>
-                                                            <segue destination="UFV-5w-1Ls" kind="modal" modalTransitionStyle="flipHorizontal" id="z0G-12-RKk"/>
+                                                            <segue destination="UFV-5w-1Ls" kind="show" id="z0G-12-RKk"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -163,7 +163,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" backgroundImage="watch-red"/>
                                                         <connections>
-                                                            <segue destination="wv3-sL-abK" kind="modal" modalTransitionStyle="flipHorizontal" id="Mo1-vA-zXU"/>
+                                                            <segue destination="wv3-sL-abK" kind="show" id="Mo1-vA-zXU"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -210,7 +210,7 @@
             <objects>
                 <viewController id="dzg-7n-mx1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cvp-fA-EM9">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main-image" translatesAutoresizingMaskIntoConstraints="NO" id="ss8-pP-lGR">
@@ -232,7 +232,7 @@
             <objects>
                 <viewController id="wv3-sL-abK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ekj-2T-JjX">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-red" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-9b-KkO">
@@ -254,7 +254,7 @@
             <objects>
                 <viewController id="UFV-5w-1Ls" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MtM-lM-ppz">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-black" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-fs-wT6">
@@ -292,7 +292,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Z-OZ-Qeb">
-                                        <rect key="frame" x="0.0" y="0.0" width="1438" height="370"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="3726" height="370"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gld-E5-FMU">
                                                 <rect key="frame" x="0.0" y="0.0" width="344" height="370"/>
@@ -304,7 +304,7 @@
                                                         </constraints>
                                                         <state key="normal" image="golden-watch"/>
                                                         <connections>
-                                                            <segue destination="p4e-MG-4Y7" kind="modal" modalTransitionStyle="flipHorizontal" id="CDX-BE-cyE"/>
+                                                            <segue destination="p4e-MG-4Y7" kind="show" id="CDX-BE-cyE"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -334,13 +334,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0K-Jy-h7F">
-                                                <rect key="frame" x="728" y="0.0" width="346" height="370"/>
+                                                <rect key="frame" x="728" y="0.0" width="2190" height="370"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsN-og-oei">
-                                                        <rect key="frame" x="68" y="8" width="210" height="354"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="210" id="fhK-sn-tzb"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="68" y="8" width="2054" height="354"/>
                                                         <state key="normal" title="Button" image="silver-small-watch"/>
                                                     </button>
                                                 </subviews>
@@ -352,13 +349,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ho-d7-jM5">
-                                                <rect key="frame" x="1094" y="0.0" width="344" height="370"/>
+                                                <rect key="frame" x="2938" y="0.0" width="788" height="370"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTC-eX-jla">
-                                                        <rect key="frame" x="47" y="1" width="250" height="368"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="250" id="pmP-qZ-gaa"/>
-                                                        </constraints>
+                                                        <rect key="frame" x="47" y="1" width="694" height="368"/>
                                                         <state key="normal" title="Button" image="silver-watch"/>
                                                     </button>
                                                 </subviews>
@@ -404,7 +398,7 @@
             <objects>
                 <viewController id="p4e-MG-4Y7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGH-xu-WeR">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golden-watch" translatesAutoresizingMaskIntoConstraints="NO" id="D4U-nr-eLE">
