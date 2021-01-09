@@ -43,6 +43,6 @@ extension Pet: Hashable {
 
 extension Pet: Equatable {
     static func == (lhs: Pet, rhs: Pet) -> Bool {
-        lhs.hashValue != rhs.hashValue
+        lhs.hashValue == rhs.hashValue
     }
 }

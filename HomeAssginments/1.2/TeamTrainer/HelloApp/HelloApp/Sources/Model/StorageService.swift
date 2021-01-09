@@ -12,6 +12,8 @@ protocol StorageServiceProtocol {
 
     func loadPets()
 
+    func search(for query: String) -> [Pet]
+
     var allPets: [Pet] { get }
 }
 
@@ -25,6 +27,10 @@ class StorageService: StorageServiceProtocol {
 
     var allPets: [Pet] {
         get { return pets }
+    }
+
+    func search(for query: String) -> [Pet] {
+        pets.filter { return $0.name.lowercased().contains(query.lowercased()) }
     }
 
     func loadPets() {
