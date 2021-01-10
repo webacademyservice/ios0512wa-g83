@@ -18,6 +18,8 @@
 		8685873F2584CB370033A6E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8685873D2584CB370033A6E3 /* LaunchScreen.storyboard */; };
 		86C1800825974CFF00C08D20 /* PetTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1800725974CFF00C08D20 /* PetTagCollectionViewCell.swift */; };
 		86C1800E2598952800C08D20 /* PetSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1800D2598952800C08D20 /* PetSelectionViewController.swift */; };
+		86FB734025AB13140064167D /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB733F25AB13140064167D /* DependencyManager.swift */; };
+		86FB734425AB15BF0064167D /* MockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB734325AB15BF0064167D /* MockStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		868587402584CB370033A6E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86C1800725974CFF00C08D20 /* PetTagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTagCollectionViewCell.swift; sourceTree = "<group>"; };
 		86C1800D2598952800C08D20 /* PetSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSelectionViewController.swift; sourceTree = "<group>"; };
+		86FB733F25AB13140064167D /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		86FB734325AB15BF0064167D /* MockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			children = (
 				8641167325862623009C9199 /* StorageService.swift */,
 				864116772586265F009C9199 /* Pet.swift */,
+				86FB734325AB15BF0064167D /* MockStorage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 		868587482584CCCE0033A6E3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				86FB733E25AB13060064167D /* Services */,
 				863E093E2592496D00943BF0 /* Extensions */,
 				8641167225862601009C9199 /* Model */,
 				8641166C25861CFD009C9199 /* Controllers */,
@@ -128,6 +134,14 @@
 				86C1800D2598952800C08D20 /* PetSelectionViewController.swift */,
 			);
 			path = PetSelection;
+			sourceTree = "<group>";
+		};
+		86FB733E25AB13060064167D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				86FB733F25AB13140064167D /* DependencyManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +219,10 @@
 				86C1800E2598952800C08D20 /* PetSelectionViewController.swift in Sources */,
 				86C1800825974CFF00C08D20 /* PetTagCollectionViewCell.swift in Sources */,
 				868587332584CB350033A6E3 /* AppDelegate.swift in Sources */,
+				86FB734425AB15BF0064167D /* MockStorage.swift in Sources */,
 				864116782586265F009C9199 /* Pet.swift in Sources */,
 				868587352584CB350033A6E3 /* SceneDelegate.swift in Sources */,
+				86FB734025AB13140064167D /* DependencyManager.swift in Sources */,
 				8641166F25861D81009C9199 /* PetDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,7 +19,11 @@ class PetSelectionViewController: UIViewController {
     @IBOutlet weak var searchField: UITextField!
 
     // MARK: Public variables
-    var petService: StorageServiceProtocol!
+
+    lazy var petService: StorageServiceProtocol = {
+        return DependencyManager.shared.storageService
+    }()
+
     lazy var notificationCenter: NotificationCenter = .default
 
     // MARK: Private variables
@@ -59,10 +63,14 @@ class PetSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = dataSource
-        petService = StorageService()
         petService.loadPets()
         pets = petService.allPets
         subscribe()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reset()
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -80,6 +88,8 @@ class PetSelectionViewController: UIViewController {
         destination.currentPet = pet
     }
 
+    // MARK: Actions
+    
     // Подключен к строке поиска и кнопке
     @IBAction func search(_ sender: Any) {
         guard let query = searchField.text, query.count > 0 else {
@@ -128,14 +138,22 @@ class PetSelectionViewController: UIViewController {
         tokens.append(keyboardToken)
 
         // Подписаться на изменение состояния аппки
-        let appStateToken = notificationCenter.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: .main) { [weak self] _ in
-
-            // Сбросить строку поиска
-            self?.searchField.text = nil
-            // Загрузить всех петов
-            self?.pets = self?.petService.allPets ?? []
+        let appStateToken = notificationCenter.addObserver(
+            forName: UIApplication.willResignActiveNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.reset()
         }
+
         tokens.append(appStateToken)
+    }
+
+    private func reset() {
+        // Сбросить строку поиска
+        searchField.text = nil
+        // Загрузить всех петов
+        pets = petService.allPets
     }
 
 }
