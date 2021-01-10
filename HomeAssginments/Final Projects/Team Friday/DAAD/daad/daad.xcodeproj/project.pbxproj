@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		803129D825A4A64500026E3E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803129D725A4A64500026E3E /* RegisterViewController.swift */; };
+		80001F0B25A4B6B00067B8F7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80001F0A25A4B6B00067B8F7 /* RegisterViewController.swift */; };
 		807CCA9E259A40F40032898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCA9D259A40F40032898C /* AppDelegate.swift */; };
 		807CCAA0259A40F40032898C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCA9F259A40F40032898C /* SceneDelegate.swift */; };
 		807CCAA2259A40F40032898C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCAA1259A40F40032898C /* ViewController.swift */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		803129D725A4A64500026E3E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		80001F0A25A4B6B00067B8F7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		807CCA9A259A40F40032898C /* daad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		807CCA9D259A40F40032898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		807CCA9F259A40F40032898C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,16 +106,20 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-		80001F0025A4AD980067B8F7 /* Screnn Controllers */ = {
+
+		80001F0025A4AD980067B8F7 /* Screen Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				803129D725A4A64500026E3E /* RegisterViewController.swift */,
+
 				80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */,
 				80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */,
 				80A7B5DC25A1E8BD001DF9CA /* MainScreenViewController.swift */,
 				80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */,
+
+				80001F0A25A4B6B00067B8F7 /* RegisterViewController.swift */,
 			);
-			path = "Screnn Controllers";
+			path = "Screen Controllers";
+
 			sourceTree = "<group>";
 		};
 		807CCA91259A40F40032898C = {
@@ -139,7 +143,9 @@
 		807CCA9C259A40F40032898C /* daad */ = {
 			isa = PBXGroup;
 			children = (
-				80001F0025A4AD980067B8F7 /* Screnn Controllers */,
+
+				80001F0025A4AD980067B8F7 /* Screen Controllers */,
+
 				0404D12025A0903D008E82FA /* Source */,
 				807CCAA3259A40F40032898C /* Main.storyboard */,
 				807CCAA6259A40F80032898C /* Assets.xcassets */,
@@ -301,7 +307,7 @@
 				807CCAA2259A40F40032898C /* ViewController.swift in Sources */,
 				80A7B5DD25A1E8BD001DF9CA /* MainScreenViewController.swift in Sources */,
 				807CCA9E259A40F40032898C /* AppDelegate.swift in Sources */,
-				803129D825A4A64500026E3E /* RegisterViewController.swift in Sources */,
+				80001F0B25A4B6B00067B8F7 /* RegisterViewController.swift in Sources */,
 				807CCAA0259A40F40032898C /* SceneDelegate.swift in Sources */,
 				80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */,
 				80A7B5E225A1E8D8001DF9CA /* BrowseViewController.swift in Sources */,
