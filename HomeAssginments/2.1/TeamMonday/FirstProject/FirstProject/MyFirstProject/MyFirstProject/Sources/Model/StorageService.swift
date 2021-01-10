@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// Дженерик протокол
 protocol StorageServiceProtocol {
     associatedtype StudentType:Equatable
     func nextCourse() -> Course<StudentType>

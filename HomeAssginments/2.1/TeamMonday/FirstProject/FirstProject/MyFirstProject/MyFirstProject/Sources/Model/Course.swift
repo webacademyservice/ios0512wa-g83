@@ -21,7 +21,7 @@ struct Course<StudentType:Equatable>: SomeProtocol {
     var description: String
 
 }
-// ввела функцию как расширение структуры Курса
+// ввела функцию как расширение структуры Курса, ф-ю сравнения нигде не используем, ДЗ 1.2
 extension Course {
     func findCommonStudents(studentsGroup:Array<StudentType>) -> Array<StudentType> {
         var  compareStud = Array<StudentType>()
