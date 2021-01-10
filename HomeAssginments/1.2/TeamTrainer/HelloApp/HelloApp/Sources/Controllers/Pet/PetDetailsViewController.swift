@@ -16,21 +16,69 @@ class PetDetailsViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
 
     var currentPet: Pet?
+    var tokens: [NSObjectProtocol] = []
 
-    var petService: StorageServiceProtocol!
+    lazy var petService: StorageServiceProtocol = {
+        return DependencyManager.shared.storageService
+    }()
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
 
     // MARK: Overrides
     override func viewDidLoad() {
-        petService = StorageService()
         petService.loadPets()
         collectionView.allowsMultipleSelection = false
 
+        tokens.append( NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { [weak self] _ in
+
+            self?.resetView()
+            self?.postProcess()
+
+        })
+
         super.viewDidLoad()
-        if let currentPet = currentPet {
-            updateUI(for: currentPet)
-        } else {
-            refresh()
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        imageView.image = nil
+    }
+
+    deinit {
+        tokens.forEach{
+            NotificationCenter.default.removeObserver($0)
         }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        // Демострация: сделать вью полупрозрачным перед показом
+        self.view.alpha = 0.5
+        // и убрать контент из контейнера
+        resetView()
+        super.viewWillAppear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        // Демострация: под конец анимации - убрать прозрачность
+        self.view.alpha = 1
+        // и показать значение
+        postProcess()
+        super.viewDidAppear(animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        // Демострация: сделать вью 1/4 прозрачным пока убирается с экрана
+        self.view.alpha = 0.75
+        super.viewWillDisappear(animated)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        // Демострация - обнулить пета
+        currentPet = nil
+        super.viewDidDisappear(animated)
     }
 
     // MARK: Action
@@ -87,6 +135,20 @@ class PetDetailsViewController: UIViewController {
         currentPet = pet
 
         updateUI(for: pet)
+    }
+
+    fileprivate func postProcess() {
+        if let currentPet = currentPet {
+            updateUI(for: currentPet)
+        } else {
+            refresh()
+        }
+    }
+
+    fileprivate func resetView() {
+        topTitleLabel.text = ""
+        imageView.image = nil
+        subTitleLabel.text = ""
     }
 }
 

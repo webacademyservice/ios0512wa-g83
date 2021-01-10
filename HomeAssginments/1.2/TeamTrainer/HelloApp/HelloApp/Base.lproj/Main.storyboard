@@ -359,15 +359,15 @@ Description
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGs-EV-jOZ">
-                                <rect key="frame" x="150" y="288" width="46" height="30"/>
+                                <rect key="frame" x="105" y="288" width="136" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Показать табличку"/>
                                 <connections>
                                     <segue destination="OoX-tc-YdX" kind="show" id="VAY-0p-kv8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cx7-3r-eoI">
-                                <rect key="frame" x="150" y="401" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="поля для вывода клавиатуры" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cx7-3r-eoI">
+                                <rect key="frame" x="125" y="408" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -380,7 +380,7 @@ Description
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DmR-5I-kWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="1448"/>
+            <point key="canvasLocation" x="214" y="1474"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

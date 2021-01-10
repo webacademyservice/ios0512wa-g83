@@ -10,10 +10,35 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        /*
+         Добавлена новая "схема" выполнения аппки. Называется  `Mock HelloApp`.
+
+         (Когда выбираете симулятор, можно редаткировать схему "", или создать новую.)
+
+         Схема скоприрована из основной схемы, но добавлены "enviroment variable" `mockService`: `true`
+
+         Теперь при выборе симулятора можно выбрать схему запуска, и при запуске `Mock HelloApp` DependecyManager будет настроен с сервисом-заглушкой
+         */
+
+
+        if let envVar = ProcessInfo.processInfo.environment["mockService"], Bool(envVar) == true {
+
+            // Зарегестрировать с сервисом-заглушкой
+            DependencyManager.register(
+                storageService: MockStorage()
+            )
+
+        } else {
+
+            // Зарегестрировать с нормальным сервисом
+            DependencyManager.register(
+                storageService: StorageService()
+            )
+        }
+
         return true
     }
 

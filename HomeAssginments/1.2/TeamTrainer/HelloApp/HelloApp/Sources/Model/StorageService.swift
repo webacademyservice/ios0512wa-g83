@@ -9,14 +9,13 @@ import Foundation
 
 protocol StorageServiceProtocol {
     func getPet() -> Pet
-
     func loadPets()
-
     func search(for query: String) -> [Pet]
 
     var allPets: [Pet] { get }
 }
 
+/// Сервис с "пре-определенным" набором значений
 class StorageService: StorageServiceProtocol {
 
     private var pets: [Pet] = []
