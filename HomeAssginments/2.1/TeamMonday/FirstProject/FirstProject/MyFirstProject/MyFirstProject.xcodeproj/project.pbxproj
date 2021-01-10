@@ -16,6 +16,7 @@
 		F3250DB025A11CB4000526E1 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3250DAF25A11CB4000526E1 /* CourseDetailsViewController.swift */; };
 		F3250DB625A13E00000526E1 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3250DB525A13E00000526E1 /* StorageService.swift */; };
 		F3250DB925A13E81000526E1 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3250DB825A13E81000526E1 /* Course.swift */; };
+		F33CA17B25AB30FE00941BFB /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CA17A25AB30FE00941BFB /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3250DAF25A11CB4000526E1 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 		F3250DB525A13E00000526E1 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		F3250DB825A13E81000526E1 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		F33CA17A25AB30FE00941BFB /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		60F8B3A825893DCD0082ABF6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F33CA17925AB30D100941BFB /* Extensions */,
 				F3250DB425A13DD1000526E1 /* Model */,
 				F3250DAD25A11C19000526E1 /* Controllers */,
 				60F8B392258936730082ABF6 /* AppDelegate.swift */,
@@ -106,6 +109,14 @@
 				F3250DB825A13E81000526E1 /* Course.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F33CA17925AB30D100941BFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F33CA17A25AB30FE00941BFB /* UIImageExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			files = (
 				F3250DB925A13E81000526E1 /* Course.swift in Sources */,
 				F3250DB625A13E00000526E1 /* StorageService.swift in Sources */,
+				F33CA17B25AB30FE00941BFB /* UIImageExtension.swift in Sources */,
 				60F8B397258936730082ABF6 /* ViewController.swift in Sources */,
 				60F8B393258936730082ABF6 /* AppDelegate.swift in Sources */,
 				F3250DB025A11CB4000526E1 /* CourseDetailsViewController.swift in Sources */,
