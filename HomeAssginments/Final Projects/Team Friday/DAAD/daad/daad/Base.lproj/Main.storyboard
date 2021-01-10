@@ -507,9 +507,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-m5-y9t">
+
                                 <rect key="frame" x="80" y="719" width="268" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oiE-YT-N2Z"/>
+
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="LOG IN">
@@ -523,6 +525,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+
                             <constraint firstItem="9Gw-m5-y9t" firstAttribute="top" secondItem="IGm-bm-yca" secondAttribute="bottom" constant="35" id="2Dg-EJ-YOF"/>
                             <constraint firstItem="9Gw-m5-y9t" firstAttribute="trailing" secondItem="IGm-bm-yca" secondAttribute="trailing" id="B26-ub-2Mc"/>
                             <constraint firstItem="naO-ch-OuU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMG-w2-314"/>
@@ -532,12 +535,15 @@
                             <constraint firstItem="naO-ch-OuU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="b2C-NF-bnn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Gw-m5-y9t" secondAttribute="bottom" constant="133" id="mt0-Lt-z4n"/>
                             <constraint firstItem="9Gw-m5-y9t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="vnT-7B-Yvo"/>
+
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ipn-Wy-Qw5"/>
                     <connections>
                         <outlet property="LogInButton" destination="9Gw-m5-y9t" id="gC5-xa-VMK"/>
+
                         <outlet property="signInButton" destination="IGm-bm-yca" id="lRg-xm-z3o"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
