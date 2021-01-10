@@ -36,7 +36,7 @@ class CourseDetailsViewController: UIViewController {
         
         super.viewDidLoad()
         iconView.image = UIImage(named: "icon")
-        //добавить смену картинки при нажатии кнопки
+    //добавить смену картинки при нажатии кнопки
     }
    //MARK: Actions
     // кнопка вперед
