@@ -19,6 +19,7 @@ class CourseDetailsViewController: UIViewController {
     @IBOutlet weak var groupValueLabel: UILabel!
     @IBOutlet weak var descriptionLessonLabel: UILabel!
     
+    // опциональная, иначе будет требовать инит, при lazy тоже нужен инит
     var courseService: StringStudentStorageServiceProtocol!
 
     
@@ -37,6 +38,7 @@ class CourseDetailsViewController: UIViewController {
         iconView.image = UIImage(named: "icon")
     }
    //MARK: Actions
+    // кнопка вперед
     @IBAction func nextCourseButtonTapped(_ sender: Any) {
         
         let courseNext = courseService.nextCourse()
@@ -45,6 +47,7 @@ class CourseDetailsViewController: UIViewController {
         groupValueLabel.text = courseNext.nameOfGroup
         descriptionLessonLabel.text = courseNext.description
     }
+    // кнопка назад
     @IBAction func previousCourseButtonTapped(_ sender: Any) {
         
         let courseBack = courseService.previousCourse()

@@ -37,33 +37,4 @@ extension Course {
     }
 }
 
-//// Структура в структуре
-//struct Students <StudentType:Equatable> {
-//    var nameOfGroup: String
-//    let students: Array<StudentType>
-//}
-//
-//struct Course<StudentType:Equatable>: SomeProtocol {
-//    var nameOfCourse: String
-//    var teacher: String
-//    let groups: Array<Students<StudentType>>
-//}
-//
-//
-//// ввела функцию как расширение структуры Курса
-//extension Course {
-//    func findCommonStudents(anotherGroup:Array<StudentType>) -> Array<StudentType> {
-//        var  compareStud = Array<StudentType>()
-//        for i in 0...anotherGroup.count - 1 {
-//            for n in 0...groups.count - 1 {
-//                if anotherGroup[i] == groups[n] as! StudentType {
-//                    compareStud.append(groups[n] as! StudentType)
-//                }
-//            }
-//        }
-//        print(compareStud)
-//        return compareStud
-//    }
-//}
-
 
