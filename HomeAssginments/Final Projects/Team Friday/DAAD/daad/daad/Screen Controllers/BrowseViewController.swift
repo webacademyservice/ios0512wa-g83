@@ -8,30 +8,36 @@
 import UIKit
 
 class BrowseViewController: UIViewController {
-    @IBOutlet weak var goldenCell: UIView!
-    @IBOutlet weak var blackyCell: UIView!
-    @IBOutlet weak var silverCell: UIView!
-    @IBOutlet weak var silverBigCell: UIView!
+    @IBOutlet weak var yellowCell: UIView!
+    @IBOutlet weak var blueCell: UIView!
+    @IBOutlet weak var purpleCell: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Browse"
-        goldenCell.layer.cornerRadius = 25
-        goldenCell.layer.masksToBounds = true
-        goldenCell.layer.borderWidth = 1
-        goldenCell.layer.borderColor = UIColor.white.cgColor
-        blackyCell.layer.cornerRadius = 25
-        blackyCell.layer.masksToBounds = true
-        blackyCell.layer.borderWidth = 1
-        blackyCell.layer.borderColor = UIColor.white.cgColor
-        silverCell.layer.cornerRadius = 25
-        silverCell.layer.masksToBounds = true
-        silverCell.layer.borderWidth = 1
-        silverCell.layer.borderColor = UIColor.white.cgColor
-        silverBigCell.layer.cornerRadius = 25
-        silverBigCell.layer.masksToBounds = true
-        silverBigCell.layer.borderWidth = 1
-        silverBigCell.layer.borderColor = UIColor.white.cgColor
+        yellowCell.layer.cornerRadius = 18
+        yellowCell.layer.masksToBounds = true
+        yellowCell.layer.borderWidth = 1
+        yellowCell.layer.borderColor = UIColor.white.cgColor
+        blueCell.layer.cornerRadius = 18
+        blueCell.layer.masksToBounds = true
+        blueCell.layer.borderWidth = 1
+        
+        blueCell.layer.borderColor = UIColor.white.cgColor
+        
+        purpleCell.layer.cornerRadius = 18
+        purpleCell.layer.masksToBounds = true
+        purpleCell.layer.borderWidth = 1
+        purpleCell.layer.borderColor = UIColor.white.cgColor
+        
+        
+        
+        
+//        goldenCell.layer.cornerRadius = 25
+ //       goldenCell.layer.masksToBounds = true
+//        goldenCell.layer.borderWidth = 1
+  //      goldenCell.layer.borderColor = UIColor.white.cgColor
+
 
         // Do any additional setup after loading the view.
     }
