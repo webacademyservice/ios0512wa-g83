@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="htg-pk-xcJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -96,9 +96,6 @@
                                                             <constraint firstAttribute="height" constant="275" id="Ntq-fZ-tJl"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="main-image"/>
-                                                        <connections>
-                                                            <segue destination="dzg-7n-mx1" kind="show" id="Au0-Q3-KwX"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -131,9 +128,6 @@
                                                             <constraint firstAttribute="width" constant="314" id="gix-mj-jKU"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="watch-black"/>
-                                                        <connections>
-                                                            <segue destination="UFV-5w-1Ls" kind="show" id="z0G-12-RKk"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -162,9 +156,6 @@
                                                         <rect key="frame" x="68" y="336" width="293" height="457"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" backgroundImage="watch-red"/>
-                                                        <connections>
-                                                            <segue destination="wv3-sL-abK" kind="show" id="Mo1-vA-zXU"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -205,72 +196,6 @@
             </objects>
             <point key="canvasLocation" x="4363" y="-1381"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tSy-16-UjD">
-            <objects>
-                <viewController id="dzg-7n-mx1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cvp-fA-EM9">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main-image" translatesAutoresizingMaskIntoConstraints="NO" id="ss8-pP-lGR">
-                                <rect key="frame" x="20" y="47" width="388" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="fxa-zJ-hhJ"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="4MG-6f-T0o"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CnE-ui-lab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5274" y="-1381"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="NtQ-8U-x8Q">
-            <objects>
-                <viewController id="wv3-sL-abK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ekj-2T-JjX">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-red" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-9b-KkO">
-                                <rect key="frame" x="68" y="20" width="293" height="457"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="gY8-vl-iQv"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="6OF-N0-ckr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9WS-IX-ixf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4363" y="-619"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="qvV-0i-ixg">
-            <objects>
-                <viewController id="UFV-5w-1Ls" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MtM-lM-ppz">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-black" translatesAutoresizingMaskIntoConstraints="NO" id="M8D-fs-wT6">
-                                <rect key="frame" x="57" y="44" width="314" height="338"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="AGn-Qh-ggF"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rQI-jW-N7z"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bnv-6s-dDR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5274" y="-619"/>
-        </scene>
         <!--Browse-->
         <scene sceneID="RSm-gQ-aci">
             <objects>
@@ -289,14 +214,12 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="372" height="370"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-gy-n2N">
-                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="370"/>
+                                                        <rect key="frame" x="69.666666666666686" y="8" width="233" height="354"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="370" id="8Ku-jU-qDv"/>
-                                                            <constraint firstAttribute="width" constant="372" id="pGt-Lr-AIG"/>
+                                                            <constraint firstAttribute="height" constant="354" id="NAn-Hn-bIH"/>
+                                                            <constraint firstAttribute="width" constant="233" id="s0L-lh-Kpl"/>
                                                         </constraints>
-                                                        <connections>
-                                                            <segue destination="p4e-MG-4Y7" kind="show" id="jiD-r2-r40"/>
-                                                        </connections>
+                                                        <state key="normal" backgroundImage="golden-watch"/>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -306,42 +229,42 @@
                                                     <constraint firstItem="ccD-gy-n2N" firstAttribute="centerX" secondItem="7AH-8c-HJb" secondAttribute="centerX" id="yBy-2f-Lsm"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gUC-uM-76t">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGJ-Qa-rvP" customClass="blueCell">
                                                 <rect key="frame" x="387" y="0.0" width="372" height="370"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8y-O4-V7S">
-                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="370"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfx-Mb-VxZ">
+                                                        <rect key="frame" x="69.666666666666686" y="8" width="233" height="354"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="370" id="DBN-XX-PKU"/>
-                                                            <constraint firstAttribute="width" constant="372" id="IvS-yg-RH1"/>
+                                                            <constraint firstAttribute="width" constant="233" id="XSk-uj-dLM"/>
+                                                            <constraint firstAttribute="height" constant="354" id="dAx-EV-fLQ"/>
                                                         </constraints>
-                                                        <state key="normal" image="black-watch"/>
+                                                        <state key="normal" backgroundImage="silver-small-watch"/>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="372" id="2ea-oJ-GWT"/>
-                                                    <constraint firstAttribute="height" constant="370" id="C6S-pc-FkE"/>
-                                                    <constraint firstItem="S8y-O4-V7S" firstAttribute="centerY" secondItem="gUC-uM-76t" secondAttribute="centerY" id="NC9-rJ-KWM"/>
-                                                    <constraint firstItem="S8y-O4-V7S" firstAttribute="centerX" secondItem="gUC-uM-76t" secondAttribute="centerX" id="hVQ-OE-Xmd"/>
+                                                    <constraint firstItem="Jfx-Mb-VxZ" firstAttribute="centerX" secondItem="zGJ-Qa-rvP" secondAttribute="centerX" id="3QT-YB-eue"/>
+                                                    <constraint firstItem="Jfx-Mb-VxZ" firstAttribute="centerY" secondItem="zGJ-Qa-rvP" secondAttribute="centerY" id="BF6-IQ-hta"/>
+                                                    <constraint firstAttribute="width" constant="372" id="cuO-nQ-3qC"/>
+                                                    <constraint firstAttribute="height" constant="370" id="guA-1J-vj0"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ay-k1-Pmy">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXw-Zl-B1x">
                                                 <rect key="frame" x="774" y="0.0" width="372" height="370"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sj-C3-mSg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="370"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ILd-fR-fZc">
+                                                        <rect key="frame" x="69.666666666666629" y="8" width="233" height="354"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="370" id="fJt-ln-2Qb"/>
-                                                            <constraint firstAttribute="width" constant="372" id="mAZ-EQ-h6s"/>
+                                                            <constraint firstAttribute="height" constant="354" id="SZG-L7-fwd"/>
+                                                            <constraint firstAttribute="width" constant="233" id="icg-Zj-5S8"/>
                                                         </constraints>
-                                                        <state key="normal" image="black-watch"/>
+                                                        <state key="normal" backgroundImage="golden-watch"/>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="370" id="C4m-F5-YXo"/>
-                                                    <constraint firstItem="5sj-C3-mSg" firstAttribute="centerY" secondItem="5Ay-k1-Pmy" secondAttribute="centerY" id="RiS-1h-dhs"/>
-                                                    <constraint firstAttribute="width" constant="372" id="lM9-5O-80A"/>
-                                                    <constraint firstItem="5sj-C3-mSg" firstAttribute="centerX" secondItem="5Ay-k1-Pmy" secondAttribute="centerX" id="sq5-tG-p6O"/>
+                                                    <constraint firstAttribute="height" constant="370" id="3zG-sP-63s"/>
+                                                    <constraint firstItem="ILd-fR-fZc" firstAttribute="centerX" secondItem="VXw-Zl-B1x" secondAttribute="centerX" id="6yj-oK-CVt"/>
+                                                    <constraint firstItem="ILd-fR-fZc" firstAttribute="centerY" secondItem="VXw-Zl-B1x" secondAttribute="centerY" id="9fb-rg-Bvq"/>
+                                                    <constraint firstAttribute="width" constant="372" id="E0P-Qy-3pe"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -370,36 +293,14 @@
                     <tabBarItem key="tabBarItem" title="Browse" image="bag" catalog="system" id="fPH-da-DOz"/>
                     <navigationItem key="navigationItem" id="fHP-Me-pko"/>
                     <connections>
-                        <outlet property="blueCell" destination="gUC-uM-76t" id="AXX-aX-T8H"/>
-                        <outlet property="purpleCell" destination="5Ay-k1-Pmy" id="bIb-5z-Cxz"/>
+                        <outlet property="blueCell" destination="zGJ-Qa-rvP" id="NCw-MK-NVB"/>
+                        <outlet property="redCell" destination="VXw-Zl-B1x" id="8H5-i1-VCh"/>
                         <outlet property="yellowCell" destination="7AH-8c-HJb" id="qWT-zC-jgR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVQ-L1-OU0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4362.6168224299063" y="95.896328293736502"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="g6D-n5-2qc">
-            <objects>
-                <viewController id="p4e-MG-4Y7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xGH-xu-WeR">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golden-watch" translatesAutoresizingMaskIntoConstraints="NO" id="D4U-nr-eLE">
-                                <rect key="frame" x="94" y="140" width="240" height="350"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="xDN-Cu-0Ir"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="8aQ-Ru-E2K"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rvd-IT-mtD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6599" y="96"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lme-3G-U1F">
@@ -692,12 +593,12 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bag" catalog="system" width="128" height="128"/>
-        <image name="black-watch" width="650" height="650"/>
         <image name="cart" catalog="system" width="128" height="102"/>
-        <image name="golden-watch" width="1020" height="1500"/>
+        <image name="golden-watch" width="955" height="1446"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="main-image" width="536.66668701171875" height="364.33334350585938"/>
+        <image name="silver-small-watch" width="2000" height="3276"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <image name="watch-black" width="311.66665649414062" height="337.66665649414062"/>
         <image name="watch-red" width="155" height="242"/>
