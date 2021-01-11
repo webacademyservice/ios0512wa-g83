@@ -106,20 +106,16 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
-
 		80001F0025A4AD980067B8F7 /* Screen Controllers */ = {
 			isa = PBXGroup;
 			children = (
-
 				80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */,
 				80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */,
 				80A7B5DC25A1E8BD001DF9CA /* MainScreenViewController.swift */,
 				80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */,
-
 				80001F0A25A4B6B00067B8F7 /* RegisterViewController.swift */,
 			);
 			path = "Screen Controllers";
-
 			sourceTree = "<group>";
 		};
 		807CCA91259A40F40032898C = {
@@ -143,9 +139,7 @@
 		807CCA9C259A40F40032898C /* daad */ = {
 			isa = PBXGroup;
 			children = (
-
 				80001F0025A4AD980067B8F7 /* Screen Controllers */,
-
 				0404D12025A0903D008E82FA /* Source */,
 				807CCAA3259A40F40032898C /* Main.storyboard */,
 				807CCAA6259A40F80032898C /* Assets.xcassets */,

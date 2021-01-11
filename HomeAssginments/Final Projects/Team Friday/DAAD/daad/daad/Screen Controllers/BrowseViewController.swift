@@ -10,7 +10,9 @@ import UIKit
 class BrowseViewController: UIViewController {
     @IBOutlet weak var yellowCell: UIView!
     @IBOutlet weak var blueCell: UIView!
-    @IBOutlet weak var purpleCell: UIView!
+    @IBOutlet weak var redCell: UIView!
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,24 +24,13 @@ class BrowseViewController: UIViewController {
         blueCell.layer.cornerRadius = 18
         blueCell.layer.masksToBounds = true
         blueCell.layer.borderWidth = 1
-        
         blueCell.layer.borderColor = UIColor.white.cgColor
-        
-        purpleCell.layer.cornerRadius = 18
-        purpleCell.layer.masksToBounds = true
-        purpleCell.layer.borderWidth = 1
-        purpleCell.layer.borderColor = UIColor.white.cgColor
-        
-        
-        
-        
-//        goldenCell.layer.cornerRadius = 25
- //       goldenCell.layer.masksToBounds = true
-//        goldenCell.layer.borderWidth = 1
-  //      goldenCell.layer.borderColor = UIColor.white.cgColor
-
-
-        // Do any additional setup after loading the view.
+        redCell.layer.cornerRadius = 18
+        redCell.layer.masksToBounds = true
+        redCell.layer.borderWidth = 1
+        redCell.layer.borderColor = UIColor.white.cgColor
+    }
+    
     }
     
 
@@ -53,4 +44,4 @@ class BrowseViewController: UIViewController {
     }
     */
 
-}
+
