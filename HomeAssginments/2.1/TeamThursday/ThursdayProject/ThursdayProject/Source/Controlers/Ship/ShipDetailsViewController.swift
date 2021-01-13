@@ -18,6 +18,11 @@ class ShipDetailsViewController:
     
     @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    var currentShip: Ship?
+    
     var shipService: StorageServiceProtocol!
     
     //MARK: Overrides
@@ -25,10 +30,14 @@ class ShipDetailsViewController:
     override func viewDidLoad() {
         shipService = StorageService()
         shipService.loadShips()
+        collectionView.allowsMultipleSelection = false
         
         super.viewDidLoad()
+        if let currentShip = currentShip {
+            updateUI(for: currentShip)
+        } else {
         refresh()
-        
+        }
 
  
     }
@@ -65,15 +74,59 @@ class ShipDetailsViewController:
     
     // MARK: Custom private functions
     
-    fileprivate func refresh() {
-        let ship = shipService.getShip()
+    fileprivate func updateUI(for ship: Ship) {
+        
         topTitleLabel.text = ship.name
         imageView.image = ship.image ?? Image(contentsOfFile: "Image")
         subTitleLabel.text = ship.shortDescription
+        
+        collectionView.reloadData()
+    }
+    fileprivate func refresh() {
+        let ship = shipService.getShip()
+        currentShip = ship
+        
+        updateUI(for: ship)
+    }
+}
+    // MARK: CollectionView DataSource
+
+extension ShipDetailsViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        guard let ship = currentShip else { return 0}
+        return ship.tags.count
     }
     
-  
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShipCell", for: indexPath)
+        
+        guard let tag = currentShip?.tags[indexPath.item] else { return cell}
+        
+        let shipTagCell = cell as? ShipTagCollectionViewCell
+        
+        shipTagCell?.tagLabel.text = tag
+        
+        return cell
+        
+        }
+    }
+
+extension ShipDetailsViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let tag = currentShip?.tags[indexPath.item] else {return}
+        print("tag selected \(tag)" )
+        
+        view.backgroundColor = (indexPath.item % 2==0) ? .systemRed : . systemGreen
     }
     
-
-
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        if collectionView.indexPathsForSelectedItems?.count == 0 {
+            view.backgroundColor = .white
+        }
+    }
+}
