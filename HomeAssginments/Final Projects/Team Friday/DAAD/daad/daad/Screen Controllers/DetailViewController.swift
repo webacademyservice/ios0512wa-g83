@@ -1,17 +1,22 @@
 //
-//  MainScreenViewController.swift
+//  DetailViewController.swift
 //  daad
 //
-//  Created by Alex Mkoff on 1/3/21.
+//  Created by Alex Mkoff on 1/13/21.
 //
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
-
+class DetailViewController: UIViewController {
+    var watch: Watch!
+    
+    @IBOutlet weak var watchImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Main"
+        
+        title = watch.name
+        watchImage.image = UIImage(named: watch.name)
 
         // Do any additional setup after loading the view.
     }
