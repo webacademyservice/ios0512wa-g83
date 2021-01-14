@@ -19,7 +19,7 @@
 		808127EE25AF38E700305E18 /* Watch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808127ED25AF38E700305E18 /* Watch.swift */; };
 		808127F325AF391800305E18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808127F225AF391800305E18 /* DetailViewController.swift */; };
 		808127F825AF39D100305E18 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808127F725AF39D100305E18 /* MainTableViewController.swift */; };
-		80A7B5E225A1E8D8001DF9CA /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */; };
+		8081280625B0279400305E18 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081280525B0279400305E18 /* MainScreenViewController.swift */; };
 		80A7B5E725A1F16D001DF9CA /* FindMyWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */; };
 		80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,7 +60,7 @@
 		808127ED25AF38E700305E18 /* Watch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watch.swift; sourceTree = "<group>"; };
 		808127F225AF391800305E18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		808127F725AF39D100305E18 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		8081280525B0279400305E18 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyWatchViewController.swift; sourceTree = "<group>"; };
 		80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,8 +115,8 @@
 			children = (
 				80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */,
 				80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */,
-				80A7B5E125A1E8D8001DF9CA /* BrowseViewController.swift */,
 				80001F0A25A4B6B00067B8F7 /* RegisterViewController.swift */,
+				8081280525B0279400305E18 /* MainScreenViewController.swift */,
 				808127F725AF39D100305E18 /* MainTableViewController.swift */,
 				808127ED25AF38E700305E18 /* Watch.swift */,
 				808127F225AF391800305E18 /* DetailViewController.swift */,
@@ -309,9 +309,9 @@
 				807CCA9E259A40F40032898C /* AppDelegate.swift in Sources */,
 				80001F0B25A4B6B00067B8F7 /* RegisterViewController.swift in Sources */,
 				807CCAA0259A40F40032898C /* SceneDelegate.swift in Sources */,
+				8081280625B0279400305E18 /* MainScreenViewController.swift in Sources */,
 				80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */,
 				808127EE25AF38E700305E18 /* Watch.swift in Sources */,
-				80A7B5E225A1E8D8001DF9CA /* BrowseViewController.swift in Sources */,
 				808127F825AF39D100305E18 /* MainTableViewController.swift in Sources */,
 				80A7B5E725A1F16D001DF9CA /* FindMyWatchViewController.swift in Sources */,
 			);
