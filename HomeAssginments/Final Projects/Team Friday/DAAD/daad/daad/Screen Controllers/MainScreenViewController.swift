@@ -15,12 +15,35 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main"
-        firstCell.layer.cornerRadius = 18
+        firstCell.layer.cornerRadius = 25
         firstCell.layer.masksToBounds = true
-        secondCell.layer.cornerRadius = 18
+        firstCell.layer.borderWidth = 2
+        firstCell.layer.borderColor = UIColor.white.cgColor
+        firstCell.layer.shadowColor = UIColor.white.cgColor
+        firstCell.layer.shadowOpacity = 1
+        firstCell.layer.shadowOffset = .zero
+        firstCell.layer.shadowRadius = 3
+        
+        
+        secondCell.layer.cornerRadius = 25
         secondCell.layer.masksToBounds = true
-        thirdCell.layer.cornerRadius = 18
+        secondCell.layer.borderWidth = 2
+        secondCell.layer.borderColor = UIColor.white.cgColor
+        secondCell.layer.shadowColor = UIColor.white.cgColor
+        secondCell.layer.shadowOpacity = 1
+        secondCell.layer.shadowOffset = .zero
+        secondCell.layer.shadowRadius = 3
+        
+        
+        thirdCell.layer.cornerRadius = 25
         thirdCell.layer.masksToBounds = true
+        thirdCell.layer.borderWidth = 2
+        thirdCell.layer.borderColor = UIColor.white.cgColor
+        thirdCell.layer.shadowColor = UIColor.white.cgColor
+        thirdCell.layer.shadowOpacity = 1
+        thirdCell.layer.shadowOffset = .zero
+        thirdCell.layer.shadowRadius = 3
+        
         
 
         // Do any additional setup after loading the view.
