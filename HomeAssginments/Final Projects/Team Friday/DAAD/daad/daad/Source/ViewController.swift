@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var logInButton: UIButton!
-
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     
