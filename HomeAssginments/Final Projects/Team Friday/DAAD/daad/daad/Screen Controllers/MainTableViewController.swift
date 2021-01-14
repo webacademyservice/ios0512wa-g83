@@ -14,6 +14,7 @@ class MainTableViewController: UITableViewController {
         Watch(name: "DAAD Hybrid", type: .hybridWatch),
         Watch(name: "DAAD Waterproof", type: .waterproofWatch),
     ]
+    
     private var filteredWatches = [Watch]()
     private let searchController = UISearchController(searchResultsController: nil)
     private var searchBarIsEmpty: Bool {

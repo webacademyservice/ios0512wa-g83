@@ -10,7 +10,6 @@
 		80001F0B25A4B6B00067B8F7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80001F0A25A4B6B00067B8F7 /* RegisterViewController.swift */; };
 		807CCA9E259A40F40032898C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCA9D259A40F40032898C /* AppDelegate.swift */; };
 		807CCAA0259A40F40032898C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCA9F259A40F40032898C /* SceneDelegate.swift */; };
-		807CCAA2259A40F40032898C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807CCAA1259A40F40032898C /* ViewController.swift */; };
 		807CCAA5259A40F40032898C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807CCAA3259A40F40032898C /* Main.storyboard */; };
 		807CCAA7259A40F80032898C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807CCAA6259A40F80032898C /* Assets.xcassets */; };
 		807CCAAA259A40F80032898C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807CCAA8259A40F80032898C /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		808127F325AF391800305E18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808127F225AF391800305E18 /* DetailViewController.swift */; };
 		808127F825AF39D100305E18 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808127F725AF39D100305E18 /* MainTableViewController.swift */; };
 		8081280625B0279400305E18 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081280525B0279400305E18 /* MainScreenViewController.swift */; };
+		8081280E25B051A100305E18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081280D25B051A100305E18 /* ViewController.swift */; };
 		80A7B5E725A1F16D001DF9CA /* FindMyWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */; };
 		80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -46,7 +46,6 @@
 		807CCA9A259A40F40032898C /* daad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		807CCA9D259A40F40032898C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		807CCA9F259A40F40032898C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		807CCAA1259A40F40032898C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		807CCAA4259A40F40032898C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		807CCAA6259A40F80032898C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		807CCAA9259A40F80032898C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		808127F225AF391800305E18 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		808127F725AF39D100305E18 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8081280525B0279400305E18 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		8081280D25B051A100305E18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		80A7B5E625A1F16D001DF9CA /* FindMyWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyWatchViewController.swift; sourceTree = "<group>"; };
 		80A7B5EB25A1F199001DF9CA /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,7 +105,7 @@
 			children = (
 				807CCA9D259A40F40032898C /* AppDelegate.swift */,
 				807CCA9F259A40F40032898C /* SceneDelegate.swift */,
-				807CCAA1259A40F40032898C /* ViewController.swift */,
+				8081280D25B051A100305E18 /* ViewController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -305,9 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				808127F325AF391800305E18 /* DetailViewController.swift in Sources */,
-				807CCAA2259A40F40032898C /* ViewController.swift in Sources */,
 				807CCA9E259A40F40032898C /* AppDelegate.swift in Sources */,
 				80001F0B25A4B6B00067B8F7 /* RegisterViewController.swift in Sources */,
+				8081280E25B051A100305E18 /* ViewController.swift in Sources */,
 				807CCAA0259A40F40032898C /* SceneDelegate.swift in Sources */,
 				8081280625B0279400305E18 /* MainScreenViewController.swift in Sources */,
 				80A7B5EC25A1F199001DF9CA /* AboutUsViewController.swift in Sources */,
