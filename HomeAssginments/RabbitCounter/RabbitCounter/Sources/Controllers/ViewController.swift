@@ -32,20 +32,12 @@ class ViewController: UIViewController {
             return
         }
 
-        DispatchQueue.global(qos: .utility).async { [weak self] in
-
-            guard let self = self else { return }
-
-            let before = Date()
-            let result = self.counter.count(for: value)
+        let before = Date()
+        self.counter.count(for: value) { [weak self] (result) in
             let after = Date()
-
             let interval = after.timeIntervalSince(before)
-
-            DispatchQueue.main.async { [weak self] in
-                self?.timeoutLabel.text = String(interval)
-                self?.resultLabel.text = "Кроликов: \(result)"
-            }
+            self?.timeoutLabel.text = String(interval)
+            self?.resultLabel.text = "Кроликов: \(result)"
         }
 
     }
