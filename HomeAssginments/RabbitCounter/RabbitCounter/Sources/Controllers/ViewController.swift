@@ -32,17 +32,21 @@ class ViewController: UIViewController {
             return
         }
 
-        let before = Date()
-        let result = counter.count(for: value)
-        let after = Date()
+        DispatchQueue.global(qos: .utility).async { [weak self] in
 
-        let interval = after.timeIntervalSince(before)
+            guard let self = self else { return }
 
+            let before = Date()
+            let result = self.counter.count(for: value)
+            let after = Date()
 
-        timeoutLabel.text = String(interval)
+            let interval = after.timeIntervalSince(before)
 
-        resultLabel.text = "Кроликов: \(result)"
-
+            DispatchQueue.main.async { [weak self] in
+                self?.timeoutLabel.text = String(interval)
+                self?.resultLabel.text = "Кроликов: \(result)"
+            }
+        }
 
     }
 
