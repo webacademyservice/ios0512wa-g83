@@ -13,6 +13,7 @@
 		86F7286825B2E6A600943C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F7286625B2E6A600943C0D /* Main.storyboard */; };
 		86F7286A25B2E6A700943C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F7286925B2E6A700943C0D /* Assets.xcassets */; };
 		86F7286D25B2E6A700943C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F7286B25B2E6A700943C0D /* LaunchScreen.storyboard */; };
+		86F7287B25B2E74A00943C0D /* FibonacciCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F7287A25B2E74A00943C0D /* FibonacciCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		86F7286925B2E6A700943C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86F7286C25B2E6A700943C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86F7286E25B2E6A700943C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F7287A25B2E74A00943C0D /* FibonacciCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		86F7287525B2E6B800943C0D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				86F7287925B2E73100943C0D /* Model */,
 				86F7286025B2E6A600943C0D /* AppDelegate.swift */,
 				86F7286225B2E6A600943C0D /* SceneDelegate.swift */,
 				86F7287725B2E6C400943C0D /* Controllers */,
@@ -89,6 +92,14 @@
 				86F7286B25B2E6A700943C0D /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		86F7287925B2E73100943C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86F7287A25B2E74A00943C0D /* FibonacciCounter.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				86F7286525B2E6A600943C0D /* ViewController.swift in Sources */,
 				86F7286125B2E6A600943C0D /* AppDelegate.swift in Sources */,
 				86F7286325B2E6A600943C0D /* SceneDelegate.swift in Sources */,
+				86F7287B25B2E74A00943C0D /* FibonacciCounter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
