@@ -31,11 +31,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 storageService: MockStorage()
             )
 
-        } else {
+        } else if let envVar = ProcessInfo.processInfo.environment["ClassicService"], Bool(envVar) == true {
 
-            // Зарегестрировать с нормальным сервисом
+            // Зарегестрировать с сервисом-заглушкой
             DependencyManager.register(
                 storageService: StorageService()
+            )
+
+        } else {
+
+            // Зарегестрировать с file сервисом
+            DependencyManager.register(
+                storageService: FileService(name: "pets")
             )
         }
 
