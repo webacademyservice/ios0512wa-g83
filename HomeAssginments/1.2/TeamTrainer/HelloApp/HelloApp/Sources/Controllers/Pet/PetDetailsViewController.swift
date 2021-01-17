@@ -28,7 +28,7 @@ class PetDetailsViewController: UIViewController {
 
     // MARK: Overrides
     override func viewDidLoad() {
-        petService.loadPets()
+        petService.loadPets { _ in }
         collectionView.allowsMultipleSelection = false
 
         tokens.append( NotificationCenter.default.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { [weak self] _ in

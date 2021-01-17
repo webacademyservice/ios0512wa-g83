@@ -9,11 +9,14 @@ import Foundation
 
 // Простой сервис-затычка
 class MockStorage: StorageServiceProtocol {
+
+    func loadPets(callback: @escaping ((Result<[Pet], Error>) -> ())) {
+
+    }
+
     func getPet() -> Pet {
         Pet(name: "Random pet", shortDescription: "", image: nil, tags: [])
     }
-
-    func loadPets() { }
 
     func search(for query: String) -> [Pet] {
         [Pet(name: "Search", shortDescription: "", image: nil, tags: [])]

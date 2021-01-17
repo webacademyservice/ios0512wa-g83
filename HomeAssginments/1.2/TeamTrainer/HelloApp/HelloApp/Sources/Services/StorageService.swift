@@ -9,7 +9,7 @@ import Foundation
 
 protocol StorageServiceProtocol {
     func getPet() -> Pet
-    func loadPets()
+    func loadPets(callback: @escaping ((Result<[Pet], Error>) -> ()) )
     func search(for query: String) -> [Pet]
 
     var allPets: [Pet] { get }
@@ -32,7 +32,7 @@ class StorageService: StorageServiceProtocol {
         pets.filter { return $0.name.lowercased().contains(query.lowercased()) }
     }
 
-    func loadPets() {
+    func loadPets(callback: @escaping ((Result<[Pet], Error>) -> ()) ) {
         pets = [
             Pet(
                 name: "American Curl",
@@ -59,5 +59,6 @@ class StorageService: StorageServiceProtocol {
                 tags: ["huge ears", "missing whiskers"]
             ),
         ]
+        callback(.success(pets))
     }
 }

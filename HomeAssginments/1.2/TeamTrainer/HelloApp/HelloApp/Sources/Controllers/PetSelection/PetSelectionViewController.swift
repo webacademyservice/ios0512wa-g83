@@ -62,9 +62,15 @@ class PetSelectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .allEvents)
+        tableView.refreshControl = refreshControl
+
         tableView.dataSource = dataSource
-        petService.loadPets()
-        pets = petService.allPets
+
+        refresh(self)
+
         subscribe()
     }
 
@@ -98,6 +104,15 @@ class PetSelectionViewController: UIViewController {
         }
 
         pets = petService.search(for: query)
+    }
+
+    @IBAction func refresh(_ : Any) {
+        tableView.refreshControl?.beginRefreshing()
+        self.pets = []
+        petService.loadPets { [weak self] result in
+            self?.pets = (try? result.get()) ?? []
+            self?.tableView.refreshControl?.endRefreshing()
+        }
     }
 
     // MARK: Private functions
