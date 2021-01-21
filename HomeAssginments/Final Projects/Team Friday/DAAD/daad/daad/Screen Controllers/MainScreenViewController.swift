@@ -15,7 +15,7 @@ class MainScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main"
-        firstCell.layer.cornerRadius = 25
+        firstCell.layer.cornerRadius = 35
         firstCell.layer.masksToBounds = true
         firstCell.layer.borderWidth = 2
         firstCell.layer.borderColor = UIColor.white.cgColor
@@ -24,8 +24,8 @@ class MainScreenViewController: UIViewController {
         firstCell.layer.shadowOffset = .zero
         firstCell.layer.shadowRadius = 3
         
-        
-        secondCell.layer.cornerRadius = 25
+    
+        secondCell.layer.cornerRadius = 35
         secondCell.layer.masksToBounds = true
         secondCell.layer.borderWidth = 2
         secondCell.layer.borderColor = UIColor.white.cgColor
@@ -35,7 +35,7 @@ class MainScreenViewController: UIViewController {
         secondCell.layer.shadowRadius = 3
         
         
-        thirdCell.layer.cornerRadius = 25
+        thirdCell.layer.cornerRadius = 35
         thirdCell.layer.masksToBounds = true
         thirdCell.layer.borderWidth = 2
         thirdCell.layer.borderColor = UIColor.white.cgColor
