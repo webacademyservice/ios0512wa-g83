@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Hf-eDu">
-                                <rect key="frame" x="0.0" y="140" width="428" height="703"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-E3-q8K">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="3100"/>
@@ -80,28 +80,23 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3je-uH-Oe1">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="800"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP8-oj-Nah">
-                                                        <rect key="frame" x="20" y="427" width="388" height="275"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="388" id="4qy-iK-nZV"/>
-                                                            <constraint firstAttribute="height" constant="275" id="Ntq-fZ-tJl"/>
-                                                        </constraints>
-                                                        <state key="normal" backgroundImage="main-image"/>
-                                                    </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our mission is to provide our customer with premium quality and reliability" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLw-FK-ErV">
                                                         <rect key="frame" x="20" y="0.0" width="388" height="107.66666666666667"/>
                                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lW-sM-gzu">
+                                                        <rect key="frame" x="20" y="423" width="388" height="275"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" backgroundImage="main-image"/>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="xLw-FK-ErV" firstAttribute="leading" secondItem="3je-uH-Oe1" secondAttribute="leading" constant="20" symbolic="YES" id="I07-cZ-6r0"/>
                                                     <constraint firstAttribute="height" constant="800" id="gQZ-K6-Y6S"/>
-                                                    <constraint firstAttribute="bottom" secondItem="FP8-oj-Nah" secondAttribute="bottom" constant="98" id="lte-xE-e7d"/>
                                                     <constraint firstItem="xLw-FK-ErV" firstAttribute="top" secondItem="3je-uH-Oe1" secondAttribute="top" id="oht-s7-K35"/>
-                                                    <constraint firstItem="FP8-oj-Nah" firstAttribute="centerX" secondItem="3je-uH-Oe1" secondAttribute="centerX" id="szf-8V-zom"/>
                                                     <constraint firstAttribute="trailing" secondItem="xLw-FK-ErV" secondAttribute="trailing" constant="20" symbolic="YES" id="vIM-55-3U3"/>
                                                 </constraints>
                                             </view>
@@ -149,7 +144,7 @@
                                                             <stackView opaque="NO" contentMode="center" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-eC-P0z">
                                                                 <rect key="frame" x="0.0" y="0.0" width="1146" height="470"/>
                                                                 <subviews>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwM-sM-ufO">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwM-sM-ufO" customClass="customCells" customModule="daad" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="372" height="470"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-Du-kF8">
@@ -168,7 +163,7 @@
                                                                             <constraint firstItem="z2f-Du-kF8" firstAttribute="centerY" secondItem="MwM-sM-ufO" secondAttribute="centerY" id="opR-9R-5GS"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-7B-MKe" customClass="blueCell">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-7B-MKe" customClass="customCells" customModule="daad" customModuleProvider="target">
                                                                         <rect key="frame" x="387" y="0.0" width="372" height="470"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-4T-KlK">
@@ -187,7 +182,7 @@
                                                                             <constraint firstItem="LBY-4T-KlK" firstAttribute="centerX" secondItem="ahO-7B-MKe" secondAttribute="centerX" id="xPe-2F-qiT"/>
                                                                         </constraints>
                                                                     </view>
-                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rx-1B-4Xz">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Rx-1B-4Xz" customClass="customCells" customModule="daad" customModuleProvider="target">
                                                                         <rect key="frame" x="774" y="0.0" width="372" height="470"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNN-fq-nxK">
@@ -279,6 +274,7 @@
                     <navigationItem key="navigationItem" id="f2c-zS-k2x"/>
                     <connections>
                         <outlet property="firstCell" destination="MwM-sM-ufO" id="NoI-3e-EYL"/>
+                        <outlet property="firstWatch" destination="9lW-sM-gzu" id="iIs-a2-Kig"/>
                         <outlet property="secondCell" destination="ahO-7B-MKe" id="cea-Dq-yDA"/>
                         <outlet property="thirdCell" destination="1Rx-1B-4Xz" id="y5T-dM-jUY"/>
                     </connections>
@@ -411,7 +407,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-m5-y9t">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-m5-y9t" customClass="MyCustomButton" customModule="daad" customModuleProvider="target">
                                 <rect key="frame" x="66" y="782" width="296" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Mk7-dS-xeN"/>
@@ -421,7 +417,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gue-sT-ZNN" kind="show" id="Rsf-gr-7io"/>
+                                    <segue destination="gue-sT-ZNN" kind="show" id="6gf-bF-WdE"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DAAD Classic" translatesAutoresizingMaskIntoConstraints="NO" id="anB-r1-6EI">
@@ -431,7 +427,7 @@
                                     <constraint firstAttribute="height" constant="314" id="5kD-RX-RlU"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-bm-yca">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-bm-yca" customClass="MyCustomButton" customModule="daad" customModuleProvider="target">
                                 <rect key="frame" x="66" y="712" width="296" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NzB-tJ-lIn"/>
@@ -441,7 +437,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="hLB-K5-xfg" kind="show" id="UZR-xz-Nnb"/>
+                                    <segue destination="hLB-K5-xfg" kind="show" id="CYw-yC-SQ9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -642,7 +638,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Rsf-gr-7io"/>
+        <segue reference="6gf-bF-WdE"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="DAAD Classic" width="311.66665649414062" height="337.66665649414062"/>

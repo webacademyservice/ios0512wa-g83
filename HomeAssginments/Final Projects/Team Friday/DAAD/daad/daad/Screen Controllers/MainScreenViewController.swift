@@ -7,57 +7,44 @@
 
 import UIKit
 
+class customCells: UIView {
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+//        self.backgroundColor = .systemYellow
+        self.layer.cornerRadius = 35
+        self.layer.masksToBounds = true
+        self.layer.borderWidth = 2
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.shadowColor = UIColor.white.cgColor
+        self.layer.shadowOpacity = 1
+        self.layer.shadowOffset = .zero
+        self.layer.shadowRadius = 3
+        
+    }
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        
+    }
+}
+
+
+
+
 class MainScreenViewController: UIViewController {
     @IBOutlet weak var firstCell: UIView!
     @IBOutlet weak var secondCell: UIView!
     @IBOutlet weak var thirdCell: UIView!
+    @IBOutlet weak var firstWatch: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main"
-        firstCell.layer.cornerRadius = 35
-        firstCell.layer.masksToBounds = true
-        firstCell.layer.borderWidth = 2
-        firstCell.layer.borderColor = UIColor.white.cgColor
-        firstCell.layer.shadowColor = UIColor.white.cgColor
-        firstCell.layer.shadowOpacity = 1
-        firstCell.layer.shadowOffset = .zero
-        firstCell.layer.shadowRadius = 3
-        
-    
-        secondCell.layer.cornerRadius = 35
-        secondCell.layer.masksToBounds = true
-        secondCell.layer.borderWidth = 2
-        secondCell.layer.borderColor = UIColor.white.cgColor
-        secondCell.layer.shadowColor = UIColor.white.cgColor
-        secondCell.layer.shadowOpacity = 1
-        secondCell.layer.shadowOffset = .zero
-        secondCell.layer.shadowRadius = 3
         
         
-        thirdCell.layer.cornerRadius = 35
-        thirdCell.layer.masksToBounds = true
-        thirdCell.layer.borderWidth = 2
-        thirdCell.layer.borderColor = UIColor.white.cgColor
-        thirdCell.layer.shadowColor = UIColor.white.cgColor
-        thirdCell.layer.shadowOpacity = 1
-        thirdCell.layer.shadowOffset = .zero
-        thirdCell.layer.shadowRadius = 3
-        
-        
-
-        // Do any additional setup after loading the view.
+        firstWatch.alpha = 0
+        UIButton.animate(withDuration: 2) { [self] in
+            firstWatch.alpha = 1
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
