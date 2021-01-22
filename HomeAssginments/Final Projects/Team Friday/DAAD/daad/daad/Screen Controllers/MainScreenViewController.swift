@@ -10,7 +10,6 @@ import UIKit
 class customCells: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-//        self.backgroundColor = .systemYellow
         self.layer.cornerRadius = 35
         self.layer.masksToBounds = true
         self.layer.borderWidth = 2
