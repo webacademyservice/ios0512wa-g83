@@ -15,15 +15,29 @@
                     <view key="view" contentMode="scaleToFill" id="gyx-7s-i2H">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f1c-XM-LKT">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="V3a-34-zDo"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="f1c-XM-LKT" secondAttribute="bottom" id="0Kt-Kf-dZA"/>
+                            <constraint firstItem="f1c-XM-LKT" firstAttribute="top" secondItem="gyx-7s-i2H" secondAttribute="top" id="RvN-gR-Qyf"/>
+                            <constraint firstAttribute="trailing" secondItem="f1c-XM-LKT" secondAttribute="trailing" id="hZ4-kl-JXh"/>
+                            <constraint firstItem="f1c-XM-LKT" firstAttribute="leading" secondItem="gyx-7s-i2H" secondAttribute="leading" id="hh7-xh-nf3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Find my watch" image="magnifyingglass" catalog="system" id="Dng-to-C6p"/>
                     <navigationItem key="navigationItem" id="Fa8-G5-Ylo"/>
+                    <connections>
+                        <outlet property="mapView" destination="f1c-XM-LKT" id="ZJF-As-My3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kk-kn-fJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1827" y="1536"/>
+            <point key="canvasLocation" x="1826.6355140186915" y="1535.6371490280778"/>
         </scene>
         <!--About Us-->
         <scene sceneID="Mgw-Rj-EoA">
@@ -72,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Hf-eDu">
-                                <rect key="frame" x="0.0" y="88" width="428" height="755"/>
+                                <rect key="frame" x="0.0" y="140" width="428" height="703"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-E3-q8K">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="3100"/>

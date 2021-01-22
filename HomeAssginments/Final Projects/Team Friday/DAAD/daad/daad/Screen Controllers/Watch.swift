@@ -8,7 +8,6 @@
 import Foundation
 
 struct Watch {
-    
     var name: String
     var type: WatchType
 }
