@@ -23,32 +23,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          Теперь при выборе симулятора можно выбрать схему запуска, и при запуске `Mock HelloApp` DependecyManager будет настроен с сервисом-заглушкой
          */
 
+        let networkController = NetworkController(host: "https://api.thecatapi.com", apiKey: "some_random_key")
 
         if let envVar = ProcessInfo.processInfo.environment["mockService"], Bool(envVar) == true {
 
             // Зарегестрировать с сервисом-заглушкой
             DependencyManager.register(
-                storageService: MockStorage()
+                storageService: MockStorage(),
+                networkController: networkController
             )
 
         } else if let envVar = ProcessInfo.processInfo.environment["ClassicService"], Bool(envVar) == true {
 
             // Зарегестрировать с сервисом-заглушкой
             DependencyManager.register(
-                storageService: StorageService()
+                storageService: StorageService(),
+                networkController: networkController
             )
 
-        } else {
+        } else if let envVar = ProcessInfo.processInfo.environment["FileService"], Bool(envVar) == true {
 
             // Зарегестрировать с file сервисом
             DependencyManager.register(
-                storageService: FileService(name: "pets")
+                storageService: FileService(name: "pets"),
+                networkController: networkController
             )
-        }
+        } else {
 
+            DependencyManager.register(
+                storageService: NetworkStorageService(networkController: networkController),
+                networkController: networkController
+            )
+
+        }
         return true
     }
-
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

@@ -15,21 +15,25 @@ protocol StorageServiceProtocol {
     var allPets: [Pet] { get }
 }
 
+extension StorageServiceProtocol {
+
+    func getPet() -> Pet {
+        return allPets.randomElement()!
+    }
+
+    func search(for query: String) -> [Pet] {
+        allPets.filter { return $0.name.lowercased().contains(query.lowercased()) }
+    }
+
+}
+
 /// Сервис с "пре-определенным" набором значений
 class StorageService: StorageServiceProtocol {
 
     private var pets: [Pet] = []
 
-    func getPet() -> Pet {
-        return pets.randomElement()!
-    }
-
     var allPets: [Pet] {
         get { return pets }
-    }
-
-    func search(for query: String) -> [Pet] {
-        pets.filter { return $0.name.lowercased().contains(query.lowercased()) }
     }
 
     func loadPets(callback: @escaping ((Result<[Pet], Error>) -> ()) ) {

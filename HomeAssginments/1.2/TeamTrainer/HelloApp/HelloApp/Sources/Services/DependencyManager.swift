@@ -10,6 +10,7 @@ import Foundation
 protocol  DependecyManaging {
 
     var storageService: StorageServiceProtocol { get }
+    var networkController: NetworkControllerProtocol { get }
 
 }
 
@@ -23,6 +24,7 @@ class DependencyManager: DependecyManaging {
     // MARK: переменные для хранения dependecies
 
     let storageService: StorageServiceProtocol
+    let networkController: NetworkControllerProtocol
 
     // Скрытая переменная, которая содержит адрес "синглтона"
     private static var storedManager: DependecyManaging?
@@ -40,17 +42,18 @@ class DependencyManager: DependecyManaging {
 
     /// Зарегестрировать менеджер с указаными зависимостями
     /// - Parameter storageService: Севрвис хранения данных
-    static func register(storageService: StorageServiceProtocol) {
+    static func register(storageService: StorageServiceProtocol, networkController: NetworkControllerProtocol) {
 
         // Метод по умолчанию "internal" - т.е. его можно использовать в любой точке проекта.
 
         // Только внутри класса мы можем использовать приватный инициализатор
-        storedManager = DependencyManager(storageService: storageService)
+        storedManager = DependencyManager(storageService: storageService, networkController: networkController)
     }
 
     // Единственный объявленый инициализатор - приватный - т.е. объекты класса нельзя создать извне
-    private init(storageService: StorageServiceProtocol) {
+    private init(storageService: StorageServiceProtocol, networkController: NetworkControllerProtocol) {
         self.storageService = storageService
+        self.networkController = networkController
     }
 
 }

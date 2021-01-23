@@ -11,6 +11,8 @@
 		8641166F25861D81009C9199 /* PetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641166E25861D81009C9199 /* PetDetailsViewController.swift */; };
 		8641167425862623009C9199 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641167325862623009C9199 /* StorageService.swift */; };
 		864116782586265F009C9199 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864116772586265F009C9199 /* Pet.swift */; };
+		8670860F25BC2B5600C2BE0C /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670860E25BC2B5600C2BE0C /* NetworkController.swift */; };
+		8670861225BC33EE00C2BE0C /* NetworkStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8670861125BC33EE00C2BE0C /* NetworkStorageService.swift */; };
 		868587332584CB350033A6E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868587322584CB350033A6E3 /* AppDelegate.swift */; };
 		868587352584CB350033A6E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868587342584CB350033A6E3 /* SceneDelegate.swift */; };
 		8685873A2584CB350033A6E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 868587382584CB350033A6E3 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		8641166E25861D81009C9199 /* PetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsViewController.swift; sourceTree = "<group>"; };
 		8641167325862623009C9199 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		864116772586265F009C9199 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		8670860E25BC2B5600C2BE0C /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		8670861125BC33EE00C2BE0C /* NetworkStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStorageService.swift; sourceTree = "<group>"; };
 		8685872F2584CB350033A6E3 /* HelloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868587322584CB350033A6E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		868587342584CB350033A6E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				86FB734325AB15BF0064167D /* MockStorage.swift */,
 				86FB733F25AB13140064167D /* DependencyManager.swift */,
 				86E86F6725B443D800E47A07 /* FileService.swift */,
+				8670860E25BC2B5600C2BE0C /* NetworkController.swift */,
+				8670861125BC33EE00C2BE0C /* NetworkStorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -242,8 +248,10 @@
 				86FB734425AB15BF0064167D /* MockStorage.swift in Sources */,
 				864116782586265F009C9199 /* Pet.swift in Sources */,
 				868587352584CB350033A6E3 /* SceneDelegate.swift in Sources */,
+				8670861225BC33EE00C2BE0C /* NetworkStorageService.swift in Sources */,
 				86FB734025AB13140064167D /* DependencyManager.swift in Sources */,
 				8641166F25861D81009C9199 /* PetDetailsViewController.swift in Sources */,
+				8670860F25BC2B5600C2BE0C /* NetworkController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
