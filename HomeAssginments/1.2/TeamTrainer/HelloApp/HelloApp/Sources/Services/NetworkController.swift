@@ -78,6 +78,7 @@ class NetworkController: NetworkControllerProtocol {
 
     }
 
+    // Пример функции для отпавки данных на сервер. Тут ожидается что сервер что-то вернет, хотя обычно при отправка данных сервер просто возвращзает 202 и не возвращает данные.
     func post<PostType, ResponseType>(
         type: ResponseType.Type,
         path: String,
@@ -108,6 +109,7 @@ class NetworkController: NetworkControllerProtocol {
 
     }
 
+    // Загрузка картинки. Обратите внимания - хост не используется. Картинка загружается по полному адресу.
     func fetchImage(
         url: URL,
         callback: @escaping ((Result<Image, Error>)  -> ())
@@ -130,6 +132,7 @@ class NetworkController: NetworkControllerProtocol {
         task.resume()
     }
 
+    // Сизхнроный блок базовой обработки ответа до момента, где нам нужны данные
     private func processData(data: Data?, response: URLResponse?, error: Error?) throws -> Data {
         if let error = error {
             throw NetworkError.networkLayer(error, data: data, response: response)
@@ -180,15 +183,13 @@ class NetworkController: NetworkControllerProtocol {
 
         let baseUrl = URL(string: host)!
         var fullUrl: URL = baseUrl.appendingPathComponent(path)
-        
         // Тут надо добавить параметры
 
         var request = URLRequest(url: fullUrl)
+        
         request.addValue(apiKey, forHTTPHeaderField: "x-api-key")
         request.httpMethod = method
         request.httpBody = bodyData
-
-        // add hedaer
 
         return request
     }
