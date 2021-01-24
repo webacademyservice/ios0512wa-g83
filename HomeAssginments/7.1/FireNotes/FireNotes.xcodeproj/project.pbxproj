@@ -17,6 +17,9 @@
 		86E3965725BD778500639502 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 86E3965625BD778500639502 /* FirebaseFirestore */; };
 		86E3965925BD778500639502 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 86E3965825BD778500639502 /* FirebaseFirestoreSwift-Beta */; };
 		86E3965C25BD785C00639502 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86E3965B25BD785C00639502 /* GoogleService-Info.plist */; };
+		86E3966025BD7D9000639502 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3965F25BD7D9000639502 /* Note.swift */; };
+		86E3966325BD7EE400639502 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3966225BD7EE400639502 /* NoteCollectionViewCell.swift */; };
+		86E3966625BD81AA00639502 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3966525BD81AA00639502 /* AddNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		86E3964A25BD734C00639502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86E3964C25BD734C00639502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E3965B25BD785C00639502 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86E3965F25BD7D9000639502 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		86E3966225BD7EE400639502 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		86E3966525BD81AA00639502 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 				86E3964725BD734C00639502 /* Assets.xcassets */,
 				86E3964925BD734C00639502 /* LaunchScreen.storyboard */,
 				86E3964C25BD734C00639502 /* Info.plist */,
+				86E3965F25BD7D9000639502 /* Note.swift */,
+				86E3966225BD7EE400639502 /* NoteCollectionViewCell.swift */,
+				86E3966525BD81AA00639502 /* AddNoteViewController.swift */,
 			);
 			path = FireNotes;
 			sourceTree = "<group>";
@@ -157,7 +166,10 @@
 			files = (
 				86E3964325BD734A00639502 /* ViewController.swift in Sources */,
 				86E3963F25BD734A00639502 /* AppDelegate.swift in Sources */,
+				86E3966625BD81AA00639502 /* AddNoteViewController.swift in Sources */,
+				86E3966325BD7EE400639502 /* NoteCollectionViewCell.swift in Sources */,
 				86E3964125BD734A00639502 /* SceneDelegate.swift in Sources */,
+				86E3966025BD7D9000639502 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
