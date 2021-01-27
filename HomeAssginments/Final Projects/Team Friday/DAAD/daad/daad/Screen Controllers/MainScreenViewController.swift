@@ -7,18 +7,18 @@
 
 import UIKit
 
+
 class customCells: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        self.layer.cornerRadius = 35
+        self.layer.cornerRadius = 45
         self.layer.masksToBounds = true
-        self.layer.borderWidth = 2
+        self.layer.borderWidth = 1
         self.layer.borderColor = UIColor.white.cgColor
-        self.layer.shadowColor = UIColor.white.cgColor
-        self.layer.shadowOpacity = 1
-        self.layer.shadowOffset = .zero
-        self.layer.shadowRadius = 3
-        
+//        self.layer.shadowColor = UIColor.white.cgColor
+//        self.layer.shadowOpacity = 1
+//        self.layer.shadowOffset = .zero
+//        self.layer.shadowRadius = 3
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,6 +26,7 @@ class customCells: UIView {
         
     }
 }
+
 
 
 
@@ -47,3 +48,6 @@ class MainScreenViewController: UIViewController {
     }
     }
 }
+
+
+
