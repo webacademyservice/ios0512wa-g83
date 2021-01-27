@@ -50,5 +50,7 @@ class FindMyWatchViewController: UIViewController, CLLocationManagerDelegate {
         
  
     }
+    
 
     }
+
