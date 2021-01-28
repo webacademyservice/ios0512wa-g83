@@ -169,7 +169,7 @@
                                                                                 <state key="normal" backgroundImage="golden-watch"/>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWN-YV-q2S">
-                                                                                <rect key="frame" x="218" y="410" width="55" height="25"/>
+                                                                                <rect key="frame" x="215" y="410" width="55" height="25"/>
                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                                 <state key="normal" title="BUY">
@@ -246,20 +246,35 @@
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-7B-MKe" customClass="customCells" customModule="daad" customModuleProvider="target">
                                                                         <rect key="frame" x="392" y="0.0" width="372" height="470"/>
                                                                         <subviews>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-4T-KlK">
+                                                                                <rect key="frame" x="99" y="102.66666666666674" width="174" height="265"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="265" id="Z8s-14-iIO"/>
+                                                                                </constraints>
+                                                                                <state key="normal" backgroundImage="silver-small-watch"/>
+                                                                            </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOn-Ai-Ysq">
+                                                                                <rect key="frame" x="215" y="410" width="55" height="25"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <state key="normal" title="BUY">
+                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
                                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6r-Up-Qyf">
                                                                                 <rect key="frame" x="65" y="20" width="205" height="85"/>
                                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                                 <attributedString key="attributedText">
                                                                                     <fragment content="New ">
                                                                                         <attributes>
-                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <font key="NSFont" metaFont="smallSystem"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
                                                                                     </fragment>
                                                                                     <fragment content="DAAD ">
                                                                                         <attributes>
-                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <font key="NSFont" size="20" name="Helvetica-Bold"/>
                                                                                             <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -267,14 +282,14 @@
                                                                                     </fragment>
                                                                                     <fragment content="Hybrid ">
                                                                                         <attributes>
-                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <font key="NSFont" size="20" name="Helvetica-Bold"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
                                                                                     </fragment>
                                                                                     <fragment content="Brand new ">
                                                                                         <attributes>
-                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <font key="NSFont" size="14" name="Helvetica-Light"/>
                                                                                             <font key="NSOriginalFont" size="14" name="Helvetica-Light"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -282,14 +297,14 @@
                                                                                     </fragment>
                                                                                     <fragment content="hybrid ">
                                                                                         <attributes>
-                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <font key="NSFont" size="14" name="Helvetica-Light"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                         </attributes>
                                                                                     </fragment>
                                                                                     <fragment content="classic in a modern shape">
                                                                                         <attributes>
-                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                             <font key="NSFont" size="14" name="Helvetica-Light"/>
                                                                                             <font key="NSOriginalFont" size="14" name="Helvetica-Light"/>
                                                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -319,13 +334,6 @@
                                                                                 </attributedString>
                                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                             </textView>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBY-4T-KlK">
-                                                                                <rect key="frame" x="99" y="102.66666666666674" width="174" height="265"/>
-                                                                                <constraints>
-                                                                                    <constraint firstAttribute="height" constant="265" id="Z8s-14-iIO"/>
-                                                                                </constraints>
-                                                                                <state key="normal" backgroundImage="silver-small-watch"/>
-                                                                            </button>
                                                                         </subviews>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="372" id="7xh-J7-3HE"/>
@@ -344,6 +352,87 @@
                                                                                 </constraints>
                                                                                 <state key="normal" backgroundImage="golden-watch"/>
                                                                             </button>
+                                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-aq-7M5">
+                                                                                <rect key="frame" x="215" y="410" width="55" height="25"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                                                <state key="normal" title="BUY">
+                                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                            </button>
+                                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFT-vH-pC3">
+                                                                                <rect key="frame" x="65" y="20" width="205" height="85"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="New ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.98567491769790649" green="0.99223273992538452" blue="0.99349516630172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="DAAD ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.98567491769790649" green="0.99223273992538452" blue="0.99349516630172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                                                                            <font key="NSOriginalFont" size="20" name="Helvetica-Bold"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="Waterproof ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.98567491769790649" green="0.99223273992538452" blue="0.99349516630172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="Brand new ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.98567491769790649" green="0.99223273992538452" blue="0.99349516630172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" size="14" name="Helvetica-Light"/>
+                                                                                            <font key="NSOriginalFont" size="14" name="Helvetica-Light"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="hybrid ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.98567491769790649" green="0.99223273992538452" blue="0.99349516630172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" size="14" name="Helvetica-Light"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content="classic in a modern shape">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="0.98567491769790649" green="0.99223273992538452" blue="0.99349516630172729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" size="14" name="Helvetica-Light"/>
+                                                                                            <font key="NSOriginalFont" size="14" name="Helvetica-Light"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                            </textView>
+                                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCU-8T-J6U">
+                                                                                <rect key="frame" x="65" y="395" width="372" height="470"/>
+                                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                <attributedString key="attributedText">
+                                                                                    <fragment content="Manually  manufactured out of  premium materials">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                    <fragment content=" ">
+                                                                                        <attributes>
+                                                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                                            <font key="NSFont" metaFont="smallSystem"/>
+                                                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                                        </attributes>
+                                                                                    </fragment>
+                                                                                </attributedString>
+                                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                            </textView>
                                                                         </subviews>
                                                                         <constraints>
                                                                             <constraint firstItem="NNN-fq-nxK" firstAttribute="leading" secondItem="1Rx-1B-4Xz" secondAttribute="leading" constant="99" id="DUp-jB-gAn"/>
