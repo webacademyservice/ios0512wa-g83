@@ -9,11 +9,6 @@ import Foundation
 
 protocol NetworkControllerProtocol {
 
-    func fetchImage(
-        url: URL,
-        callback: @escaping ((Result<Image, Error>)  -> ())
-    )
-
     func fetch<ResponseType: Decodable>(
         type: ResponseType.Type,
         path: String,
@@ -176,7 +171,6 @@ class NetworkController: NetworkControllerProtocol {
             throw NetworkError.notImage(data)
         }
     }
-
 
     private func makeRequest(path: String, parameters: [String : String]?, bodyData: Data? = nil, method: String = "GET") -> URLRequest {
 

@@ -10,9 +10,11 @@ import Foundation
 class NetworkStorageService: StorageServiceProtocol {
 
     let networkController: NetworkControllerProtocol
+    let imageLoadingController: ImageLoading
 
-    init(networkController: NetworkControllerProtocol) {
+    init(networkController: NetworkControllerProtocol, imageLoadingController: ImageLoading) {
         self.networkController = networkController
+        self.imageLoadingController = imageLoadingController
     }
 
     // Преобзраование декодированых петов в петов модели
@@ -30,7 +32,14 @@ class NetworkStorageService: StorageServiceProtocol {
 
             // Если картинки нет = просто добавляем пета без картинки в результат
             guard let url = each.image?.url else {
-                results.append(Pet(name: each.name, shortDescription: each.description, image: nil, tags: tags))
+                results.append(
+                    Pet(
+                        name: each.name,
+                        shortDescription: each.description,
+                        image: nil,
+                        tags: tags
+                    )
+                )
                 continue
             }
 
@@ -38,7 +47,7 @@ class NetworkStorageService: StorageServiceProtocol {
             group.enter()
 
             // Запускаем асинхронный запрос на загрузку картинки
-            self.networkController.fetchImage(url: url) { (result) in
+            self.imageLoadingController.fetchImage(url: url) { (result) in
                 // Когда получили ответ на загрузку картинки
                 let image = try? result.get()
 
