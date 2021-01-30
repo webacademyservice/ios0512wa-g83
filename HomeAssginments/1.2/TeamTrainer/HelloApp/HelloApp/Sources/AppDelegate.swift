@@ -50,8 +50,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             )
         } else {
 
+            let imageController = ImageController(
+                fetch: networkController,
+                cache: ImageCacheController(name: "image")
+            )
+
             DependencyManager.register(
-                storageService: NetworkStorageService(networkController: networkController),
+                storageService: NetworkStorageService(
+                    networkController: networkController,
+                    imageLoadingController: imageController
+                ),
                 networkController: networkController
             )
 

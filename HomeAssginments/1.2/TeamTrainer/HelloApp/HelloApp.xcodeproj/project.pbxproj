@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863499BC25C55F9B00FD39CA /* ImageLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863499BB25C55F9B00FD39CA /* ImageLoading.swift */; };
+		863499BF25C5608B00FD39CA /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863499BE25C5608B00FD39CA /* ImageCaching.swift */; };
 		863E09402592497F00943BF0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E093F2592497F00943BF0 /* UIImageExtensions.swift */; };
 		8641166F25861D81009C9199 /* PetDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641166E25861D81009C9199 /* PetDetailsViewController.swift */; };
 		8641167425862623009C9199 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641167325862623009C9199 /* StorageService.swift */; };
@@ -23,11 +25,14 @@
 		86E86F6825B443D800E47A07 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E86F6725B443D800E47A07 /* FileService.swift */; };
 		86E86F6C25B449CA00E47A07 /* DecodingPet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E86F6B25B449CA00E47A07 /* DecodingPet.swift */; };
 		86E86F7125B44BE200E47A07 /* pets.json in Resources */ = {isa = PBXBuildFile; fileRef = 86E86F7025B44BE200E47A07 /* pets.json */; };
+		86F5A3AE25C56723002406A7 /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5A3AD25C56723002406A7 /* ImageController.swift */; };
 		86FB734025AB13140064167D /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB733F25AB13140064167D /* DependencyManager.swift */; };
 		86FB734425AB15BF0064167D /* MockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB734325AB15BF0064167D /* MockStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		863499BB25C55F9B00FD39CA /* ImageLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoading.swift; sourceTree = "<group>"; };
+		863499BE25C5608B00FD39CA /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
 		863E093F2592497F00943BF0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		8641166E25861D81009C9199 /* PetDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailsViewController.swift; sourceTree = "<group>"; };
 		8641167325862623009C9199 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		86E86F6725B443D800E47A07 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		86E86F6B25B449CA00E47A07 /* DecodingPet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingPet.swift; sourceTree = "<group>"; };
 		86E86F7025B44BE200E47A07 /* pets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pets.json; sourceTree = "<group>"; };
+		86F5A3AD25C56723002406A7 /* ImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageController.swift; sourceTree = "<group>"; };
 		86FB733F25AB13140064167D /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		86FB734325AB15BF0064167D /* MockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +169,9 @@
 				86E86F6725B443D800E47A07 /* FileService.swift */,
 				8670860E25BC2B5600C2BE0C /* NetworkController.swift */,
 				8670861125BC33EE00C2BE0C /* NetworkStorageService.swift */,
+				863499BB25C55F9B00FD39CA /* ImageLoading.swift */,
+				863499BE25C5608B00FD39CA /* ImageCaching.swift */,
+				86F5A3AD25C56723002406A7 /* ImageController.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -250,6 +259,9 @@
 				868587352584CB350033A6E3 /* SceneDelegate.swift in Sources */,
 				8670861225BC33EE00C2BE0C /* NetworkStorageService.swift in Sources */,
 				86FB734025AB13140064167D /* DependencyManager.swift in Sources */,
+				863499BC25C55F9B00FD39CA /* ImageLoading.swift in Sources */,
+				863499BF25C5608B00FD39CA /* ImageCaching.swift in Sources */,
+				86F5A3AE25C56723002406A7 /* ImageController.swift in Sources */,
 				8641166F25861D81009C9199 /* PetDetailsViewController.swift in Sources */,
 				8670860F25BC2B5600C2BE0C /* NetworkController.swift in Sources */,
 			);
